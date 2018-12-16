@@ -3,10 +3,14 @@ package gameWorld;
 import java.util.LinkedList;
 import java.util.List;
 
+import org.omg.CORBA.INITIALIZE;
+
 import eg.edu.alexu.csd.oop.game.GameObject;
 import eg.edu.alexu.csd.oop.game.World;
+
 import gameObjects.Clown;
 import gameObjects.Stack;
+
 
 public class GameWorld implements World {
 	private int score = 0;
@@ -21,24 +25,32 @@ public class GameWorld implements World {
 		this.width = width;
 		this.height = height;
 		control.add(new Clown(200, 200, new Stack(), new Stack()));
+
+
 	}
 
 	@Override
 	public List<GameObject> getConstantObjects() {
+
 		// TODO Auto-generated method stub
 		return constant;
+
 	}
 
 	@Override
 	public List<GameObject> getMovableObjects() {
+
 		// TODO Auto-generated method stub
 		return moving;
+
 	}
 
 	@Override
 	public List<GameObject> getControlableObjects() {
+
 		// TODO Auto-generated method stub
 		return control;
+
 	}
 
 	@Override
@@ -67,14 +79,18 @@ public class GameWorld implements World {
 
 	@Override
 	public int getSpeed() {
+
 		
 		return 10;
+
 	}
 
 	@Override
 	public int getControlSpeed() {
 		// TODO Auto-generated method stub
+
 		return 40;
+
 	}
 
 }
