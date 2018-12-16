@@ -24,8 +24,9 @@ public class GameWorld implements World {
 	public GameWorld(int height, int width) {
 		this.width = width;
 		this.height = height;
-		control.add(new Clown(200, 200, new Stack(), new Stack()));
-
+	
+		control.add(new Clown(100, 400, 20));
+	
 
 	}
 

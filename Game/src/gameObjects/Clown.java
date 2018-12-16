@@ -17,19 +17,23 @@ public class Clown implements GameObject {
 	private int width ;
 	private int height;
 	private boolean visible = true;
-	private Stack leftStack;
-	private Stack rightStack;
+	private ArrayList<Plate> leftStack;
+	
+	private ArrayList<Plate> rightStack;
+	int stackCapacity = 0;
+	
+
 	private BufferedImage[] clownImage = new BufferedImage[1];
 	
-	public Clown(int positionX, int positionY, Stack leftStack, Stack rightStack) {
+	public Clown(int positionX, int positionY, int stackCapacity ) {
 		
 		this.positionX = positionX;
 		this.positionY = positionY;
-		this.leftStack = leftStack;
-		this.rightStack = rightStack;
+		this.stackCapacity = stackCapacity;
+		
 		
 		try {
-			clownImage[0] = ImageIO.read(new File("clown.png"));
+			clownImage[0] = ImageIO.read(new File("joker.png"));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -59,8 +63,8 @@ public class Clown implements GameObject {
 
 	@Override
 	public void setY(int y) {
-		positionY = y;
-
+		//positionY = y;
+		
 	}
 
 	@Override
@@ -87,14 +91,29 @@ public class Clown implements GameObject {
 		return clownImage;
 	}
 	
-	public Stack getLeftStack() {
+	
+	public void addPlateToLeftStack(Plate plate) {
+		
+		leftStack.add(plate);
+		
+	}
+	public void addPlateToRightStack(Plate plate) {
+		
+		rightStack.add(plate);
+		
+	}
+	
+	public ArrayList<Plate> getLeftStack() {
 		return leftStack;
 	}
 
-	public Stack getRightStack() {
+	public ArrayList<Plate> getRightStack() {
 		return rightStack;
 	}
 	
-	
+	public int getStackCapacity() {
+		return stackCapacity;
+	}
+
 
 }
