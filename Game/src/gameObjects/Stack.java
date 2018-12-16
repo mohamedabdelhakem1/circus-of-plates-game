@@ -12,7 +12,7 @@ public class Stack implements GameObject{
 	private int height;
 	private boolean visible = true;
 	private BufferedImage[] clownImage = new BufferedImage[1];
-
+	
 	@Override
 	public int getX() {
 		// TODO Auto-generated method stub
@@ -21,8 +21,7 @@ public class Stack implements GameObject{
 
 	@Override
 	public void setX(int x) {
-		// TODO Auto-generated method stub
-		
+	
 	}
 
 	@Override

@@ -1,57 +1,93 @@
 package gameObjects;
 
+import java.awt.*;
 import java.awt.image.BufferedImage;
 
 import eg.edu.alexu.csd.oop.game.GameObject;
 
-public class Plate implements GameObject{
+public abstract class Plate implements GameObject{
 
-	@Override
-	public int getX() {
-		// TODO Auto-generated method stub
-		return 0;
+	protected BufferedImage[] spriteImages = new BufferedImage[1];
+
+	protected int x;
+	protected int y;
+	protected int width;
+	protected int hight;
+	protected boolean isVisible;
+
+	protected Color color;
+
+	public Plate(int posX, int posY, int width, int hight, Color color) {
+		x = posX;
+		y = posY;
+		this.width = width;
+		this.hight = hight;
+		this.color = color;
 	}
 
 	@Override
-	public void setX(int x) {
-		// TODO Auto-generated method stub
-		
+	public int getX() {
+		return x;
+	}
+
+	@Override
+	public void setX(int mX) {
+		this.x = mX;
 	}
 
 	@Override
 	public int getY() {
-		// TODO Auto-generated method stub
-		return 0;
+		return y;
 	}
 
 	@Override
-	public void setY(int y) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public int getWidth() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
-	@Override
-	public int getHeight() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
-	@Override
-	public boolean isVisible() {
-		// TODO Auto-generated method stub
-		return false;
+	public void setY(int mY) {
+		return;
 	}
 
 	@Override
 	public BufferedImage[] getSpriteImages() {
-		// TODO Auto-generated method stub
-		return null;
+		return spriteImages;
 	}
 
+	@Override
+	public int getWidth(){
+		return width;
+	}
+
+	@Override
+	public int getHeight() {
+		return hight;
+	}
+
+	@Override
+	public boolean isVisible() {
+		return isVisible;
+	}
+
+	public Color getColor () {
+		return color;
+	}
+
+//	public void setVisible(boolean visible){
+//		this.isVisible = visible;
+//	}
 }
+
+//	public static final int SPRITE_HEIGHT = 5;
+//	private static final int MAX_MSTATE = 1;
+//	// an array of sprite images that are drawn sequentially
+//	private BufferedImage[] spriteImages = new BufferedImage[MAX_MSTATE];
+//	private int x;
+//	private int y;
+//	private int width;
+//	private boolean visible;
+//	private boolean horizontalOnly;
+//
+//	public BarObject(int posX, int posY, int width, boolean horizontalOnly, Color color){
+//		this.x = posX;
+//		this.y = posY;
+//		this.width = width;
+//		this.horizontalOnly = horizontalOnly;
+//		this.visible = true;
+//		// create a bunch of buffered images and place into an array, to be displayed sequentially
