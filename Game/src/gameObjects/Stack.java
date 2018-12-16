@@ -4,7 +4,14 @@ import java.awt.image.BufferedImage;
 
 import eg.edu.alexu.csd.oop.game.GameObject;
 
-public class PlateObject implements GameObject{
+public class Stack implements GameObject{
+	
+	private int positionX;
+	private int positionY;
+	private int width ;
+	private int height;
+	private boolean visible = true;
+	private BufferedImage[] clownImage = new BufferedImage[1];
 
 	@Override
 	public int getX() {

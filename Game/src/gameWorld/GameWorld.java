@@ -7,46 +7,49 @@ import org.omg.CORBA.INITIALIZE;
 
 import eg.edu.alexu.csd.oop.game.GameObject;
 import eg.edu.alexu.csd.oop.game.World;
-import gameObjects.ClownObject;
 
-public class GameWorld implements World{
-	private final List<GameObject> constantObjects ;
-	private final List<GameObject> movingObjects ;
-	private final List<GameObject> controllableObjects ;
-	private final int width;
-	private final int height;
-	private int plateSpeed,clownSpeed;
-	public GameWorld(int width, int height, int plateSpeed, int clownSpeed) {
-		this.plateSpeed = plateSpeed;
-		this.clownSpeed = clownSpeed;
-		this.width =  width;
-		this.height =  height;
-		constantObjects = new LinkedList<GameObject>();
-		movingObjects = new LinkedList<GameObject>();
-		controllableObjects = new LinkedList<GameObject>();
-		initialize();
-	}
+import gameObjects.Clown;
+import gameObjects.Stack;
 
-	private void initialize() {
-		controllableObjects.add(new ClownObject(400, 400, "res\\joker.png"));
-		
+
+public class GameWorld implements World {
+	private int score = 0;
+	private long endTime, startTime = System.currentTimeMillis();
+	private int width;
+	private int height;
+	private final List<GameObject> constant = new LinkedList<GameObject>();
+	private final List<GameObject> moving = new LinkedList<GameObject>();
+	private final List<GameObject> control = new LinkedList<GameObject>();
+	
+	public GameWorld(int height, int width) {
+		this.width = width;
+		this.height = height;
+		control.add(new Clown(200, 200, new Stack(), new Stack()));
+
 	}
 
 	@Override
 	public List<GameObject> getConstantObjects() {
-		return constantObjects;
+
+		// TODO Auto-generated method stub
+		return constant;
+
 	}
 
 	@Override
 	public List<GameObject> getMovableObjects() {
-		
-		return movingObjects;
+
+		// TODO Auto-generated method stub
+		return moving;
+
 	}
 
 	@Override
 	public List<GameObject> getControlableObjects() {
-		
-		return controllableObjects;
+
+		// TODO Auto-generated method stub
+		return control;
+
 	}
 
 	@Override
@@ -64,7 +67,7 @@ public class GameWorld implements World{
 	@Override
 	public boolean refresh() {
 		// TODO Auto-generated method stub
-		return false;
+		return true;
 	}
 
 	@Override
@@ -75,14 +78,18 @@ public class GameWorld implements World{
 
 	@Override
 	public int getSpeed() {
-		// TODO Auto-generated method stub
-		return plateSpeed;
+
+		
+		return 10;
+
 	}
 
 	@Override
 	public int getControlSpeed() {
 		// TODO Auto-generated method stub
-		return clownSpeed;
+
+		return 40;
+
 	}
 
 }
