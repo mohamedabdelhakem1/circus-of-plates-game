@@ -9,7 +9,7 @@ import eg.edu.alexu.csd.oop.game.GameObject;
 import eg.edu.alexu.csd.oop.game.World;
 
 import gameObjects.Clown;
-import gameObjects.Stack;
+
 
 
 public class GameWorld implements World {
@@ -24,9 +24,11 @@ public class GameWorld implements World {
 	public GameWorld(int height, int width) {
 		this.width = width;
 		this.height = height;
+
 	
 		control.add(new Clown(100, 400, 20));
 	
+
 
 	}
 
