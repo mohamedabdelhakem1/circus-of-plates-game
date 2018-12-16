@@ -1,5 +1,5 @@
 package gameObjects;
 
-public class StackObject implements  {
+public class StackObject {
 
 }

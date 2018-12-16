@@ -7,6 +7,7 @@ import org.omg.CORBA.INITIALIZE;
 
 import eg.edu.alexu.csd.oop.game.GameObject;
 import eg.edu.alexu.csd.oop.game.World;
+import gameObjects.ClownObject;
 
 public class GameWorld implements World{
 	private final List<GameObject> constantObjects ;
@@ -27,7 +28,7 @@ public class GameWorld implements World{
 	}
 
 	private void initialize() {
-		
+		controllableObjects.add(new ClownObject(400, 400, "\\joker.png"));
 		
 	}
 

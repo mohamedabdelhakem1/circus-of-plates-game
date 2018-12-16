@@ -32,38 +32,36 @@ public class ImageObject implements GameObject {
 
 	@Override
 	public int getX() {
-		// TODO Auto-generated method stub
-		return 0;
+		return x;
 	}
 
 	@Override
 	public void setX(int x) {
-		// TODO Auto-generated method stub
+		this.x = x;
 		
 	}
 
 	@Override
 	public int getY() {
-		// TODO Auto-generated method stub
-		return 0;
+		
+		return y;
 	}
 
 	@Override
 	public void setY(int y) {
-		// TODO Auto-generated method stub
-		
+		this.y = y;
 	}
 
 	@Override
 	public int getWidth() {
 		// TODO Auto-generated method stub
-		return 0;
+		return spriteImages[0].getHeight();
 	}
 
 	@Override
 	public int getHeight() {
 		// TODO Auto-generated method stub
-		return width;
+		return spriteImages[0].getHeight();
 	}
 
 	@Override
