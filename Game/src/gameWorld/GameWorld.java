@@ -1,40 +1,63 @@
 package gameWorld;
 
+import java.util.LinkedList;
 import java.util.List;
+
+import org.omg.CORBA.INITIALIZE;
 
 import eg.edu.alexu.csd.oop.game.GameObject;
 import eg.edu.alexu.csd.oop.game.World;
 
 public class GameWorld implements World{
+	private final List<GameObject> constantObjects ;
+	private final List<GameObject> movingObjects ;
+	private final List<GameObject> controllableObjects ;
+	private final int width;
+	private final int height;
+	private int plateSpeed,clownSpeed;
+	public GameWorld(int width, int height, int plateSpeed, int clownSpeed) {
+		this.plateSpeed = plateSpeed;
+		this.clownSpeed = clownSpeed;
+		this.width =  width;
+		this.height =  height;
+		constantObjects = new LinkedList<GameObject>();
+		movingObjects = new LinkedList<GameObject>();
+		controllableObjects = new LinkedList<GameObject>();
+		initialize();
+	}
+
+	private void initialize() {
+		
+		
+	}
 
 	@Override
 	public List<GameObject> getConstantObjects() {
-		// TODO Auto-generated method stub
-		return null;
+		return constantObjects;
 	}
 
 	@Override
 	public List<GameObject> getMovableObjects() {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return movingObjects;
 	}
 
 	@Override
 	public List<GameObject> getControlableObjects() {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return controllableObjects;
 	}
 
 	@Override
 	public int getWidth() {
 		// TODO Auto-generated method stub
-		return 0;
+		return width;
 	}
 
 	@Override
 	public int getHeight() {
 		// TODO Auto-generated method stub
-		return 0;
+		return height;
 	}
 
 	@Override
@@ -52,13 +75,13 @@ public class GameWorld implements World{
 	@Override
 	public int getSpeed() {
 		// TODO Auto-generated method stub
-		return 0;
+		return plateSpeed;
 	}
 
 	@Override
 	public int getControlSpeed() {
 		// TODO Auto-generated method stub
-		return 0;
+		return clownSpeed;
 	}
 
 }

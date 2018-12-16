@@ -4,7 +4,7 @@ import java.awt.image.BufferedImage;
 
 import eg.edu.alexu.csd.oop.game.GameObject;
 
-public class Plate implements GameObject {
+public class PlateObject implements GameObject{
 
 	@Override
 	public int getX() {
