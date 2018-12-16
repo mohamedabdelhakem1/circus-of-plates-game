@@ -28,7 +28,7 @@ public class GameWorld implements World{
 	}
 
 	private void initialize() {
-		controllableObjects.add(new ClownObject(400, 400, "\\joker.png"));
+		controllableObjects.add(new ClownObject(400, 400, "res\\joker.png"));
 		
 	}
 
