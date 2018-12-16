@@ -1,46 +1,62 @@
 package gameWorld;
 
+import java.util.LinkedList;
 import java.util.List;
 
 import eg.edu.alexu.csd.oop.game.GameObject;
 import eg.edu.alexu.csd.oop.game.World;
+import gameObjects.Clown;
+import gameObjects.Stack;
 
-public class GameWorld implements World{
+public class GameWorld implements World {
+	private int score = 0;
+	private long endTime, startTime = System.currentTimeMillis();
+	private int width;
+	private int height;
+	private final List<GameObject> constant = new LinkedList<GameObject>();
+	private final List<GameObject> moving = new LinkedList<GameObject>();
+	private final List<GameObject> control = new LinkedList<GameObject>();
+	
+	public GameWorld(int height, int width) {
+		this.width = width;
+		this.height = height;
+		control.add(new Clown(200, 200, new Stack(), new Stack()));
+	}
 
 	@Override
 	public List<GameObject> getConstantObjects() {
 		// TODO Auto-generated method stub
-		return null;
+		return constant;
 	}
 
 	@Override
 	public List<GameObject> getMovableObjects() {
 		// TODO Auto-generated method stub
-		return null;
+		return moving;
 	}
 
 	@Override
 	public List<GameObject> getControlableObjects() {
 		// TODO Auto-generated method stub
-		return null;
+		return control;
 	}
 
 	@Override
 	public int getWidth() {
 		// TODO Auto-generated method stub
-		return 0;
+		return width;
 	}
 
 	@Override
 	public int getHeight() {
 		// TODO Auto-generated method stub
-		return 0;
+		return height;
 	}
 
 	@Override
 	public boolean refresh() {
 		// TODO Auto-generated method stub
-		return false;
+		return true;
 	}
 
 	@Override
@@ -51,14 +67,14 @@ public class GameWorld implements World{
 
 	@Override
 	public int getSpeed() {
-		// TODO Auto-generated method stub
-		return 0;
+		
+		return 10;
 	}
 
 	@Override
 	public int getControlSpeed() {
 		// TODO Auto-generated method stub
-		return 0;
+		return 40;
 	}
 
 }
