@@ -1,5 +1,6 @@
 package gameWorld;
 
+import java.awt.image.BufferedImage;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -8,10 +9,12 @@ import org.omg.CORBA.INITIALIZE;
 import clownBuilder.ClownEngineer;
 import eg.edu.alexu.csd.oop.game.GameObject;
 import eg.edu.alexu.csd.oop.game.World;
+
 import gameObjects.Bar;
+
 import gameObjects.Clown;
-
-
+import gameObjects.Plate;
+import gameObjects.PlateFactory;
 
 public class GameWorld implements World {
 	private int score = 0;
@@ -21,47 +24,55 @@ public class GameWorld implements World {
 	private final List<GameObject> constant = new LinkedList<GameObject>();
 	private final List<GameObject> moving = new LinkedList<GameObject>();
 	private final List<GameObject> control = new LinkedList<GameObject>();
-	
+	private PlateFactory factory;
+
 	public GameWorld(int height, int width) {
 		this.width = width;
 		this.height = height;
 
+		factory = PlateFactory.getInstance();
+		ClownEngineer clownEnginner = new ClownEngineer(100, 400, 20, 20);
+		clownEnginner.makeClown();
+		control.add(clownEnginner.getClown());
+		for (int i = 0; i < 6; i++) {
+			moving.add(factory.getPlate(width,height));	
+		}	
 
-		ClownEngineer clownEngineer = new ClownEngineer(100, 400, 20, 20);
-		clownEngineer.makeClown();
-		
-		control.add(clownEngineer.getClown());
-		
+
 
 	}
-
+	
+	
+	@Override
+	public boolean refresh() {
+		for(GameObject plate : moving) {
+			plate.setY(plate.getY()+2);
+			plate.setX(plate.getX() + (Math.random() > 0.5 ? 1 : -1));
+			if(plate.getY()== height) {
+				plate.setY(0);
+			}
+		}
+		
+		return true;
+	}
 	@Override
 	public List<GameObject> getConstantObjects() {
-
-		// TODO Auto-generated method stub
 		return constant;
 
 	}
 
 	@Override
 	public List<GameObject> getMovableObjects() {
-
-		// TODO Auto-generated method stub
 		return moving;
-
 	}
 
 	@Override
 	public List<GameObject> getControlableObjects() {
-
-		// TODO Auto-generated method stub
 		return control;
-
 	}
 
 	@Override
 	public int getWidth() {
-		// TODO Auto-generated method stub
 		return width;
 	}
 
@@ -71,11 +82,7 @@ public class GameWorld implements World {
 		return height;
 	}
 
-	@Override
-	public boolean refresh() {
-		// TODO Auto-generated method stub
-		return true;
-	}
+
 
 	@Override
 	public String getStatus() {
@@ -85,8 +92,6 @@ public class GameWorld implements World {
 
 	@Override
 	public int getSpeed() {
-
-		
 		return 10;
 
 	}
