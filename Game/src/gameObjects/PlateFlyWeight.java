@@ -1,0 +1,60 @@
+package gameObjects;
+
+import java.awt.BasicStroke;
+import java.awt.Color;
+import java.awt.Graphics2D;
+import java.awt.Rectangle;
+import java.awt.RenderingHints;
+import java.awt.image.BufferedImage;
+import java.util.HashMap;
+
+public class PlateFlyWeight {
+	private static final HashMap<Color, BufferedImage> rectsByColor = new HashMap<Color, BufferedImage>();
+	private static final HashMap<Color, BufferedImage> EllipseByColor = new HashMap<Color, BufferedImage>();
+	private static PlateFlyWeight factory;
+
+	private PlateFlyWeight() {
+
+	}
+
+	public PlateFlyWeight getInstance() {
+		if (factory == null) {
+			factory = new PlateFlyWeight();
+		}
+		return factory;
+
+	}
+
+	public static BufferedImage getRectangularPlate(Color color,int width, int height ) {
+		BufferedImage plate = rectsByColor.get(color);
+
+		if (plate == null) {
+			plate = new BufferedImage(width, height,	BufferedImage.TYPE_INT_ARGB);
+				Graphics2D g2 = plate.createGraphics();
+				g2.setStroke(  new BasicStroke(3));
+				g2.setColor(Color.black);
+				g2.drawRect(0, 0, width-1, height-1);
+				g2.setPaint(color);
+				g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+				g2.fillRect(2, 2, width-4, height-4);
+			rectsByColor.put(color,plate);
+		}
+		return plate;
+	}
+	public static BufferedImage getOvalPlate(Color color ,int width, int height ) {
+		BufferedImage plate = EllipseByColor.get(color);
+
+		if (plate == null) {
+			plate = new BufferedImage(width, height,	BufferedImage.TYPE_INT_ARGB);
+				Graphics2D g2 = plate.createGraphics();
+				g2.setStroke(  new BasicStroke(3));
+				g2.setColor(Color.black);
+				g2.drawOval(0, 0, width-1, height-1);
+				g2.setPaint(color);
+				g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+				g2.fillOval(2, 2, width-4, height-4);
+				EllipseByColor.put(color,plate);
+		}
+		return plate;
+	}
+}
