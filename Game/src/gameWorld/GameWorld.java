@@ -31,7 +31,7 @@ public class GameWorld implements World {
 		this.height = height;
 
 		factory = PlateFactory.getInstance();
-		ClownEngineer clownEnginner = new ClownEngineer(100, 400, 20, 20);
+		ClownEngineer clownEnginner = new ClownEngineer(100, 470, 20, 20);
 		clownEnginner.makeClown();
 		control.add(clownEnginner.getClown());
 		for (int i = 0; i < 6; i++) {
