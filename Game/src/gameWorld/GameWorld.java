@@ -26,7 +26,7 @@ public class GameWorld implements World {
 		this.height = height;
 
 	
-		control.add(new Clown(100, 400, 20));
+		control.add(new Clown(100, 470, 20));
 	
 
 
