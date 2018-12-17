@@ -31,7 +31,7 @@ public class GameWorld implements World {
 		clownEngineer.makeClown();
 		
 		control.add(clownEngineer.getClown());
-		
+			
 
 	}
 
@@ -73,7 +73,7 @@ public class GameWorld implements World {
 
 	@Override
 	public boolean refresh() {
-		// TODO Auto-generated method stub
+		System.out.println(((Clown)control.get(0)).getLeftStack().getPositionX());
 		return true;
 	}
 

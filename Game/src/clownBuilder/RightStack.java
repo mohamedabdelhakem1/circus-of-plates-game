@@ -11,6 +11,8 @@ public class RightStack implements Stack {
 	private int capcity;
 	private int size = 0;
 	private ArrayList<Plate> plates;
+	private int positionX;
+	private int positionY;
 	
 	public RightStack(){
 		plates = new ArrayList<Plate>();
@@ -57,5 +59,35 @@ public class RightStack implements Stack {
 	public int getSize() {
 		
 		return size;
+	}
+
+
+
+	@Override
+	public int getPositionX() {
+		// TODO Auto-generated method stub
+		return positionX;
+	}
+
+
+
+	@Override
+	public void setPositionX(int positionX) {
+		this.positionX = positionX;
+	}
+
+
+	@Override
+	public int getPositiony() {
+		// TODO Auto-generated method stub
+		return positionY;
+	}
+
+
+
+	@Override
+	public void setPositionY(int positionY) {
+		this.positionY = positionY;
+		
 	}
 }
