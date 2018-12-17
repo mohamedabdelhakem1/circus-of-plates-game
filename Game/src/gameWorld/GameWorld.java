@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.omg.CORBA.INITIALIZE;
 
+import clownBuilder.ClownEnginner;
 import eg.edu.alexu.csd.oop.game.GameObject;
 import eg.edu.alexu.csd.oop.game.World;
 
@@ -25,10 +26,11 @@ public class GameWorld implements World {
 		this.width = width;
 		this.height = height;
 
-	
-		control.add(new Clown(100, 470, 20));
-	
 
+		ClownEnginner clownEnginner = new ClownEnginner(100, 400, 20, 20);
+		clownEnginner.makeClown();
+		
+		control.add(clownEnginner.getClown());
 
 	}
 

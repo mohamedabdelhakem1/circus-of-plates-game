@@ -9,6 +9,9 @@ import java.util.ArrayList;
 
 import javax.imageio.ImageIO;
 
+import clownBuilder.LeftStack;
+import clownBuilder.RightStack;
+import clownBuilder.Stack;
 import eg.edu.alexu.csd.oop.game.GameObject;
 
 public class Clown implements GameObject {
@@ -17,19 +20,17 @@ public class Clown implements GameObject {
 	private int width ;
 	private int height;
 	private boolean visible = true;
-	private ArrayList<Plate> leftStack;
 	
-	private ArrayList<Plate> rightStack;
-	int stackCapacity = 0;
-	
+	private Stack leftStack;
+	private Stack rightStack;
 
 	private BufferedImage[] clownImage = new BufferedImage[1];
 	
-	public Clown(int positionX, int positionY, int stackCapacity ) {
+	public Clown(int positionX, int positionY) {
 		
 		this.positionX = positionX;
 		this.positionY = positionY;
-		this.stackCapacity = stackCapacity;
+		
 		
 		
 		try {
@@ -38,9 +39,8 @@ public class Clown implements GameObject {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		width = clownImage[0].getWidth();
-		height = clownImage[0].getHeight();
-		
+		width = clownImage[0].getWidth() ;
+		height = clownImage[0].getHeight() ;
 	}
 
 	@Override
@@ -69,13 +69,12 @@ public class Clown implements GameObject {
 
 	@Override
 	public int getWidth() {
-
 		return width;
 	}
 
 	@Override
 	public int getHeight() {
-		// TODO Auto-generated method stub
+		
 		return height;
 	}
 
@@ -91,29 +90,21 @@ public class Clown implements GameObject {
 		return clownImage;
 	}
 	
-	
-	public void addPlateToLeftStack(Plate plate) {
-		
-		leftStack.add(plate);
-		
+	public void SetLeftStack(Stack leftStack) {
+		this.leftStack = leftStack;
 	}
-	public void addPlateToRightStack(Plate plate) {
-		
-		rightStack.add(plate);
-		
-	}
-	
-	public ArrayList<Plate> getLeftStack() {
+	public Stack getLeftStack() {
 		return leftStack;
 	}
-
-	public ArrayList<Plate> getRightStack() {
-		return rightStack;
+	
+	public void setRightStack(Stack rightStack) {
+		this.rightStack = rightStack;
 	}
 	
-	public int getStackCapacity() {
-		return stackCapacity;
+	public Stack getRightStack() {
+		return rightStack;
 	}
+
 
 
 }
