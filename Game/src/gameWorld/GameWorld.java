@@ -31,8 +31,7 @@ public class GameWorld implements World {
 		clownEngineer.makeClown();
 		
 		control.add(clownEngineer.getClown());
-		constant.add(new Bar(1));
-		constant.add(new Bar(2));
+		
 
 	}
 
