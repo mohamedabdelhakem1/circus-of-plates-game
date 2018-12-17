@@ -5,10 +5,10 @@ import java.util.List;
 
 import org.omg.CORBA.INITIALIZE;
 
-import clownBuilder.ClownEnginner;
+import clownBuilder.ClownEngineer;
 import eg.edu.alexu.csd.oop.game.GameObject;
 import eg.edu.alexu.csd.oop.game.World;
-
+import gameObjects.Bar;
 import gameObjects.Clown;
 
 
@@ -27,10 +27,11 @@ public class GameWorld implements World {
 		this.height = height;
 
 
-		ClownEnginner clownEnginner = new ClownEnginner(100, 400, 20, 20);
-		clownEnginner.makeClown();
+		ClownEngineer clownEngineer = new ClownEngineer(100, 400, 20, 20);
+		clownEngineer.makeClown();
 		
-		control.add(clownEnginner.getClown());
+		control.add(clownEngineer.getClown());
+		
 
 	}
 
