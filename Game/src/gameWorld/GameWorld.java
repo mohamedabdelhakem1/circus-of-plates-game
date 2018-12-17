@@ -6,9 +6,11 @@ import java.util.List;
 
 import org.omg.CORBA.INITIALIZE;
 
-import clownBuilder.ClownEnginner;
+import clownBuilder.ClownEngineer;
 import eg.edu.alexu.csd.oop.game.GameObject;
 import eg.edu.alexu.csd.oop.game.World;
+
+import gameObjects.Bar;
 
 import gameObjects.Clown;
 import gameObjects.Plate;
@@ -27,13 +29,17 @@ public class GameWorld implements World {
 	public GameWorld(int height, int width) {
 		this.width = width;
 		this.height = height;
+
 		factory = PlateFactory.getInstance();
-		ClownEnginner clownEnginner = new ClownEnginner(100, 400, 20, 20);
+		ClownEngineer clownEnginner = new ClownEngineer(100, 400, 20, 20);
 		clownEnginner.makeClown();
 		control.add(clownEnginner.getClown());
 		for (int i = 0; i < 6; i++) {
 			moving.add(factory.getPlate(width,height));	
 		}	
+
+
+
 	}
 	
 	
