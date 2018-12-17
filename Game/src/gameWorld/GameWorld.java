@@ -26,10 +26,12 @@ public class GameWorld implements World {
 		this.width = width;
 		this.height = height;
 
+
 		ClownEnginner clownEnginner = new ClownEnginner(100, 400, 20, 20);
 		clownEnginner.makeClown();
 		
 		control.add(clownEnginner.getClown());
+
 	}
 
 	@Override
