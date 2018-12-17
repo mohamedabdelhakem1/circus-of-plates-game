@@ -35,8 +35,6 @@ public class ClownBuilderHouse implements ClownBuilder {
 
 	}
 
-
-
 	@Override
 	public void addStacksToClown() {
 	clown.SetLeftStack(leftStack);
@@ -60,6 +58,13 @@ public class ClownBuilderHouse implements ClownBuilder {
 		clown = new Clown(positionX, positionY);
 	}
 
-	
+	@Override
+	public void setStackSPositions() {
+		leftStack.setPositionX(positionX + 51);
+		leftStack.setPositionY(positionY);
+		rightStack.setPositionX(positionX + 157);
+		rightStack.setPositionY(positionY);	
+	}
 
+	
 }
