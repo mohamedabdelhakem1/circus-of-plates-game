@@ -12,19 +12,19 @@ public abstract class Plate implements GameObject{
 	protected int x;
 	protected int y;
 	protected int width;
-	protected int hight;
+	protected int height;
 	protected boolean isVisible;
 
 	protected Color color;
 
-	public Plate(int posX, int posY, int width, int hight, Color color) {
+	public Plate(int posX, int posY, int width, int height, Color color) {
 		x = posX;
 		y = posY;
 		this.width = width;
-		this.hight = hight;
+		this.height = height;
 		this.color = color;
 	}
-
+	
 	@Override
 	public int getX() {
 		return x;
@@ -57,7 +57,7 @@ public abstract class Plate implements GameObject{
 
 	@Override
 	public int getHeight() {
-		return hight;
+		return height;
 	}
 
 	@Override
