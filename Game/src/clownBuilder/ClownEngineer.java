@@ -2,14 +2,14 @@ package clownBuilder;
 
 import gameObjects.Clown;
 
-public class ClownEnginner {
+public class ClownEngineer {
 	private ClownBuilder clownBuilderHouse;
 	private int positionX;
 	private int positionY;
 	private int leftStackCapacity;
 	private int rightStackCapacity;
 	
-	public ClownEnginner(int PositionX, int positionY, int leftStackCapacity, int rightStackCapacity) {
+	public ClownEngineer(int PositionX, int positionY, int leftStackCapacity, int rightStackCapacity) {
 		clownBuilderHouse = new ClownBuilderHouse();
 		this.positionX = PositionX;
 		this.positionY = positionY;
