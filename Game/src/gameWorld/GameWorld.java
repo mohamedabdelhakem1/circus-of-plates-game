@@ -3,6 +3,8 @@ package gameWorld;
 import java.awt.image.BufferedImage;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Random;
+import java.util.Set;
 
 import org.omg.CORBA.INITIALIZE;
 
@@ -10,10 +12,6 @@ import clownBuilder.ClownEngineer;
 import eg.edu.alexu.csd.oop.game.GameObject;
 import eg.edu.alexu.csd.oop.game.World;
 
-import gameObjects.Bar;
-
-import gameObjects.Clown;
-import gameObjects.Plate;
 import gameObjects.PlateFactory;
 
 public class GameWorld implements World {
@@ -31,15 +29,12 @@ public class GameWorld implements World {
 		this.height = height;
 
 		factory = PlateFactory.getInstance();
-		ClownEngineer clownEnginner = new ClownEngineer(100, 400, 20, 20);
+		ClownEngineer clownEnginner = new ClownEngineer(100, 480, 20, 20);
 		clownEnginner.makeClown();
 		control.add(clownEnginner.getClown());
 		for (int i = 0; i < 6; i++) {
 			moving.add(factory.getPlate(width,height));	
 		}	
-
-
-
 	}
 	
 	
@@ -50,15 +45,14 @@ public class GameWorld implements World {
 			plate.setX(plate.getX() + (Math.random() > 0.5 ? 1 : -1));
 			if(plate.getY()== height) {
 				plate.setY(0);
+				plate.setX((new Random()).nextInt(width));
 			}
 		}
-		
 		return true;
 	}
 	@Override
 	public List<GameObject> getConstantObjects() {
 		return constant;
-
 	}
 
 	@Override
