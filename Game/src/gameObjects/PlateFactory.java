@@ -20,13 +20,14 @@ public class PlateFactory {
 		return factory;
 	}
 
-	public Plate getPlate() {
+	public Plate getPlate(int width, int height) {
 		int PlateType = randomGenerator.nextInt(2);
 		Plate plate;
 		if (PlateType == 0) {
-			plate = new RegtanglePlateObject(0, 0, 80, 15, colors[randomGenerator.nextInt(colors.length)]);
-		} else {
-			plate = new ElipsePlateObject(0, 0, 80, 15, colors[randomGenerator.nextInt(colors.length)]);
+			
+			plate = new RegtanglePlateObject(Math.abs(randomGenerator.nextInt(width-80)), 20, 80, 15, colors[randomGenerator.nextInt(colors.length)]);
+		} else {	
+			plate = new ElipsePlateObject(Math.abs(randomGenerator.nextInt(width-80)), 20, 80, 15, colors[randomGenerator.nextInt(colors.length)]);
 		}
 
 		return plate;

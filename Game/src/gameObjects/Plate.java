@@ -42,7 +42,7 @@ public abstract class Plate implements GameObject{
 
 	@Override
 	public void setY(int mY) {
-		return;
+		this.y = mY;
 	}
 
 	@Override
@@ -69,9 +69,9 @@ public abstract class Plate implements GameObject{
 		return color;
 	}
 
-//	public void setVisible(boolean visible){
-//		this.isVisible = visible;
-//	}
+	public void setVisible(boolean visible){
+		this.isVisible = visible;
+	}
 }
 
 //	public static final int SPRITE_HEIGHT = 5;
