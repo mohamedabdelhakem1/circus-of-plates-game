@@ -9,7 +9,13 @@ import clownBuilder.stack.StackIF;
 import eg.edu.alexu.csd.oop.game.GameObject;
 import eg.edu.alexu.csd.oop.game.World;
 import gameObjects.Clown;
+import gameObjects.ElipsePlateObject;
 import gameObjects.Plate;
+import gameObjects.RegtanglePlateObject;
+import memento.Caretaker;
+import memento.Memento;
+import memento.Originator;
+import memento.SnapShotCommand;
 import plateFlyWeight.PlateFactory;
 
 public class GameWorld implements World {
@@ -17,10 +23,12 @@ public class GameWorld implements World {
 	private long endTime, startTime = System.currentTimeMillis();
 	private int width;
 	private int height;
-	private final List<GameObject> constant = new LinkedList<GameObject>();
-	private final List<GameObject> moving = new LinkedList<GameObject>();
-	private final List<GameObject> control = new LinkedList<GameObject>();
+	private List<GameObject> constant = new LinkedList<GameObject>();
+	private List<GameObject> moving = new LinkedList<GameObject>();
+	private List<GameObject> control = new LinkedList<GameObject>();
 	private PlateFactory factory;
+	private ClownEngineer clownEngineer;
+	private Clown clown;
 
 	public GameWorld(int height, int width) {
 		this.width = width;
@@ -31,7 +39,8 @@ public class GameWorld implements World {
 		ClownEngineer clownEnginner = new ClownEngineer(100, 480, 14, 14);
 
 		clownEnginner.makeClown();
-		control.add(clownEnginner.getClown());
+		clown = clownEnginner.getClown();
+		control.add(clown);
 		for (int i = 0; i < 6; i++) {
 
 			moving.add(factory.getPlate(width, height));
@@ -49,7 +58,7 @@ public class GameWorld implements World {
 			if (((Clown) control.get(0)).intersectStacks((Plate) plate)) {
 				moving.remove(plate);
 				control.add(plate);
-				if(((Clown) control.get(0)).CheckScore(control)) {
+				if (((Clown) control.get(0)).CheckScore(control)) {
 					score++;
 				}
 				moving.add(factory.getPlate(width, height));
@@ -108,5 +117,21 @@ public class GameWorld implements World {
 		return 40;
 
 	}
-
+	public void loadCheckpoint(int i) {
+		SnapShotCommand command = new SnapShotCommand(this);
+		command.execute(i);
+		command.loadSnapShot();
+	}
+	public void setMemento(Memento memento) {
+		this.score = memento.getScore();
+		this.constant = memento.getConstant();
+		this.control = memento.getControl();
+		this.moving = memento.getMoving();
+	}
+	public void storeInMemento() {
+		Originator originator = new Originator();
+		originator.set(score, moving, control, constant, clown);
+		Caretaker.addMemento(originator.storeInMemento());
+	}
 }
+
