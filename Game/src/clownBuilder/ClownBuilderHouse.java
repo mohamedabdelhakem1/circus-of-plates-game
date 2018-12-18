@@ -1,5 +1,8 @@
 package clownBuilder;
 
+import clownBuilder.stack.LeftStack;
+import clownBuilder.stack.RightStack;
+import clownBuilder.stack.Stack;
 import gameObjects.Clown;
 
 public class ClownBuilderHouse implements ClownBuilder {

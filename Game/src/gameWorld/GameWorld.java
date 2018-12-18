@@ -4,12 +4,12 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;
 import clownBuilder.ClownEngineer;
-import clownBuilder.Stack;
+import clownBuilder.stack.Stack;
 import eg.edu.alexu.csd.oop.game.GameObject;
 import eg.edu.alexu.csd.oop.game.World;
 import gameObjects.Clown;
 import gameObjects.Plate;
-import gameObjects.PlateFactory;
+import plateFlyWeight.PlateFactory;
 
 public class GameWorld implements World {
 	private int score = 0;
@@ -28,6 +28,7 @@ public class GameWorld implements World {
 		factory = PlateFactory.getInstance();
 
 		ClownEngineer clownEnginner = new ClownEngineer(100, 480, 14, 14);
+
 		clownEnginner.makeClown();
 		control.add(clownEnginner.getClown());
 		for (int i = 0; i < 6; i++) {
@@ -45,13 +46,10 @@ public class GameWorld implements World {
 			plate.setY(plate.getY() + 2);
 			plate.setX(plate.getX() + (Math.random() > 0.5 ? 1 : -1));
 			if (((Clown) control.get(0)).intersectStacks((Plate) plate)) {
-				System.out.println("intersected");
 				moving.remove(plate);
-				moving.add(factory.getPlate(width, height));
 				control.add(plate);
-			}
-			if (plate.getY() >= height) {
-
+				moving.add(factory.getPlate(width, height));
+			} else if (plate.getY() >= height) {
 				plate.setY(0);
 				plate.setX((new Random()).nextInt(width));
 

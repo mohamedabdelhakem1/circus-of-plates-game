@@ -4,6 +4,7 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 
 import eg.edu.alexu.csd.oop.game.GameObject;
+import plateFlyWeight.Observer;
 
 public abstract class Plate implements GameObject, Observer {
 
