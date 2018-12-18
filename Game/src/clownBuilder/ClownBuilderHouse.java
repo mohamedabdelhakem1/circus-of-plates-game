@@ -1,13 +1,12 @@
 package clownBuilder;
 
-import clownBuilder.stack.LeftStack;
-import clownBuilder.stack.RightStack;
 import clownBuilder.stack.Stack;
+import clownBuilder.stack.StackIF;
 import gameObjects.Clown;
 
 public class ClownBuilderHouse implements ClownBuilder {
-	private Stack leftStack;
-	private Stack rightStack;
+	private StackIF leftStack;
+	private StackIF rightStack;
 	private int positionX;
 	private int positionY;
 	private int leftStackCapacity;
@@ -17,12 +16,12 @@ public class ClownBuilderHouse implements ClownBuilder {
 
 	@Override
 	public void createLeftStack() {
-		leftStack = new LeftStack();
+		leftStack = new Stack(51-40);
 	}
 
 	@Override
 	public void createRightStack() {
-		rightStack = new RightStack();
+		rightStack = new Stack(157-40);
 
 	}
 

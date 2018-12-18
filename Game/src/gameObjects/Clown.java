@@ -3,9 +3,12 @@ package gameObjects;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.imageio.ImageIO;
 
-import clownBuilder.stack.Stack;
+import clownBuilder.stack.StackIF;
 import eg.edu.alexu.csd.oop.game.GameObject;
 
 public class Clown implements GameObject {
@@ -14,8 +17,8 @@ public class Clown implements GameObject {
 	private int width;
 	private int height;
 	private boolean visible = true;
-	private Stack leftStack;
-	private Stack rightStack;
+	private StackIF leftStack;
+	private StackIF rightStack;
 	private BufferedImage[] clownImage = new BufferedImage[1];
 
 	public Clown(int positionX, int positionY) {
@@ -92,36 +95,33 @@ public class Clown implements GameObject {
 		return clownImage;
 	}
 
-	public void SetLeftStack(Stack leftStack) {
+	public void SetLeftStack(StackIF leftStack) {
 		this.leftStack = leftStack;
 	}
 
-	public Stack getLeftStack() {
+	public StackIF getLeftStack() {
 		return leftStack;
 	}
 
-	public void setRightStack(Stack rightStack) {
+	public void setRightStack(StackIF rightStack) {
 		this.rightStack = rightStack;
 	}
 
-	public Stack getRightStack() {
+	public StackIF getRightStack() {
 		return rightStack;
 	}
-
 
 	public boolean intersectStacks(Plate p) {
 		int delta = 80;
 		if ((Math.abs(p.getX() - rightStack.getPositionX()) <= delta)
 				&& (Math.abs(p.getY() - rightStack.getPositiony()) == 0)) {
-			
 			if (rightStack.addPlate(p)) {
 				notifyStacks();
 				p.setattached();
 				return true;
 			}
 		} else if ((Math.abs(p.getX() - leftStack.getPositionX()) <= delta)
-				&& (Math.abs(p.getY() - leftStack.getLimit()) == 0) ) {
-
+				&& (Math.abs(p.getY() - leftStack.getPositiony()) == 0)) {
 			if (leftStack.addPlate(p)) {
 				notifyStacks();
 				p.setattached();
@@ -129,6 +129,28 @@ public class Clown implements GameObject {
 			}
 		}
 		return false;
+	}
+
+	public boolean CheckScore(List<GameObject> control) {
+		ArrayList<Plate> removedplates = rightStack.checkStack();
+		if (removedplates != null) {
+			for (int i = 0; i < removedplates.size(); i++) {
+				control.remove(removedplates.get(i));
+				rightStack.removePlate(removedplates.get(i));
+			}
+			return true;
+		}
+		removedplates = leftStack.checkStack();
+		if (removedplates != null) {
+			for (int i = 0; i < removedplates.size(); i++) {
+				System.out.println(control.remove(removedplates.get(i)));
+				System.out.println(leftStack.removePlate(removedplates.get(i)));
+			}
+			return true;
+
+		}
+		return false;
+
 	}
 
 	private void notifyStacks() {

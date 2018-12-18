@@ -1,10 +1,11 @@
 package gameWorld;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;
 import clownBuilder.ClownEngineer;
-import clownBuilder.stack.Stack;
+import clownBuilder.stack.StackIF;
 import eg.edu.alexu.csd.oop.game.GameObject;
 import eg.edu.alexu.csd.oop.game.World;
 import gameObjects.Clown;
@@ -48,6 +49,9 @@ public class GameWorld implements World {
 			if (((Clown) control.get(0)).intersectStacks((Plate) plate)) {
 				moving.remove(plate);
 				control.add(plate);
+				if(((Clown) control.get(0)).CheckScore(control)) {
+					score++;
+				}
 				moving.add(factory.getPlate(width, height));
 			} else if (plate.getY() >= height) {
 				plate.setY(0);
@@ -88,7 +92,7 @@ public class GameWorld implements World {
 	@Override
 	public String getStatus() {
 		// TODO Auto-generated method stub
-		return null;
+		return "score :" + String.valueOf(score);
 	}
 
 	@Override

@@ -28,9 +28,9 @@ public class PlateFactory {
 		int PlateType = randomGenerator.nextInt(2);
 		Plate plate;
 		if (PlateType == 0) {	
-			plate = new RegtanglePlateObject(Math.abs(randomGenerator.nextInt(width-80)),randomGenerator.nextInt(80) , 80, 15, colors[randomGenerator.nextInt(colors.length)]);
+			plate = new RegtanglePlateObject(Math.abs(randomGenerator.nextInt(width-80)),randomGenerator.nextInt(80) , 80, 15, colors[randomGenerator.nextInt(1)]);
 		} else {	
-			plate = new ElipsePlateObject(Math.abs(randomGenerator.nextInt(width-80)),randomGenerator.nextInt(80), 80, 15, colors[randomGenerator.nextInt(colors.length)]);
+			plate = new ElipsePlateObject(Math.abs(randomGenerator.nextInt(width-80)),randomGenerator.nextInt(80), 80, 15, colors[randomGenerator.nextInt(1)]);
 		}
 
 		return plate;
