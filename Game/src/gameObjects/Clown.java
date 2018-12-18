@@ -111,19 +111,20 @@ public class Clown implements GameObject {
 		int delta = 80;
 		if ((Math.abs(p.getX() - rightStack.getPositionX()) <= delta)
 				&& (Math.abs(p.getY() - rightStack.getPositiony()) == 0)) {
-
-			leftStack.addPlate(p);
+			rightStack.addPlate(p);
+			notifyStacks();
 			return true;
 		} else if ((Math.abs(p.getX() - leftStack.getPositionX()) <= delta)
 				&& (Math.abs(p.getY() - leftStack.getPositiony()) == 0)) {
-			rightStack.addPlate(p);
+			leftStack.addPlate(p);
+			notifyStacks();
 			return true;
 
 		}
 		return false;
 	}
 
-	public void notifyStacks() {
+	private void notifyStacks() {
 		leftStack.notifyPlates(positionX);
 		rightStack.notifyPlates(positionX);
 	}

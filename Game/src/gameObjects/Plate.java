@@ -8,7 +8,7 @@ import eg.edu.alexu.csd.oop.game.GameObject;
 public abstract class Plate implements GameObject, Observer {
 
 	protected BufferedImage[] spriteImages = new BufferedImage[1];
-
+	private boolean attached = false;
 	protected int x;
 	protected int y;
 	protected int width;
@@ -32,7 +32,9 @@ public abstract class Plate implements GameObject, Observer {
 
 	@Override
 	public void setX(int mX) {
-		this.x = mX;
+		if (!attached) {
+			this.x = mX;
+		}
 	}
 
 	@Override
@@ -42,7 +44,10 @@ public abstract class Plate implements GameObject, Observer {
 
 	@Override
 	public void setY(int mY) {
-		this.y = mY;
+		if (!attached) {
+			this.y = mY;
+		}
+
 	}
 
 	@Override
@@ -76,8 +81,13 @@ public abstract class Plate implements GameObject, Observer {
 	@Override
 	public void updateCoordinates(int x) {
 		this.x = x;
-		
+
 	}
+	@Override
+	public void setattached() {
+		attached = true;
+	}
+	
 }
 
 // public static final int SPRITE_HEIGHT = 5;
