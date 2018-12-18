@@ -47,12 +47,13 @@ public class GameWorld implements World {
 				plate.setY(plate.getY()+2);
 				plate.setX(plate.getX() + (Math.random() > 0.5 ? 1 : -1));
 				if(((Clown)control.get(0)).intersectStacks((Plate) plate)) {
-				
+					System.out.println("intersected");
 					moving.remove(plate);		
+					moving.add(factory.getPlate(width, height));
 					control.add(plate);
-				
 				}
-				if(plate.getY()== height) {
+				if(plate.getY() >= height) {
+					
 					plate.setY(0);
 					plate.setX((new Random()).nextInt(width));
 					
