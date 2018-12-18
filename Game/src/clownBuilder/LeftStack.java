@@ -6,7 +6,8 @@ import gameObjects.Plate;
 
 public class LeftStack implements Stack {
 	
-	private int capcity;
+
+	private int capacity;
 	private int size = 0;
 	private ArrayList<Plate> plates ;
 	private int positionX;
@@ -33,6 +34,7 @@ public class LeftStack implements Stack {
 
 	@Override
 	public boolean addPlate(Plate plate) {
+
 		System.out.println(positionY);
 		if(plates.size() == 0) {
 			plates.add(plate);
@@ -40,7 +42,7 @@ public class LeftStack implements Stack {
 			size++;
 			plate.setX(positionX);
 			return true;
-		}else if (size < capcity) {
+		}else if (size < capacity) {
 			plate.setY(plates.get(0).getY()-(plates.size()*15));
 			plates.add(plate);
 			size++;
@@ -49,6 +51,7 @@ public class LeftStack implements Stack {
 		}
 		
 		return false;
+
 	}
 	@Override
 	public boolean removePlate(int positionFromTop) {
@@ -58,14 +61,14 @@ public class LeftStack implements Stack {
 
 	@Override
 	public void setCapacity(int capacity) {
-		this.capcity = capacity;
+		this.capacity = capacity;
 		
 	}
 
 	@Override
 	public int getCapacity() {
 	
-		return capcity;
+		return capacity;
 	}
 
 	@Override

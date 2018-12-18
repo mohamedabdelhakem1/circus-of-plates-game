@@ -14,6 +14,7 @@ public abstract class Plate implements GameObject, Observer {
 	protected int width;
 	protected int height;
 	protected boolean isVisible;
+
 	private Boolean stopMoving = false;
 	protected Color color;
 
@@ -47,11 +48,14 @@ public abstract class Plate implements GameObject, Observer {
 
 	@Override
 	public void setY(int mY) {
+
 		if (!attached ) {
 			this.y = mY;
 		}
 		
 	}
+
+	
 
 	@Override
 	public BufferedImage[] getSpriteImages() {
@@ -94,24 +98,6 @@ public abstract class Plate implements GameObject, Observer {
 	public void setStopMoving(boolean s) {
 		stopMoving = s;
 	}
+
 }
 
-// public static final int SPRITE_HEIGHT = 5;
-// private static final int MAX_MSTATE = 1;
-// // an array of sprite images that are drawn sequentially
-// private BufferedImage[] spriteImages = new BufferedImage[MAX_MSTATE];
-// private int x;
-// private int y;
-// private int width;
-// private boolean visible;
-// private boolean horizontalOnly;
-//
-// public BarObject(int posX, int posY, int width, boolean horizontalOnly, Color
-// color){
-// this.x = posX;
-// this.y = posY;
-// this.width = width;
-// this.horizontalOnly = horizontalOnly;
-// this.visible = true;
-// // create a bunch of buffered images and place into an array, to be displayed
-// sequentially

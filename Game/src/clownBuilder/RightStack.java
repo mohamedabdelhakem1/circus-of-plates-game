@@ -6,7 +6,9 @@ import gameObjects.Plate;
 
 public class RightStack implements Stack {
 
+
 	private int capcity;
+
 	private int size = 0;
 	private ArrayList<Plate> plates;
 	private int positionX;
@@ -30,7 +32,8 @@ public class RightStack implements Stack {
 
 	@Override
 	public boolean addPlate(Plate plate) {
-		System.out.println(positionY);
+
+
 		if(plates.size() == 0) {
 			plates.add(plate);
 			plate.setY(positionY+stackbottom);
@@ -46,6 +49,7 @@ public class RightStack implements Stack {
 		}
 		
 		return false;
+
 	}
 
 	@Override
@@ -62,7 +66,9 @@ public class RightStack implements Stack {
 	@Override
 	public int getCapacity() {
 
+
 		return capcity;
+
 	}
 
 	@Override

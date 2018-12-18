@@ -13,6 +13,7 @@ public class Clown implements GameObject {
 	private int width;
 	private int height;
 	private boolean visible = true;
+
 	private Stack leftStack;
 	private Stack rightStack;
 	private BufferedImage[] clownImage = new BufferedImage[1];
@@ -40,6 +41,8 @@ public class Clown implements GameObject {
 
 	@Override
 	public void setX(int x) {
+		leftStack.setPositionX(x + 51);
+		rightStack.setPositionX(x + 157);
 		positionX = x;
 		if (x == 0 || x >= 900) {
 			notifyStacks();
@@ -103,6 +106,7 @@ public class Clown implements GameObject {
 		return rightStack;
 	}
 
+
 	public boolean intersectStacks(Plate p) {
 		int delta = 80;
 		if ((Math.abs(p.getX() - rightStack.getPositionX()) <= delta)
@@ -134,4 +138,5 @@ public class Clown implements GameObject {
 		leftStack.StopMoving(s);
 		rightStack.StopMoving(s);
 	}
+
 }
