@@ -6,7 +6,6 @@ import gameObjects.Plate;
 
 public class LeftStack implements Stack {
 	
-	
 	private int capcity;
 	private int size = 0;
 	private ArrayList<Plate> plates ;
@@ -38,11 +37,17 @@ public class LeftStack implements Stack {
 		if(plates.size() == 0) {
 			plates.add(plate);
 			plate.setY(positionY+stackbottom);
-		}else {plate.setY(plates.get(0).getY()-(plates.size()*15));
+			size++;
+			plate.setX(positionX);
+			return true;
+		}else if (size < capcity) {
+			plate.setY(plates.get(0).getY()-(plates.size()*15));
 			plates.add(plate);
-			
+			size++;
+			plate.setX(positionX);
+			return true;
 		}
-		plate.setX(positionX);
+		
 		return false;
 	}
 	@Override

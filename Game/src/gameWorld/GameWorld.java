@@ -29,7 +29,7 @@ public class GameWorld implements World {
 
 		factory = PlateFactory.getInstance();
 
-		ClownEngineer clownEnginner = new ClownEngineer(100, 480, 20, 20);
+		ClownEngineer clownEnginner = new ClownEngineer(100, 480, 7, 7);
 		clownEnginner.makeClown();
 		control.add(clownEnginner.getClown());
 		for (int i = 0; i < 6; i++) {

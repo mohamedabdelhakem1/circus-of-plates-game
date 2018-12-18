@@ -30,14 +30,21 @@ public class RightStack implements Stack {
 
 	@Override
 	public boolean addPlate(Plate plate) {
+		System.out.println(positionY);
 		if(plates.size() == 0) {
 			plates.add(plate);
 			plate.setY(positionY+stackbottom);
-		}else {
+			size++;
+			plate.setX(positionX);
+			return true;
+		}else if (size < capcity) {
 			plate.setY(plates.get(0).getY()-(plates.size()*15));
 			plates.add(plate);
+			size++;
+			plate.setX(positionX);
+			return true;
 		}
-		plate.setX(positionX);
+		
 		return false;
 	}
 

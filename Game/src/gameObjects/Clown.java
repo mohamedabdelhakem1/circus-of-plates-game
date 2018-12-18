@@ -41,7 +41,7 @@ public class Clown implements GameObject {
 	@Override
 	public void setX(int x) {
 		positionX = x;
-		if (x == 0 || x == 1105) {
+		if (x == 0 || x >= 900) {
 			notifyStacks();
 			notifyStopStacks(true);
 		} else {
@@ -107,17 +107,20 @@ public class Clown implements GameObject {
 		int delta = 80;
 		if ((Math.abs(p.getX() - rightStack.getPositionX()) <= delta)
 				&& (Math.abs(p.getY() - rightStack.getPositiony()) == 0)) {
-			rightStack.addPlate(p);
-			notifyStacks();
-			p.setattached();
-			return true;
+			
+			if (rightStack.addPlate(p)) {
+				notifyStacks();
+				p.setattached();
+				return true;
+			}
 		} else if ((Math.abs(p.getX() - leftStack.getPositionX()) <= delta)
 				&& (Math.abs(p.getY() - leftStack.getPositiony()) == 0)) {
-			leftStack.addPlate(p);
-			notifyStacks();
-			p.setattached();
-			return true;
 
+			if (leftStack.addPlate(p)) {
+				notifyStacks();
+				p.setattached();
+				return true;
+			}
 		}
 		return false;
 	}
