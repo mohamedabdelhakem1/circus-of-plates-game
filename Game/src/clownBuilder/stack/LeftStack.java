@@ -6,24 +6,27 @@ import gameObjects.Plate;
 
 public class LeftStack implements Stack {
 	
-	private int capcity;
+
+	private int capacity;
 	private int size = 0;
 	private ArrayList<Plate> plates ;
 	private int positionX;
 	private int positionY;
 	private int stackbottom = 62;
+	private int limit = 480 + 62;
 
 
 	public LeftStack() {
 		plates = new ArrayList<Plate>();
 	}
 	
+
 	@Override
 	public void setStack(ArrayList<Plate> plates) {
 		// TODO Auto-generated method stub
 		this.plates = plates;
 	}
-	
+
 	@Override
 	public ArrayList<Plate> getStack() {
 		// TODO Auto-generated method stub
@@ -32,23 +35,29 @@ public class LeftStack implements Stack {
 
 	@Override
 	public boolean addPlate(Plate plate) {
-		
+
+		System.out.println(positionY);
 		if(plates.size() == 0) {
 			plates.add(plate);
 			plate.setY(positionY+stackbottom);
 			size++;
+			limit -=15;
+			System.out.println(limit);
 			plate.setX(positionX);
 			return true;
-		}else if (size < capcity) {
+		}else if (size < capacity) {
 			plate.setY(plates.get(0).getY()-(plates.size()*15));
 			plates.add(plate);
 			size++;
+			limit-= 15;
+			System.out.println(limit);
 			plate.setX(positionX);
 			return true;
 		}
+		
 		return false;
+
 	}
-	
 	@Override
 	public boolean removePlate(int positionFromTop) {
 		// TODO Auto-generated method stub
@@ -57,19 +66,19 @@ public class LeftStack implements Stack {
 
 	@Override
 	public void setCapacity(int capacity) {
-		this.capcity = capacity;
+		this.capacity = capacity;
 		
 	}
 
 	@Override
 	public int getCapacity() {
 	
-		return capcity;
+		return capacity;
 	}
 
 	@Override
 	public int getSize() {
-		return plates.size();
+		return size;
 	}
 	
 	@Override
@@ -111,6 +120,15 @@ public class LeftStack implements Stack {
 		}
 		
 	}
+	
+	@Override
+	public int getLimit() {
+		return limit;
+	}
 
+	@Override
+	public void setLimit(int limit) {
+		this.limit = limit;
+	}
 
 }

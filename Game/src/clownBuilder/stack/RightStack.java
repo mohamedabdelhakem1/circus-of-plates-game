@@ -5,8 +5,10 @@ import java.util.ArrayList;
 import gameObjects.Plate;
 
 public class RightStack implements Stack {
-	
+
+
 	private int capcity;
+
 	private int size = 0;
 	private ArrayList<Plate> plates;
 	private int positionX;
@@ -24,11 +26,13 @@ public class RightStack implements Stack {
 
 	@Override
 	public ArrayList<Plate> getStack() {
+		// TODO Auto-generated method stub
 		return plates;
 	}
-	
+
 	@Override
 	public boolean addPlate(Plate plate) {
+
 
 		if(plates.size() == 0) {
 			plates.add(plate);
@@ -45,6 +49,7 @@ public class RightStack implements Stack {
 		}
 		
 		return false;
+
 	}
 
 	@Override
@@ -61,12 +66,15 @@ public class RightStack implements Stack {
 	@Override
 	public int getCapacity() {
 
+
 		return capcity;
+
 	}
 
 	@Override
 	public int getSize() {
-		return plates.size();
+
+		return size;
 	}
 
 	@Override
@@ -104,6 +112,18 @@ public class RightStack implements Stack {
 		for (int i = 0; i < plates.size(); i++) {
 			plates.get(i).setStopMoving(s);
 		}
+	}
+
+	@Override
+	public void setLimit(int x) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public int getLimit() {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 
 	
