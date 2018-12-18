@@ -1,11 +1,11 @@
-package clownBuilder;
+package clownBuilder.stack;
 
 import java.util.ArrayList;
 
 import gameObjects.Plate;
 
 public class RightStack implements Stack {
-
+	
 	private int capcity;
 	private int size = 0;
 	private ArrayList<Plate> plates;
@@ -27,7 +27,7 @@ public class RightStack implements Stack {
 		// TODO Auto-generated method stub
 		return plates;
 	}
-
+	
 	@Override
 	public boolean addPlate(Plate plate) {
 		if(plates.size() == 0) {
@@ -60,8 +60,7 @@ public class RightStack implements Stack {
 
 	@Override
 	public int getSize() {
-
-		return size;
+		return plates.size();
 	}
 
 	@Override

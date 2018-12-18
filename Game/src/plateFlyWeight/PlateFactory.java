@@ -1,7 +1,11 @@
-package gameObjects;
+package plateFlyWeight;
 
 import java.awt.Color;
 import java.util.Random;
+
+import gameObjects.ElipsePlateObject;
+import gameObjects.Plate;
+import gameObjects.RegtanglePlateObject;
 
 public class PlateFactory {
 	private static PlateFactory factory;

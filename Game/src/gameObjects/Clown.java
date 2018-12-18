@@ -4,7 +4,8 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import javax.imageio.ImageIO;
-import clownBuilder.Stack;
+
+import clownBuilder.stack.Stack;
 import eg.edu.alexu.csd.oop.game.GameObject;
 
 public class Clown implements GameObject {
@@ -41,7 +42,7 @@ public class Clown implements GameObject {
 	@Override
 	public void setX(int x) {
 		positionX = x;
-		if (x == 0 || x == 1105) {
+		if (x == 0 || x >= 1100) {
 			notifyStacks();
 			notifyStopStacks(true);
 		} else {
@@ -131,4 +132,5 @@ public class Clown implements GameObject {
 		leftStack.StopMoving(s);
 		rightStack.StopMoving(s);
 	}
+	
 }

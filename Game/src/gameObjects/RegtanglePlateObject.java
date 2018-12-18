@@ -2,6 +2,9 @@ package gameObjects;
 
 
 import java.awt.image.BufferedImage;
+
+import plateFlyWeight.PlateFlyWeight;
+
 import java.awt.*;
 
 public class RegtanglePlateObject extends Plate {

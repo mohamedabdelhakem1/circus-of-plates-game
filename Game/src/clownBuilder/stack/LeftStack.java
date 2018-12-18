@@ -1,11 +1,10 @@
-package clownBuilder;
+package clownBuilder.stack;
 
 import java.util.ArrayList;
 
 import gameObjects.Plate;
 
 public class LeftStack implements Stack {
-	
 	
 	private int capcity;
 	private int size = 0;
@@ -19,7 +18,6 @@ public class LeftStack implements Stack {
 		plates = new ArrayList<Plate>();
 	}
 	
-
 	@Override
 	public void setStack(ArrayList<Plate> plates) {
 		// TODO Auto-generated method stub
@@ -34,7 +32,7 @@ public class LeftStack implements Stack {
 
 	@Override
 	public boolean addPlate(Plate plate) {
-		System.out.println(positionY);
+		
 		if(plates.size() == 0) {
 			plates.add(plate);
 			plate.setY(positionY+stackbottom);
@@ -43,7 +41,7 @@ public class LeftStack implements Stack {
 			
 		}
 		plate.setX(positionX);
-		return false;
+		return true;
 	}
 	@Override
 	public boolean removePlate(int positionFromTop) {
@@ -65,7 +63,7 @@ public class LeftStack implements Stack {
 
 	@Override
 	public int getSize() {
-		return size;
+		return plates.size();
 	}
 	
 	@Override
