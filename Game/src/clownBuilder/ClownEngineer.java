@@ -24,6 +24,7 @@ public class ClownEngineer {
 		clownBuilderHouse.createRightStack();
 		clownBuilderHouse.setLeftCapacity(leftStackCapacity);
 		clownBuilderHouse.setRightCapacity(rightStackCapacity);
+		clownBuilderHouse.setStackSPositions();
 		clownBuilderHouse.addStacksToClown();
 	}
 	

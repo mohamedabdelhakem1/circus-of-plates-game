@@ -1,17 +1,16 @@
 package gameWorld;
 
-import java.awt.image.BufferedImage;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;
-import java.util.Set;
 
-import org.omg.CORBA.INITIALIZE;
 
 import clownBuilder.ClownEngineer;
+import clownBuilder.Stack;
 import eg.edu.alexu.csd.oop.game.GameObject;
 import eg.edu.alexu.csd.oop.game.World;
-
+import gameObjects.Clown;
+import gameObjects.Plate;
 import gameObjects.PlateFactory;
 
 public class GameWorld implements World {
@@ -34,20 +33,33 @@ public class GameWorld implements World {
 		control.add(clownEnginner.getClown());
 		for (int i = 0; i < 6; i++) {
 			moving.add(factory.getPlate(width,height));	
+			
 		}	
+
 	}
 	
-	
+
 	@Override
 	public boolean refresh() {
-		for(GameObject plate : moving) {
-			plate.setY(plate.getY()+2);
-			plate.setX(plate.getX() + (Math.random() > 0.5 ? 1 : -1));
-			if(plate.getY()== height) {
-				plate.setY(0);
-				plate.setX((new Random()).nextInt(width));
+		
+		
+			for(GameObject plate : moving.toArray(new GameObject[moving.size()])) {
+				plate.setY(plate.getY()+2);
+				plate.setX(plate.getX() + (Math.random() > 0.5 ? 1 : -1));
+				if(((Clown)control.get(0)).intersectStacks((Plate) plate)) {
+					moving.remove(plate);
+					control.add(plate);
+					((Clown)control.get(0)).notifyStacks();
+				}
+				if(plate.getY()== height) {
+					plate.setY(0);
+					plate.setX((new Random()).nextInt(width));
+					
+				}
 			}
-		}
+		
+		
+		
 		return true;
 	}
 	@Override

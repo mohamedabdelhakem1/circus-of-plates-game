@@ -10,7 +10,11 @@ public class LeftStack implements Stack {
 	private int capcity;
 	private int size = 0;
 	private ArrayList<Plate> plates ;
+	private int positionX;
+	private int positionY;
+	private int stackbottom = 62;
 	
+
 	public LeftStack() {
 		plates = new ArrayList<Plate>();
 	}
@@ -30,7 +34,10 @@ public class LeftStack implements Stack {
 
 	@Override
 	public boolean addPlate(Plate plate) {
-		// TODO Auto-generated method stub
+		plates.add(plate);
+		plate.setY(positionY-stackbottom);
+		plate.setX(positionX);
+		stackbottom = stackbottom - 15;
 		return false;
 	}
 
@@ -56,5 +63,40 @@ public class LeftStack implements Stack {
 	public int getSize() {
 		return size;
 	}
+	
+	@Override
+	public int getPositionX() {
+		return positionX;
+	}
+
+
+	@Override
+	public void setPositionX(int positionX) {
+		this.positionX = positionX;
+	}
+
+
+	@Override
+	public int getPositiony() {
+		return positionY;
+	}
+
+
+	@Override
+	public void setPositionY(int positionY) {
+		this.positionY = positionY;
+	}
+
+
+
+
+
+	@Override
+	public void notifyPlates(int x) {
+		for (int i = 0; i < plates.size(); i++) {
+			plates.get(i).updateCoordinates(x);
+		}
+	}
+
 
 }

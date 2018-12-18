@@ -5,7 +5,7 @@ import java.awt.image.BufferedImage;
 
 import eg.edu.alexu.csd.oop.game.GameObject;
 
-public abstract class Plate implements GameObject{
+public abstract class Plate implements GameObject, Observer {
 
 	protected BufferedImage[] spriteImages = new BufferedImage[1];
 
@@ -24,7 +24,7 @@ public abstract class Plate implements GameObject{
 		this.height = height;
 		this.color = color;
 	}
-	
+
 	@Override
 	public int getX() {
 		return x;
@@ -51,7 +51,7 @@ public abstract class Plate implements GameObject{
 	}
 
 	@Override
-	public int getWidth(){
+	public int getWidth() {
 		return width;
 	}
 
@@ -65,29 +65,37 @@ public abstract class Plate implements GameObject{
 		return isVisible;
 	}
 
-	public Color getColor () {
+	public Color getColor() {
 		return color;
 	}
 
-	public void setVisible(boolean visible){
+	public void setVisible(boolean visible) {
 		this.isVisible = visible;
+	}
+
+	@Override
+	public void updateCoordinates(int x) {
+		this.x = x;
+		
 	}
 }
 
-//	public static final int SPRITE_HEIGHT = 5;
-//	private static final int MAX_MSTATE = 1;
-//	// an array of sprite images that are drawn sequentially
-//	private BufferedImage[] spriteImages = new BufferedImage[MAX_MSTATE];
-//	private int x;
-//	private int y;
-//	private int width;
-//	private boolean visible;
-//	private boolean horizontalOnly;
+// public static final int SPRITE_HEIGHT = 5;
+// private static final int MAX_MSTATE = 1;
+// // an array of sprite images that are drawn sequentially
+// private BufferedImage[] spriteImages = new BufferedImage[MAX_MSTATE];
+// private int x;
+// private int y;
+// private int width;
+// private boolean visible;
+// private boolean horizontalOnly;
 //
-//	public BarObject(int posX, int posY, int width, boolean horizontalOnly, Color color){
-//		this.x = posX;
-//		this.y = posY;
-//		this.width = width;
-//		this.horizontalOnly = horizontalOnly;
-//		this.visible = true;
-//		// create a bunch of buffered images and place into an array, to be displayed sequentially
+// public BarObject(int posX, int posY, int width, boolean horizontalOnly, Color
+// color){
+// this.x = posX;
+// this.y = posY;
+// this.width = width;
+// this.horizontalOnly = horizontalOnly;
+// this.visible = true;
+// // create a bunch of buffered images and place into an array, to be displayed
+// sequentially

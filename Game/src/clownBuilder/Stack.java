@@ -20,6 +20,16 @@ public interface Stack {
 	
 	public int getSize();
 	
+	public int getPositionX();
+
+	public void setPositionX(int positionX);
+
+	public int getPositiony() ;
+
+	public void setPositionY(int positiony) ;
+	
+	public void notifyPlates(int x);
+	
 	
 
 }
