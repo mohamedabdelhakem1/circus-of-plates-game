@@ -42,6 +42,11 @@ public class GameWorld implements World {
 	}
 	
 	
+	private boolean intersect(Plate p, GameObject o2){
+		int delta = 40;
+		return (Math.abs(p.getX() - o2.getX()) <= delta) && (Math.abs(p.getY() - o2.getY()) == 0);
+	}
+	
 	@Override
 	public boolean refresh() {
 		for(GameObject plate : moving) {
