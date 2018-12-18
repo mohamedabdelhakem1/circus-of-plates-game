@@ -11,6 +11,9 @@ public class GameStart {
 
 
 		GameEngine.start("Very Simple Game in 99 Line of Code", new GameWorld(700, 1300), Color.white);
+		
+		
+		
 	}
 	
 
