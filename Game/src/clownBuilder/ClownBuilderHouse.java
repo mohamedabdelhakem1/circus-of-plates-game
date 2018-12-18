@@ -43,10 +43,9 @@ public class ClownBuilderHouse implements ClownBuilder {
 	
 	@Override
 	public Clown getClown() {
-		
 		return clown;
 	}
-
+	
 	@Override
 	public void setClownIntitialPosition(int positionX, int positionY) {
 		this.positionX = positionX;

@@ -23,8 +23,7 @@ public class PlateFactory {
 	public Plate getPlate(int width, int height) {
 		int PlateType = randomGenerator.nextInt(2);
 		Plate plate;
-		if (PlateType == 0) {
-			
+		if (PlateType == 0) {	
 			plate = new RegtanglePlateObject(Math.abs(randomGenerator.nextInt(width-80)), 20, 80, 15, colors[randomGenerator.nextInt(colors.length)]);
 		} else {	
 			plate = new ElipsePlateObject(Math.abs(randomGenerator.nextInt(width-80)), 20, 80, 15, colors[randomGenerator.nextInt(colors.length)]);

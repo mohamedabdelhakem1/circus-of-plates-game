@@ -27,8 +27,10 @@ public interface Stack {
 	public int getPositiony() ;
 
 	public void setPositionY(int positiony) ;
-
 	
+	public void notifyPlates(int x);
+	
+	public void StopMoving(boolean s);
 	
 
 }
