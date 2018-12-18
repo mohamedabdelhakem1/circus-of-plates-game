@@ -8,7 +8,7 @@ public class RightStack implements Stack {
 
 
 	
-	private int capcity;
+	private int capacity;
 	private int size = 0;
 	private ArrayList<Plate> plates;
 	private int positionX;
@@ -34,8 +34,8 @@ public class RightStack implements Stack {
 
 	@Override
 	public boolean addPlate(Plate plate) {
-		// TODO Auto-generated method stub
-		return false;
+		
+		return true;
 	}
 
 	@Override
@@ -46,13 +46,13 @@ public class RightStack implements Stack {
 
 	@Override
 	public void setCapacity(int capacity) {
-		this.capcity = capacity;
+		this.capacity = capacity;
 	}
 
 	@Override
 	public int getCapacity() {
 		
-		return capcity;
+		return capacity;
 	}
 
 	@Override

@@ -15,6 +15,7 @@ public abstract class Plate implements GameObject{
 	protected int height;
 	protected boolean isVisible;
 
+
 	protected Color color;
 
 	public Plate(int posX, int posY, int width, int height, Color color) {
@@ -42,8 +43,11 @@ public abstract class Plate implements GameObject{
 
 	@Override
 	public void setY(int mY) {
-		this.y = mY;
+		
+		 this.y = mY;
 	}
+
+	
 
 	@Override
 	public BufferedImage[] getSpriteImages() {
@@ -72,6 +76,9 @@ public abstract class Plate implements GameObject{
 	public void setVisible(boolean visible){
 		this.isVisible = visible;
 	}
+	
+	
+	
 }
 
 //	public static final int SPRITE_HEIGHT = 5;

@@ -1,6 +1,7 @@
 package gameWorld;
 
 import java.awt.image.BufferedImage;
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -29,31 +30,33 @@ public class GameWorld implements World {
 	public GameWorld(int height, int width) {
 		this.width = width;
 		this.height = height;
-
+	
 		factory = PlateFactory.getInstance();
 		ClownEngineer clownEnginner = new ClownEngineer(100, 400, 20, 20);
 		clownEnginner.makeClown();
 		control.add(clownEnginner.getClown());
 		for (int i = 0; i < 6; i++) {
-			moving.add(factory.getPlate(width,height));	
-		}	
-
-
-	}
-	
-	
-	@Override
-	public boolean refresh() {
-		for(GameObject plate : moving) {
-			plate.setY(plate.getY()+2);
-			plate.setX(plate.getX() + (Math.random() > 0.5 ? 1 : -1));
-			if(plate.getY()== height) {
-				plate.setY(0);
-			}
+			moving.add(factory.getPlate(width, height));
 		}
 		
+	}
+
+	@Override
+	public boolean refresh() {
+
+
+		for (GameObject plate : moving) {
+			plate.setY(plate.getY() + 2);
+			plate.setX(plate.getX() + (Math.random() > 0.5 ? 1 : -1));
+			if (plate.getY() == height) {
+				plate.setY(0);
+			}
+
+		}
+
 		return true;
 	}
+
 	@Override
 	public List<GameObject> getConstantObjects() {
 		return constant;
@@ -80,8 +83,6 @@ public class GameWorld implements World {
 		// TODO Auto-generated method stub
 		return height;
 	}
-
-
 
 	@Override
 	public String getStatus() {
