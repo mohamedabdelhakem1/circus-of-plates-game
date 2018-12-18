@@ -14,7 +14,7 @@ public abstract class Plate implements GameObject, Observer {
 	protected int width;
 	protected int height;
 	protected boolean isVisible;
-
+	private Boolean stopMoving = false;
 	protected Color color;
 
 	public Plate(int posX, int posY, int width, int height, Color color) {
@@ -27,14 +27,17 @@ public abstract class Plate implements GameObject, Observer {
 
 	@Override
 	public int getX() {
+		
 		return x;
 	}
 
 	@Override
 	public void setX(int mX) {
-		if (!attached) {
-			this.x = mX;
+	
+		if(stopMoving) {
+			return;
 		}
+		this.x = mX;
 	}
 
 	@Override
@@ -44,10 +47,10 @@ public abstract class Plate implements GameObject, Observer {
 
 	@Override
 	public void setY(int mY) {
-		if (!attached) {
+		if (!attached ) {
 			this.y = mY;
 		}
-
+		
 	}
 
 	@Override
@@ -87,7 +90,10 @@ public abstract class Plate implements GameObject, Observer {
 	public void setattached() {
 		attached = true;
 	}
-	
+	@Override
+	public void setStopMoving(boolean s) {
+		stopMoving = s;
+	}
 }
 
 // public static final int SPRITE_HEIGHT = 5;

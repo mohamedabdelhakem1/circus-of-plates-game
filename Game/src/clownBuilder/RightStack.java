@@ -30,7 +30,6 @@ public class RightStack implements Stack {
 
 	@Override
 	public boolean addPlate(Plate plate) {
-		System.out.println(positionY);
 		if(plates.size() == 0) {
 			plates.add(plate);
 			plate.setY(positionY+stackbottom);
@@ -92,6 +91,13 @@ public class RightStack implements Stack {
 	public void notifyPlates(int x) {
 		for (int i = 0; i < plates.size(); i++) {
 			plates.get(i).updateCoordinates(x+157-40);
+		}
+	}
+
+	@Override
+	public void StopMoving(boolean s) {
+		for (int i = 0; i < plates.size(); i++) {
+			plates.get(i).setStopMoving(s);
 		}
 	}
 

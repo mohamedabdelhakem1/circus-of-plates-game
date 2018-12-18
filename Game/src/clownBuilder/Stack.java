@@ -30,6 +30,7 @@ public interface Stack {
 	
 	public void notifyPlates(int x);
 	
+	public void StopMoving(boolean s);
 	
 
 }

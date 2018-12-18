@@ -13,7 +13,7 @@ public class LeftStack implements Stack {
 	private int positionX;
 	private int positionY;
 	private int stackbottom = 62;
-	
+
 
 	public LeftStack() {
 		plates = new ArrayList<Plate>();
@@ -92,14 +92,20 @@ public class LeftStack implements Stack {
 	}
 
 
-
-
-
 	@Override
 	public void notifyPlates(int x) {
 		for (int i = 0; i < plates.size(); i++) {
 			plates.get(i).updateCoordinates(x+51-40);
 		}
+	}
+
+
+	@Override
+	public void StopMoving(boolean s) {
+		for (int i = 0; i < plates.size(); i++) {
+			plates.get(i).setStopMoving(s);
+		}
+		
 	}
 
 
