@@ -14,7 +14,6 @@ public class Clown implements GameObject {
 	private int width;
 	private int height;
 	private boolean visible = true;
-
 	private Stack leftStack;
 	private Stack rightStack;
 	private BufferedImage[] clownImage = new BufferedImage[1];

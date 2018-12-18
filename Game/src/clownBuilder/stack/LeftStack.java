@@ -23,7 +23,7 @@ public class LeftStack implements Stack {
 		// TODO Auto-generated method stub
 		this.plates = plates;
 	}
-
+	
 	@Override
 	public ArrayList<Plate> getStack() {
 		// TODO Auto-generated method stub
@@ -32,7 +32,7 @@ public class LeftStack implements Stack {
 
 	@Override
 	public boolean addPlate(Plate plate) {
-	
+		
 		if(plates.size() == 0) {
 			plates.add(plate);
 			plate.setY(positionY+stackbottom);
@@ -46,9 +46,9 @@ public class LeftStack implements Stack {
 			plate.setX(positionX);
 			return true;
 		}
-		
 		return false;
 	}
+	
 	@Override
 	public boolean removePlate(int positionFromTop) {
 		// TODO Auto-generated method stub

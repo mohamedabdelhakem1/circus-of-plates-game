@@ -24,7 +24,6 @@ public class RightStack implements Stack {
 
 	@Override
 	public ArrayList<Plate> getStack() {
-		// TODO Auto-generated method stub
 		return plates;
 	}
 	
