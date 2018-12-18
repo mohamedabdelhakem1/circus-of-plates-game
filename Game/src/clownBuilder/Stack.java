@@ -32,5 +32,6 @@ public interface Stack {
 	
 	public void StopMoving(boolean s);
 	
-
+	public void setLimit (int x);
+	public int getLimit ();
 }

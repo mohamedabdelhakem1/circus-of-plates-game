@@ -13,7 +13,6 @@ public class Clown implements GameObject {
 	private int width;
 	private int height;
 	private boolean visible = true;
-
 	private Stack leftStack;
 	private Stack rightStack;
 	private BufferedImage[] clownImage = new BufferedImage[1];
@@ -118,7 +117,7 @@ public class Clown implements GameObject {
 				return true;
 			}
 		} else if ((Math.abs(p.getX() - leftStack.getPositionX()) <= delta)
-				&& (Math.abs(p.getY() - leftStack.getPositiony()) == 0)) {
+				&& (Math.abs(p.getY() - leftStack.getLimit()) == 0) ) {
 
 			if (leftStack.addPlate(p)) {
 				notifyStacks();

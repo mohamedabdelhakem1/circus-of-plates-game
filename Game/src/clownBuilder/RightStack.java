@@ -114,6 +114,18 @@ public class RightStack implements Stack {
 		}
 	}
 
+	@Override
+	public void setLimit(int x) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public int getLimit() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
 	
 
 }

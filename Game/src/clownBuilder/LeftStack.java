@@ -13,6 +13,7 @@ public class LeftStack implements Stack {
 	private int positionX;
 	private int positionY;
 	private int stackbottom = 62;
+	private int limit = 480 + 62;
 
 
 	public LeftStack() {
@@ -40,12 +41,16 @@ public class LeftStack implements Stack {
 			plates.add(plate);
 			plate.setY(positionY+stackbottom);
 			size++;
+			limit -=15;
+			System.out.println(limit);
 			plate.setX(positionX);
 			return true;
 		}else if (size < capacity) {
 			plate.setY(plates.get(0).getY()-(plates.size()*15));
 			plates.add(plate);
 			size++;
+			limit-= 15;
+			System.out.println(limit);
 			plate.setX(positionX);
 			return true;
 		}
@@ -115,6 +120,15 @@ public class LeftStack implements Stack {
 		}
 		
 	}
+	
+	@Override
+	public int getLimit() {
+		return limit;
+	}
 
+	@Override
+	public void setLimit(int limit) {
+		this.limit = limit;
+	}
 
 }
