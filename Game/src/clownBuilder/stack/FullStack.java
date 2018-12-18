@@ -39,6 +39,6 @@ public class FullStack implements StackState {
 			return _3Consecutive;
 		}
 
-		return null;
+		return new ArrayList<>();
 	}
 }

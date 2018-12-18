@@ -28,7 +28,7 @@ public class Stack implements StackIF {
 	@Override
 	public StackState getEmptyState() {
 		
-		return null;
+		return emptyState;
 	}
 	@Override
 	public StackState getFullstackState() {
@@ -132,6 +132,7 @@ public class Stack implements StackIF {
 	}
 	@Override
 	public ArrayList<Plate> checkStack() {
+		
 		return currentstate.checkConsecutivePlate();
 	}
 	

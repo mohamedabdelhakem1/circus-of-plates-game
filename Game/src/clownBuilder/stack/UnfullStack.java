@@ -50,7 +50,7 @@ public class UnfullStack implements StackState {
 				return _3Consecutive;
 			}
 		}
-		return null;
+		return new ArrayList<>();
 	}
 
 }

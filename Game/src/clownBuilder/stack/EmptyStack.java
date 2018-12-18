@@ -28,7 +28,7 @@ public class EmptyStack implements StackState {
 
 	@Override
 	public ArrayList<Plate> checkConsecutivePlate() {
-		return null;
+		return new ArrayList<>();
 	}
 
 }

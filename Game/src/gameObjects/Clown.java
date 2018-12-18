@@ -133,7 +133,8 @@ public class Clown implements GameObject {
 
 	public boolean CheckScore(List<GameObject> control) {
 		ArrayList<Plate> removedplates = rightStack.checkStack();
-		if (removedplates != null) {
+		
+		if (removedplates.size() == 3  ) {
 			for (int i = 0; i < removedplates.size(); i++) {
 				control.remove(removedplates.get(i));
 				rightStack.removePlate(removedplates.get(i));
@@ -141,7 +142,7 @@ public class Clown implements GameObject {
 			return true;
 		}
 		removedplates = leftStack.checkStack();
-		if (removedplates != null) {
+		if (removedplates.size() == 3 ) {
 			for (int i = 0; i < removedplates.size(); i++) {
 				System.out.println(control.remove(removedplates.get(i)));
 				System.out.println(leftStack.removePlate(removedplates.get(i)));
@@ -149,6 +150,7 @@ public class Clown implements GameObject {
 			return true;
 
 		}
+		
 		return false;
 
 	}
