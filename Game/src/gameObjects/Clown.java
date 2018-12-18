@@ -14,6 +14,7 @@ public class Clown implements GameObject {
 	private int width;
 	private int height;
 	private boolean visible = true;
+
 	private Stack leftStack;
 	private Stack rightStack;
 	private BufferedImage[] clownImage = new BufferedImage[1];
@@ -41,8 +42,12 @@ public class Clown implements GameObject {
 
 	@Override
 	public void setX(int x) {
+		leftStack.setPositionX(x + 51);
+		rightStack.setPositionX(x + 157);
 		positionX = x;
+
 		if (x == 0 || x >= 1100) {
+
 			notifyStacks();
 			notifyStopStacks(true);
 		} else {
@@ -104,21 +109,25 @@ public class Clown implements GameObject {
 		return rightStack;
 	}
 
+
 	public boolean intersectStacks(Plate p) {
 		int delta = 80;
 		if ((Math.abs(p.getX() - rightStack.getPositionX()) <= delta)
 				&& (Math.abs(p.getY() - rightStack.getPositiony()) == 0)) {
-			rightStack.addPlate(p);
-			notifyStacks();
-			p.setattached();
-			return true;
+			
+			if (rightStack.addPlate(p)) {
+				notifyStacks();
+				p.setattached();
+				return true;
+			}
 		} else if ((Math.abs(p.getX() - leftStack.getPositionX()) <= delta)
 				&& (Math.abs(p.getY() - leftStack.getPositiony()) == 0)) {
-			leftStack.addPlate(p);
-			notifyStacks();
-			p.setattached();
-			return true;
 
+			if (leftStack.addPlate(p)) {
+				notifyStacks();
+				p.setattached();
+				return true;
+			}
 		}
 		return false;
 	}
@@ -132,5 +141,5 @@ public class Clown implements GameObject {
 		leftStack.StopMoving(s);
 		rightStack.StopMoving(s);
 	}
-	
+
 }

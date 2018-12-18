@@ -3,8 +3,6 @@ package gameWorld;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;
-
-
 import clownBuilder.ClownEngineer;
 import clownBuilder.stack.Stack;
 import eg.edu.alexu.csd.oop.game.GameObject;
@@ -22,43 +20,45 @@ public class GameWorld implements World {
 	private final List<GameObject> moving = new LinkedList<GameObject>();
 	private final List<GameObject> control = new LinkedList<GameObject>();
 	private PlateFactory factory;
-	
+
 	public GameWorld(int height, int width) {
 		this.width = width;
 		this.height = height;
 
 		factory = PlateFactory.getInstance();
-		ClownEngineer clownEnginner = new ClownEngineer(100, 480, 15, 15);
+
+		ClownEngineer clownEnginner = new ClownEngineer(100, 480, 7, 7);
+
 		clownEnginner.makeClown();
 		control.add(clownEnginner.getClown());
 		for (int i = 0; i < 6; i++) {
-			moving.add(factory.getPlate(width,height));	
-			
-		}	
+
+			moving.add(factory.getPlate(width, height));
+
+		}
 
 	}
-	
 
 	@Override
 	public boolean refresh() {
-			for(GameObject plate : moving.toArray(new GameObject[moving.size()])) {
-				plate.setY(plate.getY()+2);
-				plate.setX(plate.getX() + (Math.random() > 0.5 ? 1 : -1));
-				if(((Clown)control.get(0)).intersectStacks((Plate) plate)) {
-					moving.remove(plate);	
-					control.add(plate);
-					moving.add(factory.getPlate(width, height));
-				}else if(plate.getY() >= height) {
-					plate.setY(0);
-					plate.setX((new Random()).nextInt(width));
-					
-				}
+
+		for (GameObject plate : moving.toArray(new GameObject[moving.size()])) {
+			plate.setY(plate.getY() + 2);
+			plate.setX(plate.getX() + (Math.random() > 0.5 ? 1 : -1));
+			if (((Clown) control.get(0)).intersectStacks((Plate) plate)) {
+				moving.remove(plate);
+				control.add(plate);
+				moving.add(factory.getPlate(width, height));
+			} else if (plate.getY() >= height) {
+				plate.setY(0);
+				plate.setX((new Random()).nextInt(width));
+
 			}
-		
-		
-		
+		}
 		return true;
+
 	}
+
 	@Override
 	public List<GameObject> getConstantObjects() {
 		return constant;
@@ -84,8 +84,6 @@ public class GameWorld implements World {
 		// TODO Auto-generated method stub
 		return height;
 	}
-
-
 
 	@Override
 	public String getStatus() {
