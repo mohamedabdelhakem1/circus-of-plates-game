@@ -1,16 +1,9 @@
 package gameObjects;
 
-import java.awt.Image;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
-import java.io.InputStream;
-import java.util.ArrayList;
-
 import javax.imageio.ImageIO;
-
-import clownBuilder.LeftStack;
-import clownBuilder.RightStack;
 import clownBuilder.Stack;
 import eg.edu.alexu.csd.oop.game.GameObject;
 
@@ -23,7 +16,6 @@ public class Clown implements GameObject {
 
 	private Stack leftStack;
 	private Stack rightStack;
-
 	private BufferedImage[] clownImage = new BufferedImage[1];
 
 	public Clown(int positionX, int positionY) {
@@ -52,6 +44,14 @@ public class Clown implements GameObject {
 		leftStack.setPositionX(x + 51);
 		rightStack.setPositionX(x + 157);
 		positionX = x;
+		if (x == 0 || x == 1105) {
+			notifyStacks();
+			notifyStopStacks(true);
+		} else {
+			notifyStopStacks(false);
+		}
+		leftStack.setPositionX(x + 51);
+		rightStack.setPositionX(x + 157);
 
 	}
 
@@ -106,5 +106,34 @@ public class Clown implements GameObject {
 		return rightStack;
 	}
 
-	
+
+	public boolean intersectStacks(Plate p) {
+		int delta = 80;
+		if ((Math.abs(p.getX() - rightStack.getPositionX()) <= delta)
+				&& (Math.abs(p.getY() - rightStack.getPositiony()) == 0)) {
+			rightStack.addPlate(p);
+			notifyStacks();
+			p.setattached();
+			return true;
+		} else if ((Math.abs(p.getX() - leftStack.getPositionX()) <= delta)
+				&& (Math.abs(p.getY() - leftStack.getPositiony()) == 0)) {
+			leftStack.addPlate(p);
+			notifyStacks();
+			p.setattached();
+			return true;
+
+		}
+		return false;
+	}
+
+	private void notifyStacks() {
+		leftStack.notifyPlates(positionX);
+		rightStack.notifyPlates(positionX);
+	}
+
+	private void notifyStopStacks(boolean s) {
+		leftStack.StopMoving(s);
+		rightStack.StopMoving(s);
+	}
+
 }

@@ -1,18 +1,12 @@
 package gameWorld;
 
-import java.awt.image.BufferedImage;
-import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
-
-import org.omg.CORBA.INITIALIZE;
-
+import java.util.Random;
 import clownBuilder.ClownEngineer;
+import clownBuilder.Stack;
 import eg.edu.alexu.csd.oop.game.GameObject;
 import eg.edu.alexu.csd.oop.game.World;
-
-import gameObjects.Bar;
-
 import gameObjects.Clown;
 import gameObjects.Plate;
 import gameObjects.PlateFactory;
@@ -30,37 +24,45 @@ public class GameWorld implements World {
 	public GameWorld(int height, int width) {
 		this.width = width;
 		this.height = height;
-	
+
 		factory = PlateFactory.getInstance();
-		ClownEngineer clownEnginner = new ClownEngineer(100, 400, 20, 20);
+		ClownEngineer clownEnginner = new ClownEngineer(100, 480, 20, 20);
 		clownEnginner.makeClown();
 		control.add(clownEnginner.getClown());
 		for (int i = 0; i < 6; i++) {
+
 			moving.add(factory.getPlate(width, height));
+
 		}
-		
+
 	}
 
 	@Override
 	public boolean refresh() {
 
-
-		for (GameObject plate : moving) {
+		for (GameObject plate : moving.toArray(new GameObject[moving.size()])) {
 			plate.setY(plate.getY() + 2);
 			plate.setX(plate.getX() + (Math.random() > 0.5 ? 1 : -1));
-			if (plate.getY() == height) {
-				plate.setY(0);
+			if (((Clown) control.get(0)).intersectStacks((Plate) plate)) {
+				System.out.println("intersected");
+				moving.remove(plate);
+				moving.add(factory.getPlate(width, height));
+				control.add(plate);
 			}
+			if (plate.getY() >= height) {
 
+				plate.setY(0);
+				plate.setX((new Random()).nextInt(width));
+
+			}
 		}
-
 		return true;
+
 	}
 
 	@Override
 	public List<GameObject> getConstantObjects() {
 		return constant;
-
 	}
 
 	@Override

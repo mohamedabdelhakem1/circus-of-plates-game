@@ -7,18 +7,16 @@ import gameObjects.Plate;
 public class RightStack implements Stack {
 
 
-	
-	private int capacity;
+	private int capcity;
+
 	private int size = 0;
 	private ArrayList<Plate> plates;
 	private int positionX;
 	private int positionY;
-	
-	public RightStack(){
+	private int stackbottom = 62;
+	public RightStack() {
 		plates = new ArrayList<Plate>();
 	}
-	
-	
 
 	@Override
 	public void setStack(ArrayList<Plate> plates) {
@@ -34,8 +32,17 @@ public class RightStack implements Stack {
 
 	@Override
 	public boolean addPlate(Plate plate) {
-		
-		return true;
+
+		if(plates.size() == 0) {
+			plates.add(plate);
+			plate.setY(positionY+stackbottom);
+		}else {
+			plate.setY(plates.get(0).getY()-(plates.size()*15));
+			plates.add(plate);
+		}
+		plate.setX(positionX);
+		return false;
+
 	}
 
 	@Override
@@ -46,22 +53,22 @@ public class RightStack implements Stack {
 
 	@Override
 	public void setCapacity(int capacity) {
-		this.capacity = capacity;
+		this.capcity = capacity;
 	}
 
 	@Override
 	public int getCapacity() {
-		
-		return capacity;
+
+
+		return capcity;
+
 	}
 
 	@Override
 	public int getSize() {
-		
+
 		return size;
 	}
-
-
 
 	@Override
 	public int getPositionX() {
@@ -69,13 +76,10 @@ public class RightStack implements Stack {
 		return positionX;
 	}
 
-
-
 	@Override
 	public void setPositionX(int positionX) {
 		this.positionX = positionX;
 	}
-
 
 	@Override
 	public int getPositiony() {
@@ -83,11 +87,26 @@ public class RightStack implements Stack {
 		return positionY;
 	}
 
-
-
 	@Override
 	public void setPositionY(int positionY) {
 		this.positionY = positionY;
-		
+
 	}
+
+	@Override
+	public void notifyPlates(int x) {
+		for (int i = 0; i < plates.size(); i++) {
+			plates.get(i).updateCoordinates(x+157-40);
+		}
+	}
+
+	@Override
+	public void StopMoving(boolean s) {
+		for (int i = 0; i < plates.size(); i++) {
+			plates.get(i).setStopMoving(s);
+		}
+	}
+
+	
+
 }

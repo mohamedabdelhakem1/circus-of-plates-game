@@ -12,8 +12,8 @@ public class LeftStack implements Stack {
 	private ArrayList<Plate> plates ;
 	private int positionX;
 	private int positionY;
-	
-	
+	private int stackbottom = 62;
+
 
 	public LeftStack() {
 		plates = new ArrayList<Plate>();
@@ -34,10 +34,19 @@ public class LeftStack implements Stack {
 
 	@Override
 	public boolean addPlate(Plate plate) {
-		
-		return true;
-	}
 
+		System.out.println(positionY);
+		if(plates.size() == 0) {
+			plates.add(plate);
+			plate.setY(positionY+stackbottom);
+		}else {plate.setY(plates.get(0).getY()-(plates.size()*15));
+			plates.add(plate);
+			
+		}
+		plate.setX(positionX);
+		return false;
+
+	}
 	@Override
 	public boolean removePlate(int positionFromTop) {
 		// TODO Auto-generated method stub
@@ -82,6 +91,23 @@ public class LeftStack implements Stack {
 	@Override
 	public void setPositionY(int positionY) {
 		this.positionY = positionY;
+	}
+
+
+	@Override
+	public void notifyPlates(int x) {
+		for (int i = 0; i < plates.size(); i++) {
+			plates.get(i).updateCoordinates(x+51-40);
+		}
+	}
+
+
+	@Override
+	public void StopMoving(boolean s) {
+		for (int i = 0; i < plates.size(); i++) {
+			plates.get(i).setStopMoving(s);
+		}
+		
 	}
 
 
