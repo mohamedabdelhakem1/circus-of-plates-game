@@ -27,7 +27,7 @@ public class GameWorld implements World {
 
 		factory = PlateFactory.getInstance();
 
-		ClownEngineer clownEnginner = new ClownEngineer(100, 480, 7, 7);
+		ClownEngineer clownEnginner = new ClownEngineer(100, 480, 14, 14);
 
 		clownEnginner.makeClown();
 		control.add(clownEnginner.getClown());

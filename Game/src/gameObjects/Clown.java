@@ -120,7 +120,7 @@ public class Clown implements GameObject {
 				return true;
 			}
 		} else if ((Math.abs(p.getX() - leftStack.getPositionX()) <= delta)
-				&& (Math.abs(p.getY() - leftStack.getPositiony()) == 0)) {
+				&& (Math.abs(p.getY() - leftStack.getLimit()) == 0) ) {
 
 			if (leftStack.addPlate(p)) {
 				notifyStacks();
