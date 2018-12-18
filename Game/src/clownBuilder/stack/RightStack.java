@@ -14,6 +14,7 @@ public class RightStack implements Stack {
 	private int positionX;
 	private int positionY;
 	private int stackbottom = 62;
+	private int limit = 480 + 62;
 	public RightStack() {
 		plates = new ArrayList<Plate>();
 	}
@@ -33,17 +34,19 @@ public class RightStack implements Stack {
 	@Override
 	public boolean addPlate(Plate plate) {
 
-
+		System.out.println(positionY);
 		if(plates.size() == 0) {
 			plates.add(plate);
-			plate.setY(positionY+stackbottom);
+			plate.setY(limit);
 			size++;
+			limit -=15;
 			plate.setX(positionX);
 			return true;
 		}else if (size < capcity) {
-			plate.setY(plates.get(0).getY()-(plates.size()*15));
+			plate.setY(limit);
 			plates.add(plate);
 			size++;
+			limit-= 15;
 			plate.setX(positionX);
 			return true;
 		}

@@ -39,18 +39,16 @@ public class LeftStack implements Stack {
 		System.out.println(positionY);
 		if(plates.size() == 0) {
 			plates.add(plate);
-			plate.setY(positionY+stackbottom);
+			plate.setY(limit);
 			size++;
 			limit -=15;
-			System.out.println(limit);
 			plate.setX(positionX);
 			return true;
 		}else if (size < capacity) {
-			plate.setY(plates.get(0).getY()-(plates.size()*15));
+			plate.setY(limit);
 			plates.add(plate);
 			size++;
 			limit-= 15;
-			System.out.println(limit);
 			plate.setX(positionX);
 			return true;
 		}
