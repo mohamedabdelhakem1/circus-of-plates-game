@@ -1,7 +1,8 @@
-package clownBuilder.stack;
+package clownBuilder.stack.state;
 
 import java.util.ArrayList;
 
+import clownBuilder.stack.StackIF;
 import gameObjects.Plate;
 
 public class EmptyStack implements StackState {

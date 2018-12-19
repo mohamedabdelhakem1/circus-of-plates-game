@@ -2,11 +2,17 @@ package clownBuilder.stack;
 
 import java.util.ArrayList;
 
+import clownBuilder.stack.Iterator.Container;
+import clownBuilder.stack.Iterator.Iterator;
+import clownBuilder.stack.state.EmptyStack;
+import clownBuilder.stack.state.FullStack;
+import clownBuilder.stack.state.StackState;
+import clownBuilder.stack.state.UnfullStack;
 import gameObjects.ElipsePlateObject;
 import gameObjects.Plate;
 import gameObjects.RegtanglePlateObject;
 
-public class Stack implements StackIF {
+public class Stack implements StackIF, Container {
 
 	private StackState fullstate;
 	private StackState unfullstate;
@@ -175,9 +181,9 @@ public class Stack implements StackIF {
 		s.setPositionX(positionX);
 		s.setPositionY(positionY);
 		s.setLimit(limit);
-
 		ArrayList<Plate> pList = new ArrayList<>();
-		for (Plate p : plates) {
+		for (Iterator iterator = getIterator(); iterator.hasNext();) {
+			Plate p = (Plate) iterator.next();
 			Plate plateTemp;
 			if (p instanceof RegtanglePlateObject) {
 				plateTemp = new RegtanglePlateObject(p.getX(), p.getY(), p.getWidth(), p.getHeight(),
@@ -206,5 +212,36 @@ public class Stack implements StackIF {
 		}
 
 		return s;
+	}
+
+	@Override
+	public Iterator getIterator() {
+		return new StackIterator(plates);
+	}
+
+	private class StackIterator implements Iterator {
+		private ArrayList<Plate> list;
+		private int index = 0;
+
+		public StackIterator(ArrayList<Plate> list) {
+			this.list = list;
+		}
+
+		@Override
+		public boolean hasNext() {
+			if (index < list.size()) {
+				return true;
+			}
+			return false;
+		}
+
+		@Override
+		public Object next() {
+			if (hasNext()) {
+				return list.get(index++);
+			}
+			return null;
+		}
+
 	}
 }

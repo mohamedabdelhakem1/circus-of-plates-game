@@ -2,6 +2,7 @@ package clownBuilder.stack;
 
 import java.util.ArrayList;
 
+import clownBuilder.stack.state.StackState;
 import gameObjects.Plate;
 
 public interface StackIF {

@@ -6,6 +6,7 @@ import java.util.List;
 import clownBuilder.ClownEngineer;
 import clownBuilder.stack.Stack;
 import clownBuilder.stack.StackIF;
+import clownBuilder.stack.Iterator.Iterator;
 import eg.edu.alexu.csd.oop.game.GameObject;
 import gameObjects.Clown;
 import gameObjects.ElipsePlateObject;
@@ -15,7 +16,7 @@ import gameObjects.RegtanglePlateObject;
 // Memento Design Pattern
 
 public class Originator {
-
+	private Iterator iterator;
 	private int score;
 	private List<GameObject> constant;
 	private List<GameObject> moving;
@@ -35,19 +36,23 @@ public class Originator {
 		List<GameObject> controlMemento = new LinkedList<GameObject>();
 		// clown memento
 		ClownEngineer clownEnginner = new ClownEngineer(clown.getX(), clown.getY(), clown.getLeftStack().getCapacity(),
-		clown.getLeftStack().getCapacity());
-		StackIF left =	clown.getLeftStack().DeepClone();
-		StackIF right = clown.getRightStack().DeepClone();
+				clown.getLeftStack().getCapacity());
+		Stack left = clown.getLeftStack().DeepClone();
+		Stack right = clown.getRightStack().DeepClone();
 		clownEnginner.makeClown();
 		Clown newClown = clownEnginner.getClown();
 		newClown.SetLeftStack(left);
 		newClown.setRightStack(right);
 		controlMemento.add(newClown);
 		// controlled plates
-		for (GameObject plate : left.getStack()) {
+
+		for (iterator = left.getIterator(); iterator.hasNext();) {
+			Plate plate = (Plate) iterator.next();
 			controlMemento.add(plate);
 		}
-		for (GameObject plate : right.getStack()) {
+
+		for (iterator = left.getIterator(); iterator.hasNext();) {
+			Plate plate = (Plate) iterator.next();
 			controlMemento.add(plate);
 		}
 		// constant objects
