@@ -3,6 +3,8 @@ package model.memento;
 
 import java.util.ArrayList;
 
+import javax.swing.JOptionPane;
+
  public class Caretaker {
 
 	private static ArrayList<Memento> GameCheckPoints = new ArrayList<Memento>();
@@ -14,6 +16,12 @@ import java.util.ArrayList;
 	}
 
 	public static Memento getMemento(int index) {
-		return GameCheckPoints.get(index);
+		try {
+			return GameCheckPoints.get(index);
+		} catch (Exception e) {
+			JOptionPane.showMessageDialog(null, "no saved snapshots");
+			return null;
+		}
+	
 	}
 }
