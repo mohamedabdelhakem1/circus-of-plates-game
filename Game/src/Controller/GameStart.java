@@ -13,7 +13,7 @@ import javax.swing.JPanel;
 
 import eg.edu.alexu.csd.oop.game.GameEngine;
 import eg.edu.alexu.csd.oop.game.GameEngine.GameController;
-import gameWorld.GameWorld;
+import model.gameWorld.GameWorld;
 
 public class GameStart {
 	
