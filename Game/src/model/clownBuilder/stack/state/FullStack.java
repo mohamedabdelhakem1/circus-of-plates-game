@@ -1,4 +1,4 @@
-package modelclownBuilder.stack.state;
+package model.clownBuilder.stack.state;
 
 import java.awt.Color;
 import java.util.ArrayList;

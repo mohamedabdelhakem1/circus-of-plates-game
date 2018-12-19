@@ -2,8 +2,8 @@ package model.clownBuilder.stack;
 
 import java.util.ArrayList;
 
+import model.clownBuilder.stack.state.StackState;
 import model.gameObjects.shapes.Plate;
-import modelclownBuilder.stack.state.StackState;
 
 public interface StackIF {
 	/**

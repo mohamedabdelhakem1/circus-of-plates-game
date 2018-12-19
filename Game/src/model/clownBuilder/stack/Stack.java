@@ -4,13 +4,13 @@ import java.util.ArrayList;
 
 import model.clownBuilder.stack.Iterator.Container;
 import model.clownBuilder.stack.Iterator.Iterator;
+import model.clownBuilder.stack.state.EmptyStack;
+import model.clownBuilder.stack.state.FullStack;
+import model.clownBuilder.stack.state.StackState;
+import model.clownBuilder.stack.state.UnfullStack;
 import model.gameObjects.shapes.ElipsePlateObject;
 import model.gameObjects.shapes.Plate;
 import model.gameObjects.shapes.RegtanglePlateObject;
-import modelclownBuilder.stack.state.EmptyStack;
-import modelclownBuilder.stack.state.FullStack;
-import modelclownBuilder.stack.state.StackState;
-import modelclownBuilder.stack.state.UnfullStack;
 
 public class Stack implements StackIF, Container {
 

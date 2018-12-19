@@ -1,4 +1,4 @@
-package modelclownBuilder.stack.state;
+package model.clownBuilder.stack.state;
 
 import java.util.ArrayList;
 
