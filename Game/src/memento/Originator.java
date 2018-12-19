@@ -51,7 +51,7 @@ public class Originator {
 			controlMemento.add(plate);
 		}
 
-		for (iterator = left.getIterator(); iterator.hasNext();) {
+		for (iterator = right.getIterator(); iterator.hasNext();) {
 			Plate plate = (Plate) iterator.next();
 			controlMemento.add(plate);
 		}

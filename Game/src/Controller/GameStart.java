@@ -1,12 +1,15 @@
-package gameStarter;
+package Controller;
 
 import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import javax.swing.JFrame;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
 
 import eg.edu.alexu.csd.oop.game.GameEngine;
 import eg.edu.alexu.csd.oop.game.GameEngine.GameController;
@@ -37,8 +40,11 @@ public class GameStart {
 		
 		newMenuItem.addActionListener(new ActionListener() {
 		@Override public void actionPerformed(ActionEvent e) {
-			
-			
+	/*		JFrame frame = new JFrame("new game");
+			frame.add(new JPanel());
+			JOptionPane.showMessageDialog(frame,
+				    "Eggs are not supposed to be green.");
+			*/
 			gameController.changeWorld(new GameWorld(700, 1300));
 			}
 		});
