@@ -22,7 +22,6 @@ public class Clown implements GameObject {
 	private BufferedImage[] clownImage = new BufferedImage[1];
 
 	public Clown(int positionX, int positionY) {
-
 		this.positionX = positionX;
 		this.positionY = positionY;
 
@@ -116,15 +115,15 @@ public class Clown implements GameObject {
 		if ((Math.abs(p.getX() - rightStack.getPositionX()) <= delta)
 				&& (Math.abs(p.getY() - rightStack.getPositiony()) == 0)) {
 			if (rightStack.addPlate(p)) {
+				p.setattached(true);
 				notifyStacks();
-				p.setattached();
 				return true;
 			}
 		} else if ((Math.abs(p.getX() - leftStack.getPositionX()) <= delta)
 				&& (Math.abs(p.getY() - leftStack.getPositiony()) == 0)) {
 			if (leftStack.addPlate(p)) {
+				p.setattached(true);
 				notifyStacks();
-				p.setattached();
 				return true;
 			}
 		}
@@ -133,8 +132,8 @@ public class Clown implements GameObject {
 
 	public boolean CheckScore(List<GameObject> control) {
 		ArrayList<Plate> removedplates = rightStack.checkStack();
-		
-		if (removedplates.size() == 3  ) {
+
+		if (removedplates.size() == 3) {
 			for (int i = 0; i < removedplates.size(); i++) {
 				control.remove(removedplates.get(i));
 				rightStack.removePlate(removedplates.get(i));
@@ -142,25 +141,25 @@ public class Clown implements GameObject {
 			return true;
 		}
 		removedplates = leftStack.checkStack();
-		if (removedplates.size() == 3 ) {
+		if (removedplates.size() == 3) {
 			for (int i = 0; i < removedplates.size(); i++) {
-				System.out.println(control.remove(removedplates.get(i)));
-				System.out.println(leftStack.removePlate(removedplates.get(i)));
+				control.remove(removedplates.get(i));
+				leftStack.removePlate(removedplates.get(i));
 			}
 			return true;
 
 		}
-		
+
 		return false;
 
 	}
 
-	private void notifyStacks() {
+	public void notifyStacks() {
 		leftStack.notifyPlates(positionX);
 		rightStack.notifyPlates(positionX);
 	}
 
-	private void notifyStopStacks(boolean s) {
+	public void notifyStopStacks(boolean s) {
 		leftStack.StopMoving(s);
 		rightStack.StopMoving(s);
 	}

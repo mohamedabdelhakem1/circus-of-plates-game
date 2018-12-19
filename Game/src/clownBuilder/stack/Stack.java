@@ -1,7 +1,10 @@
 package clownBuilder.stack;
 
 import java.util.ArrayList;
+
+import gameObjects.ElipsePlateObject;
 import gameObjects.Plate;
+import gameObjects.RegtanglePlateObject;
 
 public class Stack implements StackIF {
 
@@ -25,19 +28,47 @@ public class Stack implements StackIF {
 		emptyState = new EmptyStack(this);
 		currentstate = emptyState;
 	}
+
+	@Override
+	public StackState getCurrentState() {
+		return currentstate;
+	}
+
+	@Override
+	public int getRelativeXtoClown() {
+		return RelativeXtoClown;
+	}
+
 	@Override
 	public StackState getEmptyState() {
-		
 		return emptyState;
 	}
+
 	@Override
 	public StackState getFullstackState() {
 		return fullstate;
 	}
+
 	@Override
 	public StackState getUnfullstackState() {
 		return unfullstate;
 	}
+
+	@Override
+	public void setUnfullstackState(StackState state) {
+		unfullstate = state;
+	}
+
+	@Override
+	public void setfullstackState(StackState state) {
+		fullstate = state;
+	}
+
+	@Override
+	public void setEmptystackState(StackState state) {
+		emptyState = state;
+	}
+
 	@Override
 	public void setState(StackState state) {
 		currentstate = state;
@@ -130,12 +161,50 @@ public class Stack implements StackIF {
 	public void setLimit(int limit) {
 		this.limit = limit;
 	}
+
 	@Override
 	public ArrayList<Plate> checkStack() {
-		
+
 		return currentstate.checkConsecutivePlate();
 	}
-	
 
+	@Override
+	public Stack DeepClone() {
+		Stack s = new Stack(RelativeXtoClown);
+		s.setCapacity(capacity);
+		s.setPositionX(positionX);
+		s.setPositionY(positionY);
+		s.setLimit(limit);
 
+		ArrayList<Plate> pList = new ArrayList<>();
+		for (Plate p : plates) {
+			Plate plateTemp;
+			if (p instanceof RegtanglePlateObject) {
+				plateTemp = new RegtanglePlateObject(p.getX(), p.getY(), p.getWidth(), p.getHeight(),
+						((RegtanglePlateObject) p).getColor());
+				plateTemp.setattached(true);
+				plateTemp.setX(p.getX());
+				pList.add(plateTemp);
+			} else if (p instanceof ElipsePlateObject) {
+				plateTemp = new ElipsePlateObject(p.getX(), p.getY(), p.getWidth(), p.getHeight(),
+						((ElipsePlateObject) p).getColor());
+				plateTemp.setattached(true);
+				plateTemp.setX(p.getX());
+				pList.add(plateTemp);
+			}
+		}
+		s.setStack(pList);
+		s.setEmptystackState(new EmptyStack(s));
+		s.setfullstackState(new FullStack(s));
+		s.setUnfullstackState(new UnfullStack(s));
+		if (currentstate instanceof EmptyStack) {
+			s.setState(s.getEmptyState());
+		} else if (currentstate instanceof FullStack) {
+			s.setState(s.getFullstackState());
+		} else if (currentstate instanceof UnfullStack) {
+			s.setState(s.getUnfullstackState());
+		}
+
+		return s;
+	}
 }

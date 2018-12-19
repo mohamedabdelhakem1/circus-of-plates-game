@@ -4,7 +4,10 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;
+
+
 import clownBuilder.ClownEngineer;
+import clownBuilder.stack.Stack;
 import clownBuilder.stack.StackIF;
 import eg.edu.alexu.csd.oop.game.GameObject;
 import eg.edu.alexu.csd.oop.game.World;
@@ -123,12 +126,12 @@ public class GameWorld implements World {
 		command.loadSnapShot();
 	}
 	public void setMemento(Memento memento) {
-		this.score = memento.getScore();
-		this.constant = memento.getConstant();
-		this.control = memento.getControl();
-		this.moving = memento.getMoving();
+		score = memento.getScore();
+		constant = memento.getConstant();
+		control = memento.getControl();
+		moving = memento.getMoving();
 	}
-	public void storeInMemento() {
+	public void saveSnapshot() {
 		Originator originator = new Originator();
 		originator.set(score, moving, control, constant, clown);
 		Caretaker.addMemento(originator.storeInMemento());

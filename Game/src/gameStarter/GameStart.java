@@ -22,12 +22,17 @@ public class GameStart {
 		JMenuItem newMenuItem = new JMenuItem("New");
 		JMenuItem pauseMenuItem = new JMenuItem("Pause");
 		JMenuItem resumeMenuItem = new JMenuItem("Resume");
+		JMenuItem SnapshotMenuItem = new JMenuItem("snapshot");
+		JMenuItem LoadSnapshot = new JMenuItem("load");
 		menu.add(newMenuItem);
 		menu.addSeparator();
 		menu.add(pauseMenuItem);
 		menu.add(resumeMenuItem);
+		menu.add(SnapshotMenuItem);
+		menu.add(LoadSnapshot);
 		menuBar.add(menu);
-		final GameController gameController = GameEngine.start("Very Simple Game in 99 Line of Code",  new GameWorld(680, 1300), menuBar, Color.white);
+		GameWorld gameWorld = new GameWorld(700, 1300);
+		final GameController gameController = GameEngine.start("Very Simple Game in 99 Line of Code", gameWorld, menuBar, Color.white);
 
 		
 		newMenuItem.addActionListener(new ActionListener() {
@@ -45,6 +50,17 @@ public class GameStart {
 		resumeMenuItem.addActionListener(new ActionListener() {
 			@Override public void actionPerformed(ActionEvent e) {
 				gameController.resume();
+			}
+		});
+		SnapshotMenuItem.addActionListener(new ActionListener() {
+			@Override public void actionPerformed(ActionEvent e) {
+				gameWorld.saveSnapshot();
+				
+			}
+		});
+		LoadSnapshot.addActionListener(new ActionListener() {
+			@Override public void actionPerformed(ActionEvent e) {
+				gameWorld.loadCheckpoint(0);
 			}
 		});
 		

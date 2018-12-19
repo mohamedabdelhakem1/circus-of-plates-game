@@ -14,4 +14,5 @@ public class RegtanglePlateObject extends Plate {
 		spriteImages[0] = PlateFlyWeight.getRectangularPlate(color, width, height);
 		setVisible(true);
 	}
+	
 }

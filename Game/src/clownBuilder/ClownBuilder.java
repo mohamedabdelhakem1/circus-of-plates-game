@@ -1,5 +1,6 @@
 package clownBuilder;
 
+import clownBuilder.stack.StackIF;
 import gameObjects.Clown;
 
 public interface ClownBuilder {

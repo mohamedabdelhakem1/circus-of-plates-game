@@ -16,12 +16,12 @@ public class ClownBuilderHouse implements ClownBuilder {
 
 	@Override
 	public void createLeftStack() {
-		leftStack = new Stack(51-40);
+		leftStack = new Stack(51 - 40);
 	}
 
 	@Override
 	public void createRightStack() {
-		rightStack = new Stack(157-40);
+		rightStack = new Stack(157 - 40);
 
 	}
 
@@ -39,15 +39,15 @@ public class ClownBuilderHouse implements ClownBuilder {
 
 	@Override
 	public void addStacksToClown() {
-	clown.SetLeftStack(leftStack);
-	clown.setRightStack(rightStack);	
+		clown.SetLeftStack(this.leftStack);
+		clown.setRightStack(this.rightStack);
 	}
-	
+
 	@Override
 	public Clown getClown() {
 		return clown;
 	}
-	
+
 	@Override
 	public void setClownIntitialPosition(int positionX, int positionY) {
 		this.positionX = positionX;
@@ -64,8 +64,7 @@ public class ClownBuilderHouse implements ClownBuilder {
 		leftStack.setPositionX(positionX + 51);
 		leftStack.setPositionY(positionY);
 		rightStack.setPositionX(positionX + 157);
-		rightStack.setPositionY(positionY);	
+		rightStack.setPositionY(positionY);
 	}
 
-	
 }

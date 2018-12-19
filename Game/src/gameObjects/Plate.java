@@ -9,14 +9,13 @@ import plateFlyWeight.Observer;
 public abstract class Plate implements GameObject, Observer {
 
 	protected BufferedImage[] spriteImages = new BufferedImage[1];
-	private boolean attached = false;
+	protected boolean attached = false;
 	protected int x;
 	protected int y;
 	protected int width;
 	protected int height;
 	protected boolean isVisible;
-
-	private Boolean stopMoving = false;
+	protected Boolean stopMoving = false;
 	protected Color color;
 
 	public Plate(int posX, int posY, int width, int height, Color color) {
@@ -37,6 +36,7 @@ public abstract class Plate implements GameObject, Observer {
 	public void setX(int mX) {
 	
 		if(stopMoving) {
+			
 			return;
 		}
 		this.x = mX;
@@ -49,7 +49,6 @@ public abstract class Plate implements GameObject, Observer {
 
 	@Override
 	public void setY(int mY) {
-
 		if (!attached ) {
 			this.y = mY;
 		}
@@ -92,13 +91,18 @@ public abstract class Plate implements GameObject, Observer {
 
 	}
 	@Override
-	public void setattached() {
-		attached = true;
+	public void setattached(boolean s) {
+		attached = s;
 	}
 	@Override
 	public void setStopMoving(boolean s) {
 		stopMoving = s;
 	}
-
+	public boolean getattached() {
+		return attached;
+	}
+	public boolean getStopmoving() {
+		return stopMoving;
+	}
 }
 

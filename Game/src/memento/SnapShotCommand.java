@@ -16,6 +16,10 @@ public class SnapShotCommand implements GameCommand{
         memento = Caretaker.getMemento(i);
     }
     public void loadSnapShot() {
-        gameWorld.setMemento(memento);
+    	Originator originator = new Originator();
+    	originator.RestoreFromMemento(memento);
+    	
+        gameWorld.setMemento(originator.storeInMemento());
+        
     }
 }
