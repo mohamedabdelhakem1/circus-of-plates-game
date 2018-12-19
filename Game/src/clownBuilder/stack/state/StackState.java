@@ -2,7 +2,7 @@ package clownBuilder.stack.state;
 
 import java.util.ArrayList;
 
-import gameObjects.Plate;
+import gameObjects.shapes.Plate;
 
 public interface StackState {
 	public boolean AddPlate(Plate plate);

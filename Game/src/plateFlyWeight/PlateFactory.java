@@ -1,11 +1,13 @@
 package plateFlyWeight;
 
 import java.awt.Color;
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
 import java.util.Random;
 
-import gameObjects.ElipsePlateObject;
-import gameObjects.Plate;
-import gameObjects.RegtanglePlateObject;
+import gameObjects.shapes.ElipsePlateObject;
+import gameObjects.shapes.Plate;
+import gameObjects.shapes.RegtanglePlateObject;
 
 public class PlateFactory {
 	private static PlateFactory factory;
@@ -27,13 +29,52 @@ public class PlateFactory {
 	public Plate getPlate(int width, int height) {
 		int PlateType = randomGenerator.nextInt(2);
 		Plate plate;
-		if (PlateType == 0) {	
-			plate = new RegtanglePlateObject(Math.abs(randomGenerator.nextInt(width-80)),randomGenerator.nextInt(80) , 80, 15, colors[randomGenerator.nextInt(1)]);
-		} else {	
-			plate = new ElipsePlateObject(Math.abs(randomGenerator.nextInt(width-80)),randomGenerator.nextInt(80), 80, 15, colors[randomGenerator.nextInt(1)]);
+		if (PlateType == 0) {
+			// dynamic loading
+
+			Class<? extends Plate> s = load("gameObjects.shapes.RegtanglePlateObject");
+			Class[] parameterTypes = new Class[] { int.class, int.class, int.class, int.class, Color.class };
+			try {
+				Constructor constructor = s.getConstructor(parameterTypes);
+				plate = (Plate) constructor.newInstance(Math.abs(randomGenerator.nextInt(width - 80)),
+						randomGenerator.nextInt(80), 80, 15, colors[randomGenerator.nextInt(3)]);
+			} catch (NoSuchMethodException | SecurityException | InstantiationException | IllegalAccessException
+					| IllegalArgumentException | InvocationTargetException e) {
+				plate = null;
+				e.printStackTrace();
+			}
+			// plate = new
+			// RegtanglePlateObject(Math.abs(randomGenerator.nextInt(width-80)),randomGenerator.nextInt(80)
+			// , 80, 15, colors[randomGenerator.nextInt(3)]);
+		} else {
+			Class<? extends Plate> s = load("gameObjects.shapes.ElipsePlateObject");
+			Class[] parameterTypes = new Class[] { int.class, int.class, int.class, int.class, Color.class };
+			try {
+				Constructor constructor = s.getConstructor(parameterTypes);
+				plate = (Plate) constructor.newInstance(Math.abs(randomGenerator.nextInt(width - 80)),
+						randomGenerator.nextInt(80), 80, 15, colors[randomGenerator.nextInt(3)]);
+			} catch (NoSuchMethodException | SecurityException | InstantiationException | IllegalAccessException
+					| IllegalArgumentException | InvocationTargetException e) {
+				plate = null;
+				e.printStackTrace();
+			}
+			// plate = new ElipsePlateObject(Math.abs(randomGenerator.nextInt(width - 80)),
+			// randomGenerator.nextInt(80),80, 15, colors[randomGenerator.nextInt(3)]);
 		}
 
 		return plate;
 	}
 
+	public Class<? extends Plate> load(String className) {
+		Class LoadedClass = null;
+		ClassLoader classLoader = getClass().getClassLoader();
+		try {
+			LoadedClass = classLoader.loadClass(className);
+		} catch (ClassNotFoundException e) {
+			System.out.println("error");
+		}
+
+		return LoadedClass;
+
+	}
 }

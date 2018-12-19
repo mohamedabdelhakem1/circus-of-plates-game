@@ -4,7 +4,7 @@ import java.awt.Color;
 import java.util.ArrayList;
 
 import clownBuilder.stack.StackIF;
-import gameObjects.Plate;
+import gameObjects.shapes.Plate;
 
 public class FullStack implements StackState {
 	private StackIF stack;

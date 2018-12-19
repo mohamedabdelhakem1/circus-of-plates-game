@@ -9,9 +9,9 @@ import clownBuilder.stack.StackIF;
 import clownBuilder.stack.Iterator.Iterator;
 import eg.edu.alexu.csd.oop.game.GameObject;
 import gameObjects.Clown;
-import gameObjects.ElipsePlateObject;
-import gameObjects.Plate;
-import gameObjects.RegtanglePlateObject;
+import gameObjects.shapes.ElipsePlateObject;
+import gameObjects.shapes.Plate;
+import gameObjects.shapes.RegtanglePlateObject;
 
 // Memento Design Pattern
 

@@ -8,9 +8,9 @@ import clownBuilder.stack.state.EmptyStack;
 import clownBuilder.stack.state.FullStack;
 import clownBuilder.stack.state.StackState;
 import clownBuilder.stack.state.UnfullStack;
-import gameObjects.ElipsePlateObject;
-import gameObjects.Plate;
-import gameObjects.RegtanglePlateObject;
+import gameObjects.shapes.ElipsePlateObject;
+import gameObjects.shapes.Plate;
+import gameObjects.shapes.RegtanglePlateObject;
 
 public class Stack implements StackIF, Container {
 

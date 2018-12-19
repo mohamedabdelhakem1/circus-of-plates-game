@@ -10,6 +10,7 @@ import javax.imageio.ImageIO;
 
 import clownBuilder.stack.StackIF;
 import eg.edu.alexu.csd.oop.game.GameObject;
+import gameObjects.shapes.Plate;
 
 public class Clown implements GameObject {
 	private int positionX;

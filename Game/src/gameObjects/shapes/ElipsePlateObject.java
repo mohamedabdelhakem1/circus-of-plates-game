@@ -1,4 +1,4 @@
-package gameObjects;
+package gameObjects.shapes;
 
 
 import java.awt.*;
