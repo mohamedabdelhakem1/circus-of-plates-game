@@ -1,6 +1,5 @@
 package model.gameWorld;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;
@@ -8,19 +7,22 @@ import java.util.Random;
 import eg.edu.alexu.csd.oop.game.GameObject;
 import eg.edu.alexu.csd.oop.game.World;
 import model.clownBuilder.ClownEngineer;
-import model.clownBuilder.stack.Stack;
-import model.clownBuilder.stack.StackIF;
 import model.gameObjects.Clown;
-import model.gameObjects.shapes.ElipsePlateObject;
+
 import model.gameObjects.shapes.Plate;
-import model.gameObjects.shapes.RegtanglePlateObject;
+
 import model.gameObjects.shapes.plate.PlateFactory;
+import model.gameStrategy.DifficultyFactory;
+import model.gameStrategy.GameStrategyIF;
 import model.memento.Caretaker;
 import model.memento.Memento;
 import model.memento.Originator;
 import model.memento.SnapShotCommand;
+import starter.GameStart;
 
 public class GameWorld implements World {
+	private Integer speed;
+	private Integer controlspeed;
 	private int score = 0;
 	private long endTime, startTime = System.currentTimeMillis();
 	private int width;
@@ -31,29 +33,23 @@ public class GameWorld implements World {
 	private PlateFactory factory;
 	private ClownEngineer clownEngineer;
 	private Clown clown;
+	private DifficultyFactory difficultyFactory;
+	private GameStrategyIF strategy;
 
-	public GameWorld(int height, int width) {
+	public GameWorld(int height, int width, String difficulty) {
 		this.width = width;
 		this.height = height;
-
-		factory = PlateFactory.getInstance();
-
-		ClownEngineer clownEnginner = new ClownEngineer(100, 480, 14, 14);
-
-		clownEnginner.makeClown();
-		clown = clownEnginner.getClown();
-		control.add(clown);
-		for (int i = 0; i < 6; i++) {
-
-			moving.add(factory.getPlate(width, height));
-
-		}
-
+		difficultyFactory = new DifficultyFactory();
+		strategy = difficultyFactory.getDifficulty(difficulty);
+		strategy.setGamePlay(factory, control, moving, clown, width, height, this);
+		
 	}
 
 	@Override
 	public boolean refresh() {
-
+		if(System.currentTimeMillis() - startTime > 10000) {
+			setSpeed(0);
+		}
 		for (GameObject plate : moving.toArray(new GameObject[moving.size()])) {
 			plate.setY(plate.getY() + 2);
 			plate.setX(plate.getX() + (Math.random() > 0.5 ? 1 : -1));
@@ -96,44 +92,54 @@ public class GameWorld implements World {
 
 	@Override
 	public int getHeight() {
-		// TODO Auto-generated method stub
 		return height;
 	}
 
 	@Override
 	public String getStatus() {
-		// TODO Auto-generated method stub
 		return "score :" + String.valueOf(score);
 	}
 
 	@Override
 	public int getSpeed() {
-		return 10;
-
+	
+		return speed;
 	}
 
 	@Override
 	public int getControlSpeed() {
-		// TODO Auto-generated method stub
+		return controlspeed;
+	}
 
-		return 40;
+	public void setControlSpeed(int controlspeed) {
+		this.controlspeed = controlspeed;
+	}
 
+	public void setSpeed(int speed) {
+		this.speed = speed;
+	}
+	public void setClowns(Clown clown) {
+		this.clown = clown; 
+	}
+	public void setPlatesFactory(PlateFactory factory) {
+		this.factory = factory; 
 	}
 	public void loadCheckpoint(int i) {
 		SnapShotCommand command = new SnapShotCommand(this);
 		command.execute(i);
 		command.loadSnapShot();
 	}
+
 	public void setMemento(Memento memento) {
 		score = memento.getScore();
 		constant = memento.getConstant();
 		control = memento.getControl();
 		moving = memento.getMoving();
 	}
+
 	public void saveSnapshot() {
 		Originator originator = new Originator();
 		originator.set(score, moving, control, constant, clown);
 		Caretaker.addMemento(originator.storeInMemento());
 	}
 }
-

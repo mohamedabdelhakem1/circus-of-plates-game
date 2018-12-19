@@ -13,12 +13,13 @@ public class PlateFactory {
 	private static Random randomGenerator;
 	private final Color[] colors = new Color[] { Color.black, Color.BLUE, Color.CYAN, Color.DARK_GRAY, Color.MAGENTA,
 			Color.GRAY, Color.YELLOW, Color.ORANGE, Color.GREEN, Color.PINK, Color.LIGHT_GRAY, Color.red };
-
+	private static int numberOfColors;
 	private PlateFactory() {
 		randomGenerator = new Random();
 	}
 
-	public static PlateFactory getInstance() {
+	public static PlateFactory getInstance(int numColors) {
+		numberOfColors = numColors;
 		if (factory == null) {
 			factory = new PlateFactory();
 		}
@@ -39,12 +40,12 @@ public class PlateFactory {
 		}
 		if (PlateType == 0) {
 			// dynamic loading
-			Class<? extends Plate> s = load("gameObjects.shapes.RegtanglePlateObject");
+			Class<? extends Plate> s = load("model.gameObjects.shapes.RegtanglePlateObject");
 			Class[] parameterTypes = new Class[] { int.class, int.class, int.class, int.class, Color.class };
 			try {
 				Constructor constructor = s.getConstructor(parameterTypes);
 				plate = (Plate) constructor.newInstance(Math.abs(randomGenerator.nextInt(width - 80)),
-						randomGenerator.nextInt(80), 80, 15, colors[randomGenerator.nextInt(3)]);
+						randomGenerator.nextInt(80), 80, 15, colors[randomGenerator.nextInt(numberOfColors)]);
 			} catch (NoSuchMethodException | SecurityException | InstantiationException | IllegalAccessException
 					| IllegalArgumentException | InvocationTargetException e) {
 				plate = null;
@@ -54,12 +55,12 @@ public class PlateFactory {
 			// RegtanglePlateObject(Math.abs(randomGenerator.nextInt(width-80)),randomGenerator.nextInt(80)
 			// , 80, 15, colors[randomGenerator.nextInt(3)]);
 		} else {
-			Class<? extends Plate> s = load("gameObjects.shapes.ElipsePlateObject");
+			Class<? extends Plate> s = load("model.gameObjects.shapes.ElipsePlateObject");
 			Class[] parameterTypes = new Class[] { int.class, int.class, int.class, int.class, Color.class };
 			try {
 				Constructor constructor = s.getConstructor(parameterTypes);
 				plate = (Plate) constructor.newInstance(Math.abs(randomGenerator.nextInt(width - 80)),
-						randomGenerator.nextInt(80), 80, 15, colors[randomGenerator.nextInt(3)]);
+						randomGenerator.nextInt(80), 80, 15, colors[randomGenerator.nextInt(numberOfColors)]);
 			} catch (NoSuchMethodException | SecurityException | InstantiationException | IllegalAccessException
 					| IllegalArgumentException | InvocationTargetException e) {
 				plate = null;
