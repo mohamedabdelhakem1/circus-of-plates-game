@@ -4,10 +4,8 @@ import java.awt.Color;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.util.Random;
-
-import gameObjects.shapes.ElipsePlateObject;
 import gameObjects.shapes.Plate;
-import gameObjects.shapes.RegtanglePlateObject;
+
 
 public class PlateFactory {
 	private static PlateFactory factory;
@@ -29,9 +27,17 @@ public class PlateFactory {
 	public Plate getPlate(int width, int height) {
 		int PlateType = randomGenerator.nextInt(2);
 		Plate plate;
+		// get a plate from the pool.
+		plate = PlatesPool.getInstance().PopPlate();
+		if(plate != null) {
+			plate.setattached(false);
+			plate.setStopMoving(false);
+			plate.setX(Math.abs(randomGenerator.nextInt(width - 80)));
+			plate.setY(randomGenerator.nextInt(80));
+			return plate;
+		}
 		if (PlateType == 0) {
 			// dynamic loading
-
 			Class<? extends Plate> s = load("gameObjects.shapes.RegtanglePlateObject");
 			Class[] parameterTypes = new Class[] { int.class, int.class, int.class, int.class, Color.class };
 			try {

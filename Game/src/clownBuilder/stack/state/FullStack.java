@@ -5,6 +5,7 @@ import java.util.ArrayList;
 
 import clownBuilder.stack.StackIF;
 import gameObjects.shapes.Plate;
+import plateFlyWeight.PlatesPool;
 
 public class FullStack implements StackState {
 	private StackIF stack;
@@ -22,6 +23,8 @@ public class FullStack implements StackState {
 	public boolean removePlate(Plate plate) {
 		stack.setState(stack.getUnfullstackState());
 		stack.setLimit(stack.getLimit() + 15);
+		// push the removed plate to the pool to reuse it
+		PlatesPool.getInstance().PushPlate(plate);
 		return stack.getStack().remove(plate);
 	}
 
