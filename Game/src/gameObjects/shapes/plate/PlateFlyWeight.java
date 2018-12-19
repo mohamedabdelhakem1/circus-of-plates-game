@@ -1,4 +1,4 @@
-package plateFlyWeight;
+package gameObjects.shapes.plate;
 
 import java.awt.BasicStroke;
 import java.awt.Color;

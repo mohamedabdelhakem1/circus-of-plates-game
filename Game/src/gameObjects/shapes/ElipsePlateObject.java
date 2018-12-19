@@ -4,7 +4,7 @@ package gameObjects.shapes;
 import java.awt.*;
 import java.awt.geom.Ellipse2D;
 
-import plateFlyWeight.PlateFlyWeight;
+import gameObjects.shapes.plate.PlateFlyWeight;
 
 public class ElipsePlateObject extends Plate {
 	public ElipsePlateObject(int posX, int posY, int width, int height, Color color) {

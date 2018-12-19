@@ -3,7 +3,7 @@ package gameObjects.shapes;
 
 import java.awt.image.BufferedImage;
 
-import plateFlyWeight.PlateFlyWeight;
+import gameObjects.shapes.plate.PlateFlyWeight;
 
 import java.awt.*;
 

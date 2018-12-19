@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 import clownBuilder.stack.StackIF;
 import gameObjects.shapes.Plate;
-import plateFlyWeight.PlatesPool;
+import gameObjects.shapes.plate.PlatesPool;
 
 public class UnfullStack implements StackState {
 	private StackIF stack;

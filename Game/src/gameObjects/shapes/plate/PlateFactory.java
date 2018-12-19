@@ -1,4 +1,4 @@
-package plateFlyWeight;
+package gameObjects.shapes.plate;
 
 import java.awt.Color;
 import java.lang.reflect.Constructor;

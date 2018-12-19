@@ -15,11 +15,11 @@ import gameObjects.Clown;
 import gameObjects.shapes.ElipsePlateObject;
 import gameObjects.shapes.Plate;
 import gameObjects.shapes.RegtanglePlateObject;
+import gameObjects.shapes.plate.PlateFactory;
 import memento.Caretaker;
 import memento.Memento;
 import memento.Originator;
 import memento.SnapShotCommand;
-import plateFlyWeight.PlateFactory;
 
 public class GameWorld implements World {
 	private int score = 0;

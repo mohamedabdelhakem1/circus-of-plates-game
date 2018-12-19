@@ -1,4 +1,4 @@
-package plateFlyWeight;
+package gameObjects.shapes.plate;
 
 public interface Observer {
 	public void updateCoordinates(int x) ;
