@@ -10,8 +10,8 @@ import javax.imageio.ImageIO;
 
 import eg.edu.alexu.csd.oop.game.GameObject;
 import model.clownBuilder.stack.StackIF;
-import model.gameObjects.shapes.BatmanObject;
 import model.gameObjects.shapes.Plate;
+import model.gameObjects.shapes.plate.Shapesloader;
 import model.gameWorld.GameWorld;
 
 public class Clown implements GameObject {
@@ -118,7 +118,8 @@ public class Clown implements GameObject {
 		int deltaY = 3;
 		if ((Math.abs(p.getX() - rightStack.getPositionX()) <= deltaX)
 				&& (Math.abs(p.getY() - rightStack.getPositiony()) <= deltaY)) {
-			if (p instanceof BatmanObject) {
+			if (Shapesloader.getInstance().loadAllclasses().get("model.gameObjects.shapes.BatmanObject")
+					.isInstance(p)) {
 				return true;
 			} else if (rightStack.addPlate(p)) {
 				p.setattached(true);
@@ -127,7 +128,8 @@ public class Clown implements GameObject {
 			}
 		} else if ((Math.abs(p.getX() - leftStack.getPositionX()) <= deltaX)
 				&& (Math.abs(p.getY() - leftStack.getPositiony()) <= deltaY)) {
-			if (p instanceof BatmanObject) {
+			if (Shapesloader.getInstance().loadAllclasses().get("model.gameObjects.shapes.BatmanObject")
+					.isInstance(p)) {
 				return true;
 			} else if (leftStack.addPlate(p)) {
 				p.setattached(true);

@@ -5,13 +5,12 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.util.Random;
 
-import model.gameObjects.shapes.BatmanObject;
 import model.gameObjects.shapes.Plate;
 
 public class PlateFactory {
 	private static PlateFactory factory;
 	private static Random randomGenerator;
-	private static long startTime;
+	private static Shapesloader shapesloader ;
 	private final Color[] colors = new Color[] { Color.black, Color.BLUE, Color.CYAN, Color.DARK_GRAY, Color.MAGENTA,
 			Color.GRAY, Color.YELLOW, Color.ORANGE, Color.GREEN, Color.PINK, Color.LIGHT_GRAY, Color.red };
 	private static int numberOfColors;
@@ -23,7 +22,8 @@ public class PlateFactory {
 	public static PlateFactory getInstance(int numColors) {
 		numberOfColors = numColors;
 		if (factory == null) {
-			startTime = System.currentTimeMillis();
+			shapesloader = Shapesloader.getInstance();
+			shapesloader.load();
 			factory = new PlateFactory();
 		}
 		return factory;
@@ -47,7 +47,7 @@ public class PlateFactory {
 		}
 		if (PlateType == 0) {
 			// dynamic loading
-			Class<? extends Plate> s = load("model.gameObjects.shapes.RegtanglePlateObject");
+			Class<? extends Plate> s = shapesloader.load("model.gameObjects.shapes.RegtanglePlateObject");
 			Class[] parameterTypes = new Class[] { int.class, int.class, int.class, int.class, Color.class };
 			try {
 				Constructor constructor = s.getConstructor(parameterTypes);
@@ -62,7 +62,7 @@ public class PlateFactory {
 			// RegtanglePlateObject(Math.abs(randomGenerator.nextInt(width-80)),randomGenerator.nextInt(80)
 			// , 80, 15, colors[randomGenerator.nextInt(3)]);
 		} else {
-			Class<? extends Plate> s = load("model.gameObjects.shapes.ElipsePlateObject");
+			Class<? extends Plate> s =shapesloader.load("model.gameObjects.shapes.ElipsePlateObject");
 			Class[] parameterTypes = new Class[] { int.class, int.class, int.class, int.class, Color.class };
 			try {
 				Constructor constructor = s.getConstructor(parameterTypes);
@@ -83,7 +83,7 @@ public class PlateFactory {
 	public Plate getBatmanLogo(int width, int height) {
 		Plate plate = null;
 
-		Class<? extends Plate> s = load("model.gameObjects.shapes.BatmanObject");
+		Class<? extends Plate> s = shapesloader.load("model.gameObjects.shapes.BatmanObject");
 		Class[] parameterTypes = new Class[] { int.class, int.class, int.class, int.class, Color.class };
 		try {
 			Constructor constructor = s.getConstructor(parameterTypes);
@@ -97,16 +97,5 @@ public class PlateFactory {
 		return plate;
 	}
 
-	public Class<? extends Plate> load(String className) {
-		Class LoadedClass = null;
-		ClassLoader classLoader = getClass().getClassLoader();
-		try {
-			LoadedClass = classLoader.loadClass(className);
-		} catch (ClassNotFoundException e) {
-			System.out.println("error");
-		}
 
-		return LoadedClass;
-
-	}
 }

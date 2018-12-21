@@ -9,10 +9,7 @@ import model.clownBuilder.stack.Stack;
 import model.clownBuilder.stack.StackIF;
 import model.clownBuilder.stack.Iterator.Iterator;
 import model.gameObjects.Clown;
-import model.gameObjects.shapes.BatmanObject;
-import model.gameObjects.shapes.ElipsePlateObject;
 import model.gameObjects.shapes.Plate;
-import model.gameObjects.shapes.RegtanglePlateObject;
 
 // Memento Design Pattern
 

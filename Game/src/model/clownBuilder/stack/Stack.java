@@ -1,6 +1,9 @@
 package model.clownBuilder.stack;
 
+import java.awt.Color;
+import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
+import java.util.Map;
 
 import model.clownBuilder.stack.Iterator.Container;
 import model.clownBuilder.stack.Iterator.Iterator;
@@ -8,9 +11,8 @@ import model.clownBuilder.stack.state.EmptyStack;
 import model.clownBuilder.stack.state.FullStack;
 import model.clownBuilder.stack.state.StackState;
 import model.clownBuilder.stack.state.UnfullStack;
-import model.gameObjects.shapes.ElipsePlateObject;
 import model.gameObjects.shapes.Plate;
-import model.gameObjects.shapes.RegtanglePlateObject;
+import model.gameObjects.shapes.plate.Shapesloader;
 
 public class Stack implements StackIF, Container {
 
@@ -22,7 +24,6 @@ public class Stack implements StackIF, Container {
 	private ArrayList<Plate> plates;
 	private int positionX;
 	private int positionY;
-	private int stackbottom = 62;
 	private int limit = 480 + 62;
 	private int RelativeXtoClown; // 51-40 for left // 157-40 for the right
 
@@ -189,21 +190,37 @@ public class Stack implements StackIF, Container {
 		s.setPositionY(positionY);
 		s.setLimit(limit);
 		ArrayList<Plate> pList = new ArrayList<>();
+		Map<String, Class<? extends Plate>> map = Shapesloader.getInstance().loadAllclasses();
 		for (Iterator iterator = getIterator(); iterator.hasNext();) {
 			Plate p = (Plate) iterator.next();
 			Plate plateTemp;
-			if (p instanceof RegtanglePlateObject) {
-				plateTemp = new RegtanglePlateObject(p.getX(), p.getY(), p.getWidth(), p.getHeight(),
-						((RegtanglePlateObject) p).getColor());
-				plateTemp.setattached(true);
-				plateTemp.setX(p.getX());
-				pList.add(plateTemp);
-			} else if (p instanceof ElipsePlateObject) {
-				plateTemp = new ElipsePlateObject(p.getX(), p.getY(), p.getWidth(), p.getHeight(),
-						((ElipsePlateObject) p).getColor());
-				plateTemp.setattached(true);
-				plateTemp.setX(p.getX());
-				pList.add(plateTemp);
+			if (map.get("model.gameObjects.shapes.RegtanglePlateObject").isInstance(p)) {
+				try {
+					plateTemp = map.get("model.gameObjects.shapes.RegtanglePlateObject")
+							.getConstructor(new Class[] { int.class, int.class, int.class, int.class, Color.class })
+							.newInstance(p.getX(), p.getY(), p.getWidth(), p.getHeight(), p.getColor());
+					plateTemp.setattached(true);
+					plateTemp.setX(p.getX());
+					pList.add(plateTemp);
+				} catch (InstantiationException | IllegalAccessException | IllegalArgumentException
+						| InvocationTargetException | NoSuchMethodException | SecurityException e) {
+
+				}
+				
+			} else if (map.get("model.gameObjects.shapes.ElipsePlateObject").isInstance(p)) {
+				try {
+					plateTemp = map.get("model.gameObjects.shapes.ElipsePlateObject")
+							.getConstructor(new Class[] { int.class, int.class, int.class, int.class, Color.class })
+							.newInstance(p.getX(), p.getY(), p.getWidth(), p.getHeight(), p.getColor());
+
+					plateTemp.setattached(true);
+					plateTemp.setX(p.getX());
+					pList.add(plateTemp);
+				} catch (InstantiationException | IllegalAccessException | IllegalArgumentException
+						| InvocationTargetException | NoSuchMethodException | SecurityException e) {
+
+				}
+			
 			}
 		}
 		s.setStack(pList);

@@ -4,16 +4,18 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;
 
+import eg.edu.alexu.csd.oop.game.GameEngine;
 import eg.edu.alexu.csd.oop.game.GameObject;
 import eg.edu.alexu.csd.oop.game.World;
 import model.clownBuilder.ClownEngineer;
 import model.clownBuilder.stack.state.FullStack;
 import model.gameObjects.Clown;
-import model.gameObjects.shapes.BatmanObject;
+
 import model.gameObjects.shapes.Plate;
 
 import model.gameObjects.shapes.plate.PlateFactory;
 import model.gameObjects.shapes.plate.PlatesPool;
+import model.gameObjects.shapes.plate.Shapesloader;
 import model.gameStrategy.DifficultyFactory;
 import model.gameStrategy.GameStrategyIF;
 import model.memento.Caretaker;
@@ -24,6 +26,7 @@ import starter.GameStart;
 
 public class GameWorld implements World {
 	private static GameWorld gameWorld;
+	private boolean gameEnded;
 	private Integer speed;
 	private Integer controlspeed;
 	private int score = 0;
@@ -41,6 +44,7 @@ public class GameWorld implements World {
 	private GameStrategyIF strategy;
 
 	private GameWorld(int height, int width, String difficulty) {
+		gameEnded = false;
 		startTime = System.currentTimeMillis();
 		batmanTime = System.currentTimeMillis();
 		constant = new LinkedList<GameObject>();
@@ -63,6 +67,7 @@ public class GameWorld implements World {
 
 	public static GameWorld getInstance() {
 		if (gameWorld == null) {
+
 			return null;
 		}
 		return gameWorld;
@@ -73,6 +78,7 @@ public class GameWorld implements World {
 		// strategy
 		if (clown.getLeftStack().getCurrentState() instanceof FullStack
 				&& clown.getRightStack().getCurrentState() instanceof FullStack) {
+			gameEnded = true;
 			return false;
 		}
 		if (System.currentTimeMillis() - batmanTime > 10000) {
@@ -83,9 +89,10 @@ public class GameWorld implements World {
 			plate.setY(plate.getY() + 2);
 			plate.setX(plate.getX() + (Math.random() > 0.5 ? 1 : -1));
 			if (((Clown) control.get(0)).intersectStacks((Plate) plate)) {
-				if (plate instanceof BatmanObject) {
+				if (Shapesloader.getInstance().loadAllclasses().get("model.gameObjects.shapes.BatmanObject")
+						.isInstance(plate)) {
 					moving.remove(plate);
-					if(score != 0) {
+					if (score != 0) {
 						score--;
 					}
 				} else {
@@ -97,9 +104,10 @@ public class GameWorld implements World {
 					moving.add(factory.getPlate(width, height));
 				}
 			} else if (plate.getY() >= height) {
-				if (plate instanceof BatmanObject) {
+				if (Shapesloader.getInstance().loadAllclasses().get("model.gameObjects.shapes.BatmanObject")
+						.isInstance(plate)) {
 					moving.remove(plate);
-					
+
 				} else {
 					plate.setY(0);
 					plate.setX((new Random()).nextInt(width));
@@ -171,6 +179,9 @@ public class GameWorld implements World {
 		SnapShotCommand command = new SnapShotCommand(this);
 		command.execute(i);
 		command.loadSnapShot();
+		if (gameEnded) {
+			GameEngine.start("", this);
+		}
 	}
 
 	public void setScore(int score) {

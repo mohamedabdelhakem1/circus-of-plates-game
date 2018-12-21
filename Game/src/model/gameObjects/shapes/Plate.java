@@ -2,9 +2,12 @@ package model.gameObjects.shapes;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;
+import java.lang.reflect.InvocationTargetException;
+import java.util.Map;
 
 import eg.edu.alexu.csd.oop.game.GameObject;
 import model.gameObjects.shapes.plate.Observer;
+import model.gameObjects.shapes.plate.Shapesloader;
 
 public abstract class Plate implements GameObject, Observer {
 
@@ -28,15 +31,15 @@ public abstract class Plate implements GameObject, Observer {
 
 	@Override
 	public int getX() {
-		
+
 		return x;
 	}
 
 	@Override
 	public void setX(int mX) {
-	
-		if(stopMoving) {
-			
+
+		if (stopMoving) {
+
 			return;
 		}
 		this.x = mX;
@@ -49,13 +52,11 @@ public abstract class Plate implements GameObject, Observer {
 
 	@Override
 	public void setY(int mY) {
-		if (!attached ) {
+		if (!attached) {
 			this.y = mY;
 		}
-		
-	}
 
-	
+	}
 
 	@Override
 	public BufferedImage[] getSpriteImages() {
@@ -90,39 +91,65 @@ public abstract class Plate implements GameObject, Observer {
 		this.x = x;
 
 	}
+
 	@Override
 	public void setattached(boolean s) {
 		attached = s;
 	}
+
 	@Override
 	public void setStopMoving(boolean s) {
 		stopMoving = s;
 	}
+
 	public boolean getattached() {
 		return attached;
 	}
+
 	public boolean getStopmoving() {
 		return stopMoving;
 	}
+
 	public Plate deepClone() {
+		Map<String, Class<? extends Plate>> map = Shapesloader.getInstance().loadAllclasses();
 		Plate plateTemp = null;
-		if (this instanceof RegtanglePlateObject) {
-			plateTemp = new RegtanglePlateObject(getX(), getY(), getWidth(), getHeight(),
-					getColor());
-		} else if (this instanceof ElipsePlateObject) {
-			plateTemp = new ElipsePlateObject(getX(), getY(), getWidth(), getHeight(),
-					getColor());
-		} else if (this instanceof BatmanObject) {
-			plateTemp = new BatmanObject(getX(), getY(), getWidth(), getHeight(),
-					getColor());
+
+		if (map.get("model.gameObjects.shapes.RegtanglePlateObject").isInstance(this)) {
+			try {
+				plateTemp = map.get("model.gameObjects.shapes.RegtanglePlateObject")
+						.getConstructor(new Class[] { int.class, int.class, int.class, int.class, Color.class })
+						.newInstance(getX(), getY(), getWidth(), getHeight(), getColor());
+			} catch (InstantiationException | IllegalAccessException | IllegalArgumentException
+					| InvocationTargetException | NoSuchMethodException | SecurityException e) {
+
+			}
+		} else if (map.get("model.gameObjects.shapes.ElipsePlateObject").isInstance(this)) {
+			try {
+				plateTemp = map.get("model.gameObjects.shapes.ElipsePlateObject")
+						.getConstructor(new Class[] { int.class, int.class, int.class, int.class, Color.class })
+						.newInstance(getX(), getY(), getWidth(), getHeight(), getColor());
+			} catch (InstantiationException | IllegalAccessException | IllegalArgumentException
+					| InvocationTargetException | NoSuchMethodException | SecurityException e) {
+
+			}
+		} else if (map.get("model.gameObjects.shapes.BatmanObject").isInstance(this)) {
+			try {
+				plateTemp = map.get("model.gameObjects.shapes.BatmanObject")
+						.getConstructor(new Class[] { int.class, int.class, int.class, int.class, Color.class })
+						.newInstance(getX(), getY(), getWidth(), getHeight(), getColor());
+			} catch (InstantiationException | IllegalAccessException | IllegalArgumentException
+					| InvocationTargetException | NoSuchMethodException | SecurityException e) {
+
+			}
 		}
 		return plateTemp;
 	}
+
 	public void setSpirteImage(BufferedImage bufferedImage) {
 		spriteImages[0] = bufferedImage;
 	}
-	public void setColor (Color color) {
+
+	public void setColor(Color color) {
 		this.color = color;
 	}
 }
-
