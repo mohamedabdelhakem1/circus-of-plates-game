@@ -173,6 +173,7 @@ public class GameWorld implements World {
 	}
 
 	public void loadCheckpoint(int i) {
+		
 		constant.clear();
 		gameEnded = false;
 		SnapShotCommand command = new SnapShotCommand(this);
