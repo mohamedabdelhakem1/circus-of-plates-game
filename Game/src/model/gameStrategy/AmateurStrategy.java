@@ -16,7 +16,7 @@ public class AmateurStrategy implements GameStrategyIF {
 		gameWorld.setControlSpeed(40);
 		gameWorld.setSpeed(10);
 		factory = PlateFactory.getInstance(3);
-		ClownEngineer clownEnginner = new ClownEngineer(100, 480, 3, 3);
+		ClownEngineer clownEnginner = new ClownEngineer(100, 480, 14, 14);
 		clownEnginner.makeClown();
 		clown = clownEnginner.getClown();
 		control.add(clown);
