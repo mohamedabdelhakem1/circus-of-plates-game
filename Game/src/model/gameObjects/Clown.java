@@ -10,7 +10,9 @@ import javax.imageio.ImageIO;
 
 import eg.edu.alexu.csd.oop.game.GameObject;
 import model.clownBuilder.stack.StackIF;
+import model.gameObjects.shapes.BatmanObject;
 import model.gameObjects.shapes.Plate;
+import model.gameWorld.GameWorld;
 
 public class Clown implements GameObject {
 	private int positionX;
@@ -112,17 +114,22 @@ public class Clown implements GameObject {
 	}
 
 	public boolean intersectStacks(Plate p) {
-		int delta = 80;
-		if ((Math.abs(p.getX() - rightStack.getPositionX()) <= delta)
-				&& (Math.abs(p.getY() - rightStack.getPositiony()) <=3 )) {
-			if (rightStack.addPlate(p)) {
+		int deltaX = 80;
+		int deltaY = 3;
+		if ((Math.abs(p.getX() - rightStack.getPositionX()) <= deltaX)
+				&& (Math.abs(p.getY() - rightStack.getPositiony()) <= deltaY)) {
+			if (p instanceof BatmanObject) {
+				return true;
+			} else if (rightStack.addPlate(p)) {
 				p.setattached(true);
 				notifyStacks();
 				return true;
 			}
-		} else if ((Math.abs(p.getX() - leftStack.getPositionX()) <= delta)
-				&& (Math.abs(p.getY() - leftStack.getPositiony()) <=3)) {
-			if (leftStack.addPlate(p)) {
+		} else if ((Math.abs(p.getX() - leftStack.getPositionX()) <= deltaX)
+				&& (Math.abs(p.getY() - leftStack.getPositiony()) <= deltaY)) {
+			if (p instanceof BatmanObject) {
+				return true;
+			} else if (leftStack.addPlate(p)) {
 				p.setattached(true);
 				notifyStacks();
 				return true;

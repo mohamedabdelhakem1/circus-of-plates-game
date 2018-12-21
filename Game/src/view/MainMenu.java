@@ -69,7 +69,7 @@ public class MainMenu extends JFrame {
 			menu.add(LoadSnapshot);
 			menuBar.add(menu);
 
-			GameWorld gameWorld = new GameWorld(700, 1300 , box.getSelectedItem().toString());
+			GameWorld gameWorld = GameWorld.getInstance(700, 1300 , box.getSelectedItem().toString());
 			final GameController gameController = GameEngine.start("Very Simple Game in 99 Line of Code", gameWorld,
 					menuBar, Color.white);
 
@@ -77,7 +77,7 @@ public class MainMenu extends JFrame {
 				@Override
 				public void actionPerformed(ActionEvent e) {
 
-					gameController.changeWorld(new GameWorld(700, 1300,box.getSelectedItem().toString()));
+					gameController.changeWorld( GameWorld.getInstance(700, 1300 , box.getSelectedItem().toString()));
 				}
 			});
 			pauseMenuItem.addActionListener(new ActionListener() {
