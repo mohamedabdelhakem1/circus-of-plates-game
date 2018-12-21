@@ -114,14 +114,14 @@ public class Clown implements GameObject {
 	public boolean intersectStacks(Plate p) {
 		int delta = 80;
 		if ((Math.abs(p.getX() - rightStack.getPositionX()) <= delta)
-				&& (Math.abs(p.getY() - rightStack.getPositiony()) == 0)) {
+				&& (Math.abs(p.getY() - rightStack.getPositiony()) <=3 )) {
 			if (rightStack.addPlate(p)) {
 				p.setattached(true);
 				notifyStacks();
 				return true;
 			}
 		} else if ((Math.abs(p.getX() - leftStack.getPositionX()) <= delta)
-				&& (Math.abs(p.getY() - leftStack.getPositiony()) == 0)) {
+				&& (Math.abs(p.getY() - leftStack.getPositiony()) <=3)) {
 			if (leftStack.addPlate(p)) {
 				p.setattached(true);
 				notifyStacks();

@@ -93,6 +93,10 @@ public class Stack implements StackIF, Container {
 
 	@Override
 	public boolean addPlate(Plate plate) {
+		if (plates.size()+1 > 5) {
+			setPositionY(getPositiony()-15);
+			System.out.println();
+		}
 		if (plates.size() == capacity) {
 			currentstate = fullstate;
 		} else if (plates.size() < capacity) {
@@ -103,6 +107,9 @@ public class Stack implements StackIF, Container {
 
 	@Override
 	public boolean removePlate(Plate plate) {
+		if (plates.size() > 5) {
+			setPositionY(getPositiony()+15);
+		}
 		return currentstate.removePlate(plate);
 	}
 
