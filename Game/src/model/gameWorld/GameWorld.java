@@ -10,7 +10,7 @@ import eg.edu.alexu.csd.oop.game.World;
 import model.clownBuilder.ClownEngineer;
 import model.clownBuilder.stack.state.FullStack;
 import model.gameObjects.Clown;
-
+import model.gameObjects.GameOver;
 import model.gameObjects.shapes.Plate;
 
 import model.gameObjects.shapes.plate.PlateFactory;
@@ -39,17 +39,19 @@ public class GameWorld implements World {
 	private List<GameObject> control;
 	private PlateFactory factory;
 	private ClownEngineer clownEngineer;
+	
 	private Clown clown;
 	private DifficultyFactory difficultyFactory;
 	private GameStrategyIF strategy;
 
-	private GameWorld(int height, int width, String difficulty) {
-		gameEnded = false;
+	public GameWorld(int height, int width, String difficulty) {
+		gameEnded = true;
 		startTime = System.currentTimeMillis();
 		batmanTime = System.currentTimeMillis();
 		constant = new LinkedList<GameObject>();
 		moving = new LinkedList<GameObject>();
 		control = new LinkedList<GameObject>();
+		
 		this.width = width;
 		this.height = height;
 		difficultyFactory = new DifficultyFactory();
@@ -58,28 +60,23 @@ public class GameWorld implements World {
 
 	}
 
-	public static GameWorld getInstance(int height, int width, String difficulty) {
-		if (gameWorld == null) {
-			gameWorld = new GameWorld(height, width, difficulty);
-		}
-		return gameWorld;
-	}
+	
 
-	public static GameWorld getInstance() {
-		if (gameWorld == null) {
 
-			return null;
-		}
-		return gameWorld;
-	}
 
 	@Override
 	public boolean refresh() {
 		// strategy
+		gameEnded = true;
 		if (clown.getLeftStack().getCurrentState() instanceof FullStack
-				&& clown.getRightStack().getCurrentState() instanceof FullStack) {
-			gameEnded = true;
-			return false;
+				&& clown.getRightStack().getCurrentState() instanceof FullStack && gameEnded) {
+			try {
+				constant.add(control.remove(0));
+			} catch (Exception e) {
+		
+			}
+			constant.add(new GameOver());
+			return true;
 		}
 		if (System.currentTimeMillis() - batmanTime > 10000) {
 			batmanTime = System.currentTimeMillis();
@@ -176,12 +173,12 @@ public class GameWorld implements World {
 	}
 
 	public void loadCheckpoint(int i) {
+		constant.clear();
+		gameEnded = false;
 		SnapShotCommand command = new SnapShotCommand(this);
 		command.execute(i);
 		command.loadSnapShot();
-		if (gameEnded) {
-			GameEngine.start("", this);
-		}
+		
 	}
 
 	public void setScore(int score) {
@@ -197,6 +194,7 @@ public class GameWorld implements World {
 		constant = memento.getConstant();
 		control = memento.getControl();
 		moving = memento.getMoving();
+		clown = (Clown) control.get(0);
 	}
 
 	public void saveSnapshot() {

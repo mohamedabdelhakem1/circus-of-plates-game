@@ -44,15 +44,15 @@ public class Controller {
 			menu.add(LoadSnapshot);
 			menuBar.add(menu);
 
-			GameWorld gameWorld = GameWorld.getInstance(700, 1300, mainMenu.getSelectedDifficulty());
+			GameWorld gameWorld = new GameWorld(700, 1300, mainMenu.getSelectedDifficulty());
 			final GameController gameController = GameEngine.start("Very Simple Game in 99 Line of Code", gameWorld,
 					menuBar, Color.white);
 
 			newMenuItem.addActionListener(new ActionListener() {
 				@Override
 				public void actionPerformed(ActionEvent e) {
-
-					gameController.changeWorld(GameWorld.getInstance(700, 1300, mainMenu.getSelectedDifficulty()));
+				
+					gameController.changeWorld( new GameWorld(700, 1300, mainMenu.getSelectedDifficulty()));
 				}
 			});
 			pauseMenuItem.addActionListener(new ActionListener() {

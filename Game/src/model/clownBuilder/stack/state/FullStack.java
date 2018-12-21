@@ -32,6 +32,7 @@ public class FullStack implements StackState {
 	public ArrayList<Plate> checkConsecutivePlate() {
 		ArrayList<Plate> arrayList = stack.getStack();
 		int size = arrayList.size();
+		if(size >=3) {
 		Color color1 = arrayList.get(size - 1).getColor();
 		Color color2 = arrayList.get(size - 2).getColor();
 		Color color3 = arrayList.get(size - 3).getColor();
@@ -42,7 +43,7 @@ public class FullStack implements StackState {
 			_3Consecutive.add(arrayList.get(size - 3));
 			return _3Consecutive;
 		}
-
+		}
 		return new ArrayList<>();
 	}
 }
