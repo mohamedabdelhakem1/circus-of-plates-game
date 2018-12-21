@@ -9,6 +9,7 @@ import model.clownBuilder.stack.Stack;
 import model.clownBuilder.stack.StackIF;
 import model.clownBuilder.stack.Iterator.Iterator;
 import model.gameObjects.Clown;
+import model.gameObjects.shapes.BatmanObject;
 import model.gameObjects.shapes.ElipsePlateObject;
 import model.gameObjects.shapes.Plate;
 import model.gameObjects.shapes.RegtanglePlateObject;
@@ -64,15 +65,8 @@ public class Originator {
 
 		List<GameObject> movingMemento = new LinkedList<GameObject>();
 		for (GameObject plate : moving) {
-			Plate plateTemp;
-			if (plate instanceof RegtanglePlateObject) {
-				plateTemp = new RegtanglePlateObject(plate.getX(), plate.getY(), 80, 15,
-						((RegtanglePlateObject) plate).getColor());
-			} else {
-				plateTemp = new ElipsePlateObject(plate.getX(), plate.getY(), 80, 15,
-						((ElipsePlateObject) plate).getColor());
-			}
-			movingMemento.add(plateTemp);
+	
+			movingMemento.add(((Plate)plate).deepClone());
 		}
 		return new Memento(score, movingMemento, controlMemento, constantMemento);
 	}

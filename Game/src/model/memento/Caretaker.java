@@ -12,16 +12,25 @@ import javax.swing.JOptionPane;
 		
 	}
 	public static void addMemento(Memento m) {
+		
 		GameCheckPoints.add(m);
 	}
 
 	public static Memento getMemento(int index) {
+	/*	for(Memento memento:GameCheckPoints) {
+			System.out.println(memento.hashCode());
+		}
+		System.out.println(index);*/
 		try {
+			//System.out.println( GameCheckPoints.get(index).hashCode());
 			return GameCheckPoints.get(index);
 		} catch (Exception e) {
 			JOptionPane.showMessageDialog(null, "no saved snapshots");
 			return null;
 		}
 	
+	}
+	public static int NumberOfCheckpoints() {
+		return GameCheckPoints.size();
 	}
 }

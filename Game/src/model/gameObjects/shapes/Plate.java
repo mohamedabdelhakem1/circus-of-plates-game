@@ -104,5 +104,25 @@ public abstract class Plate implements GameObject, Observer {
 	public boolean getStopmoving() {
 		return stopMoving;
 	}
+	public Plate deepClone() {
+		Plate plateTemp = null;
+		if (this instanceof RegtanglePlateObject) {
+			plateTemp = new RegtanglePlateObject(getX(), getY(), getWidth(), getHeight(),
+					getColor());
+		} else if (this instanceof ElipsePlateObject) {
+			plateTemp = new ElipsePlateObject(getX(), getY(), getWidth(), getHeight(),
+					getColor());
+		} else if (this instanceof BatmanObject) {
+			plateTemp = new BatmanObject(getX(), getY(), getWidth(), getHeight(),
+					getColor());
+		}
+		return plateTemp;
+	}
+	public void setSpirteImage(BufferedImage bufferedImage) {
+		spriteImages[0] = bufferedImage;
+	}
+	public void setColor (Color color) {
+		this.color = color;
+	}
 }
 

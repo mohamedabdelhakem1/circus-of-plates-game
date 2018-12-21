@@ -45,68 +45,14 @@ public class MainMenu extends JFrame {
 		this.setSize(600, 200);
 		Panel.add(jLabel);
 		Panel.add(box);
-		start.addActionListener(new startListener());
 		Panel.add(start);
 		this.getContentPane().add(Panel);
 	}
-
-	class startListener implements ActionListener {
-		@Override
-		public void actionPerformed(ActionEvent e) {
-			
-			JMenuBar menuBar = new JMenuBar();
-			JMenu menu = new JMenu("File");
-			JMenuItem newMenuItem = new JMenuItem("New");
-			JMenuItem pauseMenuItem = new JMenuItem("Pause");
-			JMenuItem resumeMenuItem = new JMenuItem("Resume");
-			JMenuItem SnapshotMenuItem = new JMenuItem("snapshot");
-			JMenuItem LoadSnapshot = new JMenuItem("load");
-			menu.add(newMenuItem);
-			menu.addSeparator();
-			menu.add(pauseMenuItem);
-			menu.add(resumeMenuItem);
-			menu.add(SnapshotMenuItem);
-			menu.add(LoadSnapshot);
-			menuBar.add(menu);
-
-			GameWorld gameWorld = GameWorld.getInstance(700, 1300 , box.getSelectedItem().toString());
-			final GameController gameController = GameEngine.start("Very Simple Game in 99 Line of Code", gameWorld,
-					menuBar, Color.white);
-
-			newMenuItem.addActionListener(new ActionListener() {
-				@Override
-				public void actionPerformed(ActionEvent e) {
-
-					gameController.changeWorld( GameWorld.getInstance(700, 1300 , box.getSelectedItem().toString()));
-				}
-			});
-			pauseMenuItem.addActionListener(new ActionListener() {
-				@Override
-				public void actionPerformed(ActionEvent e) {
-					gameController.pause();
-				}
-			});
-			resumeMenuItem.addActionListener(new ActionListener() {
-				@Override
-				public void actionPerformed(ActionEvent e) {
-					gameController.resume();
-				}
-			});
-			SnapshotMenuItem.addActionListener(new ActionListener() {
-				@Override
-				public void actionPerformed(ActionEvent e) {
-					gameWorld.saveSnapshot();
-
-				}
-			});
-			LoadSnapshot.addActionListener(new ActionListener() {
-				@Override
-				public void actionPerformed(ActionEvent e) {
-					gameWorld.loadCheckpoint(0);
-				}
-			});
-
-		}
-
+	public void addStartListener(ActionListener actionListener) {
+		start.addActionListener(actionListener);
 	}
+	public String getSelectedDifficulty() {
+		return box.getSelectedItem().toString();
+	}
+	
 }

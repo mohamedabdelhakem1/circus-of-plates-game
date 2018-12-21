@@ -85,7 +85,7 @@ public class GameWorld implements World {
 			if (((Clown) control.get(0)).intersectStacks((Plate) plate)) {
 				if (plate instanceof BatmanObject) {
 					moving.remove(plate);
-					System.out.println("batman");
+					
 					score--;
 				} else {
 					moving.remove(plate);
@@ -98,7 +98,7 @@ public class GameWorld implements World {
 			} else if (plate.getY() >= height) {
 				if (plate instanceof BatmanObject) {
 					moving.remove(plate);
-					System.out.println("batman");
+					
 				} else {
 					plate.setY(0);
 					plate.setX((new Random()).nextInt(width));

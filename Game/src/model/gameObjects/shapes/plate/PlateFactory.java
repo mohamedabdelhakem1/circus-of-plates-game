@@ -34,15 +34,17 @@ public class PlateFactory {
 		Plate plate;
 		// get a plate from the pool.
 		plate = PlatesPool.getInstance().PopPlate();
-
+		
 		if (plate != null) {
+			Color color =colors[randomGenerator.nextInt(numberOfColors)];
+			plate.setColor(color);
+			plate.setSpirteImage(PlateFlyWeight.getRandomPlate(color , 80, 15));
 			plate.setattached(false);
 			plate.setStopMoving(false);
 			plate.setX(Math.abs(randomGenerator.nextInt(width - 80)));
 			plate.setY(randomGenerator.nextInt(80));
 			return plate;
 		}
-
 		if (PlateType == 0) {
 			// dynamic loading
 			Class<? extends Plate> s = load("model.gameObjects.shapes.RegtanglePlateObject");

@@ -18,7 +18,7 @@ public class SnapShotCommand implements GameCommand {
 
 	@Override
 	public void execute(int i) {
-
+		
 		memento = Caretaker.getMemento(i);
 
 	}
@@ -29,7 +29,6 @@ public class SnapShotCommand implements GameCommand {
 			return;
 		}
 		originator.RestoreFromMemento(memento);
-
 		gameWorld.setMemento(originator.storeInMemento());
 
 	}
