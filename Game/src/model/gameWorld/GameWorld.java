@@ -7,6 +7,7 @@ import java.util.Random;
 import eg.edu.alexu.csd.oop.game.GameEngine;
 import eg.edu.alexu.csd.oop.game.GameObject;
 import eg.edu.alexu.csd.oop.game.World;
+import javafx.scene.layout.Background;
 import model.clownBuilder.ClownEngineer;
 import model.clownBuilder.stack.state.FullStack;
 import model.gameObjects.Clown;
@@ -51,7 +52,7 @@ public class GameWorld implements World {
 		constant = new LinkedList<GameObject>();
 		moving = new LinkedList<GameObject>();
 		control = new LinkedList<GameObject>();
-		
+		constant.add(new model.gameObjects.shapes.Background(0, 0, 1300, 700, null));
 		this.width = width;
 		this.height = height;
 		difficultyFactory = new DifficultyFactory();

@@ -1,18 +1,16 @@
 package model.gameObjects.shapes;
 
 import java.awt.Color;
-import java.io.File;
 import java.io.IOException;
 
 import javax.imageio.ImageIO;
 
+public class Background extends Plate {
 
-public class BatmanObject extends Plate {
-
-	public BatmanObject(int posX, int posY, int width, int height, Color color) {
+	public Background(int posX, int posY, int width, int height, Color color) {
 		super(posX, posY, width, height, color);
 		try {
-			spriteImages[0] = ImageIO.read(BatmanObject.class.getResource("/res/Batman_Logo_04.png"));
+			spriteImages[0] = ImageIO.read(BatmanObject.class.getResource("/res/background.jpg"));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -20,3 +18,4 @@ public class BatmanObject extends Plate {
 		setVisible(true);
 	}
 }
+ 

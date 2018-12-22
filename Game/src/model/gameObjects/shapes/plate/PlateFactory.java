@@ -11,8 +11,8 @@ public class PlateFactory {
 	private static PlateFactory factory;
 	private static Random randomGenerator;
 	private static Shapesloader shapesloader ;
-	private final Color[] colors = new Color[] { Color.black, Color.BLUE, Color.CYAN, Color.DARK_GRAY, Color.MAGENTA,
-			Color.GRAY, Color.YELLOW, Color.ORANGE, Color.GREEN, Color.PINK, Color.LIGHT_GRAY, Color.red };
+	private final Color[] colors = new Color[] { Color.BLUE, Color.ORANGE,Color.CYAN, Color.DARK_GRAY, Color.MAGENTA,
+			Color.GRAY, Color.YELLOW,  Color.GREEN, Color.PINK,Color.black, Color.LIGHT_GRAY, Color.red };
 	private static int numberOfColors;
 
 	private PlateFactory() {
