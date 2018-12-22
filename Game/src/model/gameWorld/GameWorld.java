@@ -97,7 +97,7 @@ public class GameWorld implements World {
 					if (score != 0) {
 						score--;
 					}
-				}if (Shapesloader.getInstance().loadAllclasses().get("model.gameObjects.shapes.HarleyQuinnObject")
+				}else if (Shapesloader.getInstance().loadAllclasses().get("model.gameObjects.shapes.HarleyQuinnObject")
 						.isInstance(plate)) {
 					saveSnapshot();
 					moving.remove(plate);
@@ -113,8 +113,10 @@ public class GameWorld implements World {
 				if (Shapesloader.getInstance().loadAllclasses().get("model.gameObjects.shapes.BatmanObject")
 						.isInstance(plate)) {
 					moving.remove(plate);
-
-				} else {
+				}else if (Shapesloader.getInstance().loadAllclasses().get("model.gameObjects.shapes.HarleyQuinnObject")
+						.isInstance(plate)) {
+					moving.remove(plate);
+				}  else {
 					plate.setY(0);
 					plate.setX((new Random()).nextInt(width));
 				}

@@ -42,6 +42,7 @@ public class Shapesloader {
 				classname = classname.replace('/', '.');
 				Class c = classLoad.loadClass(classname);
 				classes.put(c.getName(),c);
+				
 			}
 		} catch (IOException | ClassNotFoundException e) {
 			// TODO Auto-generated catch block
