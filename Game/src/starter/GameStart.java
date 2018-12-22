@@ -12,6 +12,7 @@ public class GameStart {
 		Controller controller = new Controller(mainMenu);
 		mainMenu.setVisible(true);
 		/* allow pause, resume, and restart multiple worlds in the same frame */
+		// add sound here
 	}
 
 

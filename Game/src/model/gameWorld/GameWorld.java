@@ -4,10 +4,8 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;
 
-import eg.edu.alexu.csd.oop.game.GameEngine;
 import eg.edu.alexu.csd.oop.game.GameObject;
 import eg.edu.alexu.csd.oop.game.World;
-import javafx.scene.layout.Background;
 import model.clownBuilder.ClownEngineer;
 import model.clownBuilder.stack.state.FullStack;
 import model.gameObjects.Clown;
@@ -33,6 +31,7 @@ public class GameWorld implements World {
 	private int score = 0;
 	private long endTime, startTime;
 	private long batmanTime;
+	private long harleyTime;
 	private int width;
 	private int height;
 	private List<GameObject> constant;
@@ -49,6 +48,7 @@ public class GameWorld implements World {
 		gameEnded = true;
 		startTime = System.currentTimeMillis();
 		batmanTime = System.currentTimeMillis();
+		harleyTime = System.currentTimeMillis();
 		constant = new LinkedList<GameObject>();
 		moving = new LinkedList<GameObject>();
 		control = new LinkedList<GameObject>();
@@ -82,6 +82,10 @@ public class GameWorld implements World {
 		if (System.currentTimeMillis() - batmanTime > 10000) {
 			batmanTime = System.currentTimeMillis();
 			moving.add(factory.getBatmanLogo(width, height));
+		}
+		if (System.currentTimeMillis() - harleyTime > 5000) {
+			harleyTime = System.currentTimeMillis();
+			moving.add(factory.getHarleyLogo(width, height));
 		}
 		for (GameObject plate : moving.toArray(new GameObject[moving.size()])) {
 			plate.setY(plate.getY() + 2);

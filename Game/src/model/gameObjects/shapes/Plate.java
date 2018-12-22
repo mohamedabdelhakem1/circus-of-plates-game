@@ -141,6 +141,15 @@ public abstract class Plate implements GameObject, Observer {
 					| InvocationTargetException | NoSuchMethodException | SecurityException e) {
 
 			}
+		} else if (map.get("model.gameObjects.shapes.HarleyQuinnObject").isInstance(this)) {
+			try {
+				plateTemp = map.get("model.gameObjects.shapes.HarleyQuinnObject")
+						.getConstructor(new Class[] { int.class, int.class, int.class, int.class, Color.class })
+						.newInstance(getX(), getY(), getWidth(), getHeight(), getColor());
+			} catch (InstantiationException | IllegalAccessException | IllegalArgumentException
+					| InvocationTargetException | NoSuchMethodException | SecurityException e) {
+
+			}
 		}
 		return plateTemp;
 	}

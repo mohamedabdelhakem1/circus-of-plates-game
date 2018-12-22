@@ -96,6 +96,23 @@ public class PlateFactory {
 
 		return plate;
 	}
+	
+	public Plate getHarleyLogo(int width, int height) {
+		Plate plate = null;
+
+		Class<? extends Plate> s = shapesloader.load("model.gameObjects.shapes.HarleyQuinnObject");
+		Class[] parameterTypes = new Class[] { int.class, int.class, int.class, int.class, Color.class };
+		try {
+			Constructor constructor = s.getConstructor(parameterTypes);
+			plate = (Plate) constructor.newInstance(Math.abs(randomGenerator.nextInt(width - 80)),
+					randomGenerator.nextInt(80), 80, 15, colors[randomGenerator.nextInt(numberOfColors)]);
+		} catch (NoSuchMethodException | SecurityException | InstantiationException | IllegalAccessException
+				| IllegalArgumentException | InvocationTargetException e) {
+			e.printStackTrace();
+		}
+
+		return plate;
+	}
 
 
 }
