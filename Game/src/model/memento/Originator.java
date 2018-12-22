@@ -56,7 +56,7 @@ public class Originator {
 		// constant objects
 		List<GameObject> constantMemento = new LinkedList<GameObject>();
 		for (GameObject gameObject : constant) {
-
+			constantMemento.add(((Plate)gameObject).deepClone());
 		}
 		// moving plates
 

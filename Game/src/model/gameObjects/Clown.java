@@ -120,7 +120,10 @@ public class Clown implements GameObject {
 		int deltaY = 3;
 		if ((Math.abs(p.getX() - rightStack.getPositionX()) <= deltaX)
 				&& (Math.abs(p.getY() - rightStack.getPositiony()) <= deltaY)) {
-			if (Shapesloader.getInstance().loadAllclasses().get("model.gameObjects.shapes.BatmanObject")
+			if (Shapesloader.getInstance().loadAllclasses().get("model.gameObjects.shapes.HarleyQuinnObject")
+					.isInstance(p)) {
+				return true;
+			} if (Shapesloader.getInstance().loadAllclasses().get("model.gameObjects.shapes.BatmanObject")
 					.isInstance(p)) {
 				return true;
 			} else if (rightStack.addPlate(p)) {
@@ -130,7 +133,10 @@ public class Clown implements GameObject {
 			}
 		} else if ((Math.abs(p.getX() - leftStack.getPositionX()) <= deltaX)
 				&& (Math.abs(p.getY() - leftStack.getPositiony()) <= deltaY)) {
-			if (Shapesloader.getInstance().loadAllclasses().get("model.gameObjects.shapes.BatmanObject")
+			if (Shapesloader.getInstance().loadAllclasses().get("model.gameObjects.shapes.HarleyQuinnObject")
+					.isInstance(p)) {
+				return true;
+			} if (Shapesloader.getInstance().loadAllclasses().get("model.gameObjects.shapes.BatmanObject")
 					.isInstance(p)) {
 				return true;
 			} else if (leftStack.addPlate(p)) {

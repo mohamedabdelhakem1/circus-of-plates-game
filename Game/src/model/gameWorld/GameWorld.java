@@ -83,7 +83,7 @@ public class GameWorld implements World {
 			batmanTime = System.currentTimeMillis();
 			moving.add(factory.getBatmanLogo(width, height));
 		}
-		if (System.currentTimeMillis() - harleyTime > 5000) {
+		if (System.currentTimeMillis() - harleyTime > 10000) {
 			harleyTime = System.currentTimeMillis();
 			moving.add(factory.getHarleyLogo(width, height));
 		}
@@ -97,6 +97,10 @@ public class GameWorld implements World {
 					if (score != 0) {
 						score--;
 					}
+				}if (Shapesloader.getInstance().loadAllclasses().get("model.gameObjects.shapes.HarleyQuinnObject")
+						.isInstance(plate)) {
+					saveSnapshot();
+					moving.remove(plate);
 				} else {
 					moving.remove(plate);
 					control.add(plate);

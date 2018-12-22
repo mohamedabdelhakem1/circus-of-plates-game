@@ -150,6 +150,8 @@ public abstract class Plate implements GameObject, Observer {
 					| InvocationTargetException | NoSuchMethodException | SecurityException e) {
 
 			}
+		}  else if (this instanceof Background) {
+				plateTemp = new Background(getX(), getY(), getWidth(), getHeight(), getColor());	
 		}
 		return plateTemp;
 	}
