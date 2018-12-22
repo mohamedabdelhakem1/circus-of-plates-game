@@ -13,6 +13,7 @@ import model.clownBuilder.stack.StackIF;
 import model.gameObjects.shapes.Plate;
 import model.gameObjects.shapes.plate.Shapesloader;
 import model.gameWorld.GameWorld;
+import view.MainMenu;
 
 public class Clown implements GameObject {
 	private int positionX;
@@ -29,7 +30,8 @@ public class Clown implements GameObject {
 		this.positionY = positionY;
 
 		try {
-			clownImage[0] = ImageIO.read(new File("joker.png"));
+				
+			clownImage[0] = ImageIO.read(Clown.class.getResource("/res/joker.png"));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

@@ -38,7 +38,8 @@ public class MainMenu extends JFrame {
 	private JButton start = new JButton("start");
 
 	public MainMenu() {
-		JLabel jLabel = new JLabel(new ImageIcon("menu.jpg"), JLabel.CENTER);
+		
+		JLabel jLabel = new JLabel(new ImageIcon(MainMenu.class.getResource("/res/menu.jpg")), JLabel.CENTER);
 		jLabel.setBounds(0, 0, 400, 298);
 		JPanel Panel = new JPanel();
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
