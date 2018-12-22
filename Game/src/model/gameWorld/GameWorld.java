@@ -62,10 +62,6 @@ public class GameWorld implements World {
 
 	}
 
-	
-
-
-
 	@Override
 	public boolean refresh() {
 		// strategy
@@ -75,7 +71,7 @@ public class GameWorld implements World {
 			try {
 				constant.add(control.remove(0));
 			} catch (Exception e) {
-		
+
 			}
 			constant.add(new GameOver());
 			return true;
@@ -98,7 +94,7 @@ public class GameWorld implements World {
 					if (score != 0) {
 						score--;
 					}
-				}else if (Shapesloader.getInstance().loadAllclasses().get("model.gameObjects.shapes.HarleyQuinnObject")
+				} else if (Shapesloader.getInstance().loadAllclasses().get("model.gameObjects.shapes.HarleyQuinnObject")
 						.isInstance(plate)) {
 					saveSnapshot();
 					moving.remove(plate);
@@ -106,6 +102,7 @@ public class GameWorld implements World {
 					moving.remove(plate);
 					control.add(plate);
 					if (((Clown) control.get(0)).CheckScore(control)) {
+						effectsFactory.playJokerLaugh();
 						score++;
 					}
 					moving.add(factory.getPlate(width, height));
@@ -114,10 +111,10 @@ public class GameWorld implements World {
 				if (Shapesloader.getInstance().loadAllclasses().get("model.gameObjects.shapes.BatmanObject")
 						.isInstance(plate)) {
 					moving.remove(plate);
-				}else if (Shapesloader.getInstance().loadAllclasses().get("model.gameObjects.shapes.HarleyQuinnObject")
+				} else if (Shapesloader.getInstance().loadAllclasses().get("model.gameObjects.shapes.HarleyQuinnObject")
 						.isInstance(plate)) {
 					moving.remove(plate);
-				}  else {
+				} else {
 					plate.setY(0);
 					plate.setX((new Random()).nextInt(width));
 				}
@@ -185,13 +182,13 @@ public class GameWorld implements World {
 	}
 
 	public void loadCheckpoint(int i) {
-		
+
 		constant.clear();
 		gameEnded = false;
 		SnapShotCommand command = new SnapShotCommand(this);
 		command.execute(i);
 		command.loadSnapShot();
-		
+
 	}
 
 	public void setScore(int score) {
@@ -211,8 +208,14 @@ public class GameWorld implements World {
 	}
 
 	public void saveSnapshot() {
-		Originator originator = new Originator();
-		originator.set(score, moving, control, constant, clown);
-		Caretaker.addMemento(originator.storeInMemento());
+		Runnable runnable = new Runnable() {
+			@Override
+			public void run() {
+				Originator originator = new Originator();
+				originator.set(score, moving, control, constant, clown);
+				Caretaker.addMemento(originator.storeInMemento());
+			}
+		};
+		new Thread(runnable).start();
 	}
 }

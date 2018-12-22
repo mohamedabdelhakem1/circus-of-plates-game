@@ -9,19 +9,21 @@ import javazoom.jl.player.Player;
 import model.gameObjects.Clown;
 
 public class SoundEffectsFactory {
+	private Thread thread;
 	public SoundEffectsFactory() {
+		
 		Runnable runnable = new Runnable() {
 			public void run() {
 				while(true) {
-					playMainTheme();
+					playMainTheme("/res/joker.mp3");
 				}
 			}
 		};
 		new Thread(runnable).start();
 	}
 
-	private void playMainTheme() {
-		File soundFile = new File(Clown.class.getResource("/res/joker.mp3").getFile()); // you could also get the sound
+	private void playMainTheme(String path) {
+		File soundFile = new File(Clown.class.getResource(path).getFile()); // you could also get the sound
 																						// file with an URL
 		FileInputStream audioIn;
 		try {
@@ -40,5 +42,17 @@ public class SoundEffectsFactory {
 			e.printStackTrace();
 		}
 
+	}
+	public void playJokerLaugh() {
+		Runnable runnable = new Runnable() {
+			public void run() {
+				while(true) {
+					playMainTheme("/res/jokerLaugh.mp3");
+					thread.stop();
+				}
+			}
+		};
+		thread = new Thread(runnable);
+		thread.start();	
 	}
 }
