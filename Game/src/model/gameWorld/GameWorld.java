@@ -39,12 +39,13 @@ public class GameWorld implements World {
 	private List<GameObject> control;
 	private PlateFactory factory;
 	private ClownEngineer clownEngineer;
-	
+	private SoundEffectsFactory effectsFactory;
 	private Clown clown;
 	private DifficultyFactory difficultyFactory;
 	private GameStrategyIF strategy;
 
 	public GameWorld(int height, int width, String difficulty) {
+		effectsFactory = new SoundEffectsFactory();
 		gameEnded = true;
 		startTime = System.currentTimeMillis();
 		batmanTime = System.currentTimeMillis();
