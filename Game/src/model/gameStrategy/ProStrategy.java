@@ -15,7 +15,7 @@ public class ProStrategy implements GameStrategyIF{
 		gameWorld.setControlSpeed(35);
 		gameWorld.setSpeed(7);
 		factory = PlateFactory.getInstance(9);
-		ClownEngineer clownEnginner = new ClownEngineer(100, 480, 25, 25);
+		ClownEngineer clownEnginner = new ClownEngineer(100, 480, 17, 17);
 		clownEnginner.makeClown();
 		clown = clownEnginner.getClown();
 		control.add(clown);

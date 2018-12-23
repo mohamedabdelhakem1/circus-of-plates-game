@@ -27,7 +27,6 @@ public class PlateFactory {
 		if (factory == null) {
 			pool = PlatesPool.getInstance();
 			shapesloader = Shapesloader.getInstance();
-			shapesloader.load();
 			factory = new PlateFactory();
 		}
 		return factory;

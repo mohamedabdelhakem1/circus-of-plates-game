@@ -3,7 +3,7 @@
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
   <interface id="1" language="java" name="model.clownBuilder.stack.Iterator.Iterator" project="Game" 
     file="/Game/src/model/clownBuilder/stack/Iterator/Iterator.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="409" y="569"/>    
+    <position height="-1" width="-1" x="973" y="206"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -12,7 +12,7 @@
   </interface>  
   <interface id="2" language="java" name="model.clownBuilder.stack.Iterator.Container" project="Game" 
     file="/Game/src/model/clownBuilder/stack/Iterator/Container.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="384" y="394"/>    
+    <position height="-1" width="-1" x="394" y="279"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -30,21 +30,21 @@
   </class>  
   <class id="4" language="java" name="model.clownBuilder.stack.Stack.StackIterator" project="Game" 
     file="/Game/src/model/clownBuilder/stack/Stack.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="153" width="211" x="594" y="620"/>    
+    <position height="-1" width="-1" x="982" y="373"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <realization id="5">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="2"/>  
-  </realization>  
-  <nesting id="6">    
+  <nesting id="5">    
     <end type="SOURCE" refId="3"/>    
     <end type="TARGET" refId="4"/>  
   </nesting>  
+  <realization id="6">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="2"/>  
+  </realization>  
   <realization id="7">    
     <end type="SOURCE" refId="4"/>    
     <end type="TARGET" refId="1"/>  

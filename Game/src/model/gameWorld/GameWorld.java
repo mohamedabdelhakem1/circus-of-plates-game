@@ -15,7 +15,7 @@ import model.gameObjects.GameOver;
 import model.gameObjects.shapes.ImageObject;
 
 import model.gameObjects.shapes.plate.PlateFactory;
-import model.gameObjects.shapes.plate.PlatesPool;
+
 import model.gameObjects.shapes.plate.Shapesloader;
 import model.gameStrategy.DifficultyFactory;
 import model.gameStrategy.GameStrategyIF;
@@ -23,7 +23,7 @@ import model.memento.Caretaker;
 import model.memento.Memento;
 import model.memento.Originator;
 import model.memento.SnapShotCommand;
-import starter.GameStart;
+
 
 public class GameWorld implements World {
 	private static GameWorld gameWorld;
