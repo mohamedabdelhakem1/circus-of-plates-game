@@ -10,7 +10,7 @@ import model.clownBuilder.ClownEngineer;
 import model.clownBuilder.stack.state.FullStack;
 import model.gameObjects.Clown;
 import model.gameObjects.GameOver;
-import model.gameObjects.shapes.Plate;
+import model.gameObjects.shapes.ImageObject;
 
 import model.gameObjects.shapes.plate.PlateFactory;
 import model.gameObjects.shapes.plate.PlatesPool;
@@ -88,7 +88,7 @@ public class GameWorld implements World {
 		for (GameObject plate : moving.toArray(new GameObject[moving.size()])) {
 			plate.setY(plate.getY() + 2);
 			plate.setX(plate.getX() + (Math.random() > 0.5 ? 1 : -1));
-			if (((Clown) control.get(0)).intersectStacks((Plate) plate)) {
+			if (((Clown) control.get(0)).intersectStacks((ImageObject) plate)) {
 				if (Shapesloader.getInstance().loadAllclasses().get("model.gameObjects.shapes.BatmanObject")
 						.isInstance(plate)) {
 					moving.remove(plate);
@@ -155,7 +155,7 @@ public class GameWorld implements World {
 
 	@Override
 	public String getStatus() {
-		return "score : " + String.valueOf(score) + " time : "
+		return "score : " + String.valueOf(score) + " 	time : "
 				+ String.valueOf((System.currentTimeMillis() - startTime) / 1000) + "/ 120";
 	}
 

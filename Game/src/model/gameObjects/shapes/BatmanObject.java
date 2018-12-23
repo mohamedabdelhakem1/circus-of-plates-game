@@ -7,7 +7,7 @@ import java.io.IOException;
 import javax.imageio.ImageIO;
 
 
-public class BatmanObject extends Plate {
+public class BatmanObject extends ImageObject {
 
 	public BatmanObject(int posX, int posY, int width, int height, Color color) {
 		super(posX, posY, width, height, color);

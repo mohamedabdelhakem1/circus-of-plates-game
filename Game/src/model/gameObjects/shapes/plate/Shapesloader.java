@@ -9,11 +9,11 @@ import java.util.Map;
 import java.util.jar.JarEntry;
 import java.util.jar.JarFile;
 
-import model.gameObjects.shapes.Plate;
+import model.gameObjects.shapes.ImageObject;
 
 public class Shapesloader {
 	private static Shapesloader shapesloader;
-	private static Map<String, Class<? extends Plate>> classes ;
+	private static Map<String, Class<? extends ImageObject>> classes ;
 	private Shapesloader() {
 		classes = new HashMap<>();
 		load();
@@ -50,10 +50,10 @@ public class Shapesloader {
 		}
 	
 	}
-	public Class<? extends Plate> load(String string) {
+	public Class<? extends ImageObject> load(String string) {
 		return classes.get(string);
 	}
-	public Map<String, Class<? extends Plate>> loadAllclasses() {
+	public Map<String, Class<? extends ImageObject>> loadAllclasses() {
 		return classes;
 	}
 }

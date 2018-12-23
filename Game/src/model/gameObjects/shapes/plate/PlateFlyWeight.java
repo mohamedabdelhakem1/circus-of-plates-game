@@ -20,7 +20,7 @@ public class PlateFlyWeight {
 
 	}
 
-	public PlateFlyWeight getInstance() {
+	public static PlateFlyWeight getInstance() {
 		if (factory == null) {
 			factory = new PlateFlyWeight();
 		}
@@ -28,7 +28,7 @@ public class PlateFlyWeight {
 
 	}
 
-	public static BufferedImage getRectangularPlate(Color color, int width, int height) {
+	public  BufferedImage getRectangularPlate(Color color, int width, int height) {
 		BufferedImage plate = rectsByColor.get(color);
 
 		if (plate == null) {
@@ -49,7 +49,7 @@ public class PlateFlyWeight {
 		return plate;
 	}
 
-	public static BufferedImage getOvalPlate(Color color, int width, int height) {
+	public  BufferedImage getOvalPlate(Color color, int width, int height) {
 		BufferedImage plate = EllipseByColor.get(color);
 
 		if (plate == null) {

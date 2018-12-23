@@ -7,11 +7,12 @@ import model.gameObjects.shapes.plate.PlateFlyWeight;
 
 import java.awt.*;
 
-public class RegtanglePlateObject extends Plate {
-
+public class RegtanglePlateObject extends ImageObject {
+	private PlateFlyWeight flyWeight;
 	public RegtanglePlateObject (int posX, int posY, int width, int height, Color color) {
 		super(posX, posY, width, height, color);
-		spriteImages[0] = PlateFlyWeight.getRectangularPlate(color, width, height);
+		flyWeight = PlateFlyWeight.getInstance();
+		spriteImages[0] = flyWeight.getRectangularPlate(color, width, height);
 		setVisible(true);
 	}
 	

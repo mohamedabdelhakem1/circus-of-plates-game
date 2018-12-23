@@ -4,7 +4,7 @@ import java.awt.Color;
 import java.util.ArrayList;
 
 import model.clownBuilder.stack.StackIF;
-import model.gameObjects.shapes.Plate;
+import model.gameObjects.shapes.ImageObject;
 import model.gameObjects.shapes.plate.PlatesPool;
 
 public class UnfullStack implements StackState {
@@ -15,7 +15,7 @@ public class UnfullStack implements StackState {
 	}
 
 	@Override
-	public boolean AddPlate(Plate plate) {
+	public boolean AddPlate(ImageObject plate) {
 		stack.getStack().add(plate);
 		plate.setY(stack.getLimit());
 		stack.setLimit(stack.getLimit() - 15);
@@ -28,7 +28,7 @@ public class UnfullStack implements StackState {
 	}
 
 	@Override
-	public boolean removePlate(Plate plate) {
+	public boolean removePlate(ImageObject plate) {
 		if (stack.getSize() - 1 == 0) {
 			stack.setState(stack.getEmptyState());
 		}
@@ -40,15 +40,15 @@ public class UnfullStack implements StackState {
 	}
 
 	@Override
-	public ArrayList<Plate> checkConsecutivePlate() {
-		ArrayList<Plate> arrayList = stack.getStack();
+	public ArrayList<ImageObject> checkConsecutivePlate() {
+		ArrayList<ImageObject> arrayList = stack.getStack();
 		int size = arrayList.size();
 		if (size >= 3) {
 			Color color1 = arrayList.get(size - 1).getColor();
 			Color color2 = arrayList.get(size - 2).getColor();
 			Color color3 = arrayList.get(size - 3).getColor();
 			if (color1.equals(color2) && color2.equals(color3)) {
-				ArrayList<Plate> _3Consecutive = new ArrayList<>();
+				ArrayList<ImageObject> _3Consecutive = new ArrayList<>();
 				_3Consecutive.add(arrayList.get(size - 1));
 				_3Consecutive.add(arrayList.get(size - 2));
 				_3Consecutive.add(arrayList.get(size - 3));

@@ -11,7 +11,7 @@ import model.clownBuilder.stack.state.EmptyStack;
 import model.clownBuilder.stack.state.FullStack;
 import model.clownBuilder.stack.state.StackState;
 import model.clownBuilder.stack.state.UnfullStack;
-import model.gameObjects.shapes.Plate;
+import model.gameObjects.shapes.ImageObject;
 import model.gameObjects.shapes.plate.Shapesloader;
 
 public class Stack implements StackIF, Container {
@@ -21,14 +21,14 @@ public class Stack implements StackIF, Container {
 	private StackState emptyState;
 	private StackState currentstate;
 	private int capacity;
-	private ArrayList<Plate> plates;
+	private ArrayList<ImageObject> plates;
 	private int positionX;
 	private int positionY;
 	private int limit = 480 + 62;
 	private int RelativeXtoClown; // 51-40 for left // 157-40 for the right
 
 	public Stack(int x) {
-		plates = new ArrayList<Plate>();
+		plates = new ArrayList<ImageObject>();
 		RelativeXtoClown = x;
 		fullstate = new FullStack(this);
 		unfullstate = new UnfullStack(this);
@@ -82,18 +82,18 @@ public class Stack implements StackIF, Container {
 	}
 
 	@Override
-	public void setStack(ArrayList<Plate> plates) {
+	public void setStack(ArrayList<ImageObject> plates) {
 		this.plates = plates;
 	}
 
 	@Override
-	public ArrayList<Plate> getStack() {
+	public ArrayList<ImageObject> getStack() {
 		// TODO Auto-generated method stub
 		return plates;
 	}
 
 	@Override
-	public boolean addPlate(Plate plate) {
+	public boolean addPlate(ImageObject plate) {
 		if (plates.size()+1 > 5) {
 			setPositionY(getPositiony()-15);
 			System.out.println();
@@ -107,7 +107,7 @@ public class Stack implements StackIF, Container {
 	}
 
 	@Override
-	public boolean removePlate(Plate plate) {
+	public boolean removePlate(ImageObject plate) {
 		if (plates.size() > 5) {
 			setPositionY(getPositiony()+15);
 		}
@@ -177,7 +177,7 @@ public class Stack implements StackIF, Container {
 	}
 
 	@Override
-	public ArrayList<Plate> checkStack() {
+	public ArrayList<ImageObject> checkStack() {
 
 		return currentstate.checkConsecutivePlate();
 	}
@@ -189,11 +189,11 @@ public class Stack implements StackIF, Container {
 		s.setPositionX(positionX);
 		s.setPositionY(positionY);
 		s.setLimit(limit);
-		ArrayList<Plate> pList = new ArrayList<>();
-		Map<String, Class<? extends Plate>> map = Shapesloader.getInstance().loadAllclasses();
+		ArrayList<ImageObject> pList = new ArrayList<>();
+		Map<String, Class<? extends ImageObject>> map = Shapesloader.getInstance().loadAllclasses();
 		for (Iterator iterator = getIterator(); iterator.hasNext();) {
-			Plate p = (Plate) iterator.next();
-			Plate plateTemp;
+			ImageObject p = (ImageObject) iterator.next();
+			ImageObject plateTemp;
 			if (map.get("model.gameObjects.shapes.RegtanglePlateObject").isInstance(p)) {
 				try {
 					plateTemp = map.get("model.gameObjects.shapes.RegtanglePlateObject")
@@ -244,10 +244,10 @@ public class Stack implements StackIF, Container {
 	}
 
 	private class StackIterator implements Iterator {
-		private ArrayList<Plate> list;
+		private ArrayList<ImageObject> list;
 		private int index = 0;
 
-		public StackIterator(ArrayList<Plate> list) {
+		public StackIterator(ArrayList<ImageObject> list) {
 			this.list = list;
 		}
 

@@ -10,7 +10,7 @@ import javax.imageio.ImageIO;
 
 import eg.edu.alexu.csd.oop.game.GameObject;
 import model.clownBuilder.stack.StackIF;
-import model.gameObjects.shapes.Plate;
+import model.gameObjects.shapes.ImageObject;
 import model.gameObjects.shapes.plate.Shapesloader;
 import model.gameWorld.GameWorld;
 import model.gameWorld.MyLogger;
@@ -120,7 +120,7 @@ public class Clown implements GameObject {
 		return rightStack;
 	}
 
-	public boolean intersectStacks(Plate p) {
+	public boolean intersectStacks(ImageObject p) {
 		int deltaX = 80;
 		int deltaY = 3;
 		if ((Math.abs(p.getX() - rightStack.getPositionX()) <= deltaX)
@@ -164,7 +164,7 @@ public class Clown implements GameObject {
 	}
 
 	public boolean CheckScore(List<GameObject> control) {
-		ArrayList<Plate> removedplates = rightStack.checkStack();
+		ArrayList<ImageObject> removedplates = rightStack.checkStack();
 
 		if (removedplates.size() == 3) {
 			for (int i = 0; i < removedplates.size(); i++) {

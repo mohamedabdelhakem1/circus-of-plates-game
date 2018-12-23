@@ -9,7 +9,7 @@ import eg.edu.alexu.csd.oop.game.GameObject;
 import model.gameObjects.shapes.plate.Observer;
 import model.gameObjects.shapes.plate.Shapesloader;
 
-public abstract class Plate implements GameObject, Observer {
+public abstract class ImageObject implements GameObject, Observer {
 
 	protected BufferedImage[] spriteImages = new BufferedImage[1];
 	protected boolean attached = false;
@@ -21,7 +21,7 @@ public abstract class Plate implements GameObject, Observer {
 	protected Boolean stopMoving = false;
 	protected Color color;
 
-	public Plate(int posX, int posY, int width, int height, Color color) {
+	public ImageObject(int posX, int posY, int width, int height, Color color) {
 		x = posX;
 		y = posY;
 		this.width = width;
@@ -110,9 +110,9 @@ public abstract class Plate implements GameObject, Observer {
 		return stopMoving;
 	}
 
-	public Plate deepClone() {
-		Map<String, Class<? extends Plate>> map = Shapesloader.getInstance().loadAllclasses();
-		Plate plateTemp = null;
+	public ImageObject deepClone() {
+		Map<String, Class<? extends ImageObject>> map = Shapesloader.getInstance().loadAllclasses();
+		ImageObject plateTemp = null;
 
 		if (map.get("model.gameObjects.shapes.RegtanglePlateObject").isInstance(this)) {
 			try {
