@@ -1,0 +1,3604 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-12-23T15:17:39.135622Z</date>
+  <millis>1545578259135</millis>
+  <nanos>622000</nanos>
+  <sequence>0</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>WARNING</level>
+  <class>model.gameObjects.shapes.plate.PlatesPool</class>
+  <method>PopPlate</method>
+  <thread>17</thread>
+  <message>pool is empty</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:39.141639Z</date>
+  <millis>1545578259141</millis>
+  <nanos>639000</nanos>
+  <sequence>1</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.shapes.plate.PlateFactory</class>
+  <method>getPlate</method>
+  <thread>17</thread>
+  <message>rectanglar Plate instance is returned from factory </message>
+</record>
+<record>
+  <date>2018-12-23T15:17:39.143643300Z</date>
+  <millis>1545578259143</millis>
+  <nanos>643300</nanos>
+  <sequence>2</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>WARNING</level>
+  <class>model.gameObjects.shapes.plate.PlatesPool</class>
+  <method>PopPlate</method>
+  <thread>17</thread>
+  <message>pool is empty</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:39.143643300Z</date>
+  <millis>1545578259143</millis>
+  <nanos>643300</nanos>
+  <sequence>3</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.shapes.plate.PlateFactory</class>
+  <method>getPlate</method>
+  <thread>17</thread>
+  <message>oval Plate instance is returned from factory </message>
+</record>
+<record>
+  <date>2018-12-23T15:17:39.148657900Z</date>
+  <millis>1545578259148</millis>
+  <nanos>657900</nanos>
+  <sequence>4</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>WARNING</level>
+  <class>model.gameObjects.shapes.plate.PlatesPool</class>
+  <method>PopPlate</method>
+  <thread>17</thread>
+  <message>pool is empty</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:39.148657900Z</date>
+  <millis>1545578259148</millis>
+  <nanos>657900</nanos>
+  <sequence>5</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.shapes.plate.PlateFactory</class>
+  <method>getPlate</method>
+  <thread>17</thread>
+  <message>oval Plate instance is returned from factory </message>
+</record>
+<record>
+  <date>2018-12-23T15:17:39.149691700Z</date>
+  <millis>1545578259149</millis>
+  <nanos>691700</nanos>
+  <sequence>6</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>WARNING</level>
+  <class>model.gameObjects.shapes.plate.PlatesPool</class>
+  <method>PopPlate</method>
+  <thread>17</thread>
+  <message>pool is empty</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:39.150193900Z</date>
+  <millis>1545578259150</millis>
+  <nanos>193900</nanos>
+  <sequence>7</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.shapes.plate.PlateFactory</class>
+  <method>getPlate</method>
+  <thread>17</thread>
+  <message>rectanglar Plate instance is returned from factory </message>
+</record>
+<record>
+  <date>2018-12-23T15:17:39.150193900Z</date>
+  <millis>1545578259150</millis>
+  <nanos>193900</nanos>
+  <sequence>8</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>WARNING</level>
+  <class>model.gameObjects.shapes.plate.PlatesPool</class>
+  <method>PopPlate</method>
+  <thread>17</thread>
+  <message>pool is empty</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:39.150662200Z</date>
+  <millis>1545578259150</millis>
+  <nanos>662200</nanos>
+  <sequence>9</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.shapes.plate.PlateFactory</class>
+  <method>getPlate</method>
+  <thread>17</thread>
+  <message>rectanglar Plate instance is returned from factory </message>
+</record>
+<record>
+  <date>2018-12-23T15:17:39.150662200Z</date>
+  <millis>1545578259150</millis>
+  <nanos>662200</nanos>
+  <sequence>10</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>WARNING</level>
+  <class>model.gameObjects.shapes.plate.PlatesPool</class>
+  <method>PopPlate</method>
+  <thread>17</thread>
+  <message>pool is empty</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:39.151164500Z</date>
+  <millis>1545578259151</millis>
+  <nanos>164500</nanos>
+  <sequence>11</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.shapes.plate.PlateFactory</class>
+  <method>getPlate</method>
+  <thread>17</thread>
+  <message>oval Plate instance is returned from factory </message>
+</record>
+<record>
+  <date>2018-12-23T15:17:40.109031400Z</date>
+  <millis>1545578260109</millis>
+  <nanos>31400</nanos>
+  <sequence>12</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:40.593771100Z</date>
+  <millis>1545578260593</millis>
+  <nanos>771100</nanos>
+  <sequence>13</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:40.623365900Z</date>
+  <millis>1545578260623</millis>
+  <nanos>365900</nanos>
+  <sequence>14</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:40.655282100Z</date>
+  <millis>1545578260655</millis>
+  <nanos>282100</nanos>
+  <sequence>15</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:40.686766Z</date>
+  <millis>1545578260686</millis>
+  <nanos>766000</nanos>
+  <sequence>16</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:40.717400100Z</date>
+  <millis>1545578260717</millis>
+  <nanos>400100</nanos>
+  <sequence>17</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:40.743692600Z</date>
+  <millis>1545578260743</millis>
+  <nanos>692600</nanos>
+  <sequence>18</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:40.772700300Z</date>
+  <millis>1545578260772</millis>
+  <nanos>700300</nanos>
+  <sequence>19</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:40.804298800Z</date>
+  <millis>1545578260804</millis>
+  <nanos>298800</nanos>
+  <sequence>20</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:40.835319Z</date>
+  <millis>1545578260835</millis>
+  <nanos>319000</nanos>
+  <sequence>21</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:40.866840400Z</date>
+  <millis>1545578260866</millis>
+  <nanos>840400</nanos>
+  <sequence>22</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:41.018418700Z</date>
+  <millis>1545578261018</millis>
+  <nanos>418700</nanos>
+  <sequence>23</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:41.639948300Z</date>
+  <millis>1545578261639</millis>
+  <nanos>948300</nanos>
+  <sequence>24</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:41.749196100Z</date>
+  <millis>1545578261749</millis>
+  <nanos>196100</nanos>
+  <sequence>25</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>intersectStacks</method>
+  <thread>17</thread>
+  <message>intersection of plate with left stack</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:41.749739900Z</date>
+  <millis>1545578261749</millis>
+  <nanos>739900</nanos>
+  <sequence>26</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>intersectStacks</method>
+  <thread>17</thread>
+  <message>plate addded to left stack</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:41.750202100Z</date>
+  <millis>1545578261750</millis>
+  <nanos>202100</nanos>
+  <sequence>27</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>WARNING</level>
+  <class>model.gameObjects.shapes.plate.PlatesPool</class>
+  <method>PopPlate</method>
+  <thread>17</thread>
+  <message>pool is empty</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:41.750202100Z</date>
+  <millis>1545578261750</millis>
+  <nanos>202100</nanos>
+  <sequence>28</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.shapes.plate.PlateFactory</class>
+  <method>getPlate</method>
+  <thread>17</thread>
+  <message>rectanglar Plate instance is returned from factory </message>
+</record>
+<record>
+  <date>2018-12-23T15:17:41.909444900Z</date>
+  <millis>1545578261909</millis>
+  <nanos>444900</nanos>
+  <sequence>29</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:42.097462Z</date>
+  <millis>1545578262097</millis>
+  <nanos>462000</nanos>
+  <sequence>30</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:42.746040800Z</date>
+  <millis>1545578262746</millis>
+  <nanos>40800</nanos>
+  <sequence>31</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:43.049149500Z</date>
+  <millis>1545578263049</millis>
+  <nanos>149500</nanos>
+  <sequence>32</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:43.536806500Z</date>
+  <millis>1545578263536</millis>
+  <nanos>806500</nanos>
+  <sequence>33</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:43.669165200Z</date>
+  <millis>1545578263669</millis>
+  <nanos>165200</nanos>
+  <sequence>34</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:43.882656400Z</date>
+  <millis>1545578263882</millis>
+  <nanos>656400</nanos>
+  <sequence>35</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:45.550642300Z</date>
+  <millis>1545578265550</millis>
+  <nanos>642300</nanos>
+  <sequence>36</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>intersectStacks</method>
+  <thread>17</thread>
+  <message>intersection of plate with left stack</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:45.551103900Z</date>
+  <millis>1545578265551</millis>
+  <nanos>103900</nanos>
+  <sequence>37</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>intersectStacks</method>
+  <thread>17</thread>
+  <message>plate addded to left stack</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:45.551103900Z</date>
+  <millis>1545578265551</millis>
+  <nanos>103900</nanos>
+  <sequence>38</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>WARNING</level>
+  <class>model.gameObjects.shapes.plate.PlatesPool</class>
+  <method>PopPlate</method>
+  <thread>17</thread>
+  <message>pool is empty</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:45.551605100Z</date>
+  <millis>1545578265551</millis>
+  <nanos>605100</nanos>
+  <sequence>39</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.shapes.plate.PlateFactory</class>
+  <method>getPlate</method>
+  <thread>17</thread>
+  <message>rectanglar Plate instance is returned from factory </message>
+</record>
+<record>
+  <date>2018-12-23T15:17:46.085759Z</date>
+  <millis>1545578266085</millis>
+  <nanos>759000</nanos>
+  <sequence>40</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:46.571637900Z</date>
+  <millis>1545578266571</millis>
+  <nanos>637900</nanos>
+  <sequence>41</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:46.604232700Z</date>
+  <millis>1545578266604</millis>
+  <nanos>232700</nanos>
+  <sequence>42</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:46.630751800Z</date>
+  <millis>1545578266630</millis>
+  <nanos>751800</nanos>
+  <sequence>43</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:46.661219400Z</date>
+  <millis>1545578266661</millis>
+  <nanos>219400</nanos>
+  <sequence>44</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:47.745458900Z</date>
+  <millis>1545578267745</millis>
+  <nanos>458900</nanos>
+  <sequence>45</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:48.231804Z</date>
+  <millis>1545578268231</millis>
+  <nanos>804000</nanos>
+  <sequence>46</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:48.263565Z</date>
+  <millis>1545578268263</millis>
+  <nanos>565000</nanos>
+  <sequence>47</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:48.297506Z</date>
+  <millis>1545578268297</millis>
+  <nanos>506000</nanos>
+  <sequence>48</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:48.320970700Z</date>
+  <millis>1545578268320</millis>
+  <nanos>970700</nanos>
+  <sequence>49</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:48.349842100Z</date>
+  <millis>1545578268349</millis>
+  <nanos>842100</nanos>
+  <sequence>50</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:48.619733Z</date>
+  <millis>1545578268619</millis>
+  <nanos>733000</nanos>
+  <sequence>51</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:48.875846200Z</date>
+  <millis>1545578268875</millis>
+  <nanos>846200</nanos>
+  <sequence>52</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.shapes.plate.PlateFactory</class>
+  <method>getBatmanLogo</method>
+  <thread>17</thread>
+  <message>batman logo instance is returned from factory </message>
+</record>
+<record>
+  <date>2018-12-23T15:17:48.880312300Z</date>
+  <millis>1545578268880</millis>
+  <nanos>312300</nanos>
+  <sequence>53</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.shapes.plate.PlateFactory</class>
+  <method>getHarleyLogo</method>
+  <thread>17</thread>
+  <message>harley logo instance is returned from factory </message>
+</record>
+<record>
+  <date>2018-12-23T15:17:49.296601300Z</date>
+  <millis>1545578269296</millis>
+  <nanos>601300</nanos>
+  <sequence>54</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>intersectStacks</method>
+  <thread>17</thread>
+  <message>intersection of plate with right stack</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:49.297151300Z</date>
+  <millis>1545578269297</millis>
+  <nanos>151300</nanos>
+  <sequence>55</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>intersectStacks</method>
+  <thread>17</thread>
+  <message>plate addded to right stack</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:49.297151300Z</date>
+  <millis>1545578269297</millis>
+  <nanos>151300</nanos>
+  <sequence>56</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>WARNING</level>
+  <class>model.gameObjects.shapes.plate.PlatesPool</class>
+  <method>PopPlate</method>
+  <thread>17</thread>
+  <message>pool is empty</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:49.297151300Z</date>
+  <millis>1545578269297</millis>
+  <nanos>151300</nanos>
+  <sequence>57</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.shapes.plate.PlateFactory</class>
+  <method>getPlate</method>
+  <thread>17</thread>
+  <message>oval Plate instance is returned from factory </message>
+</record>
+<record>
+  <date>2018-12-23T15:17:49.307132800Z</date>
+  <millis>1545578269307</millis>
+  <nanos>132800</nanos>
+  <sequence>58</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>intersectStacks</method>
+  <thread>17</thread>
+  <message>intersection of plate with right stack</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:49.308134200Z</date>
+  <millis>1545578269308</millis>
+  <nanos>134200</nanos>
+  <sequence>59</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>intersectStacks</method>
+  <thread>17</thread>
+  <message>plate addded to right stack</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:49.308134200Z</date>
+  <millis>1545578269308</millis>
+  <nanos>134200</nanos>
+  <sequence>60</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>WARNING</level>
+  <class>model.gameObjects.shapes.plate.PlatesPool</class>
+  <method>PopPlate</method>
+  <thread>17</thread>
+  <message>pool is empty</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:49.308674900Z</date>
+  <millis>1545578269308</millis>
+  <nanos>674900</nanos>
+  <sequence>61</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.shapes.plate.PlateFactory</class>
+  <method>getPlate</method>
+  <thread>17</thread>
+  <message>rectanglar Plate instance is returned from factory </message>
+</record>
+<record>
+  <date>2018-12-23T15:17:49.748696900Z</date>
+  <millis>1545578269748</millis>
+  <nanos>696900</nanos>
+  <sequence>62</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:49.984113100Z</date>
+  <millis>1545578269984</millis>
+  <nanos>113100</nanos>
+  <sequence>63</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:50.178554400Z</date>
+  <millis>1545578270178</millis>
+  <nanos>554400</nanos>
+  <sequence>64</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:50.535066400Z</date>
+  <millis>1545578270535</millis>
+  <nanos>66400</nanos>
+  <sequence>65</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:51.025490500Z</date>
+  <millis>1545578271025</millis>
+  <nanos>490500</nanos>
+  <sequence>66</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:51.210905500Z</date>
+  <millis>1545578271210</millis>
+  <nanos>905500</nanos>
+  <sequence>67</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>intersectStacks</method>
+  <thread>17</thread>
+  <message>intersection of harleyquinn with left stack</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:51.211395400Z</date>
+  <millis>1545578271211</millis>
+  <nanos>395400</nanos>
+  <sequence>68</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>WARNING</level>
+  <class>model.gameWorld.GameWorld</class>
+  <method>refresh</method>
+  <thread>17</thread>
+  <message>harley quinn affects score up</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:51.446948900Z</date>
+  <millis>1545578271446</millis>
+  <nanos>948900</nanos>
+  <sequence>69</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>intersectStacks</method>
+  <thread>17</thread>
+  <message>intersection of Batman with right stack</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:51.447450600Z</date>
+  <millis>1545578271447</millis>
+  <nanos>450600</nanos>
+  <sequence>70</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>WARNING</level>
+  <class>model.gameWorld.GameWorld</class>
+  <method>refresh</method>
+  <thread>17</thread>
+  <message>batman affects score down</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:51.723076300Z</date>
+  <millis>1545578271723</millis>
+  <nanos>76300</nanos>
+  <sequence>71</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:52.511779100Z</date>
+  <millis>1545578272511</millis>
+  <nanos>779100</nanos>
+  <sequence>72</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:52.995710200Z</date>
+  <millis>1545578272995</millis>
+  <nanos>710200</nanos>
+  <sequence>73</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:53.031122Z</date>
+  <millis>1545578273031</millis>
+  <nanos>122000</nanos>
+  <sequence>74</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:53.054683300Z</date>
+  <millis>1545578273054</millis>
+  <nanos>683300</nanos>
+  <sequence>75</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:53.085265Z</date>
+  <millis>1545578273085</millis>
+  <nanos>265000</nanos>
+  <sequence>76</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:53.114843300Z</date>
+  <millis>1545578273114</millis>
+  <nanos>843300</nanos>
+  <sequence>77</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:53.148434300Z</date>
+  <millis>1545578273148</millis>
+  <nanos>434300</nanos>
+  <sequence>78</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:53.462385500Z</date>
+  <millis>1545578273462</millis>
+  <nanos>385500</nanos>
+  <sequence>79</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:53.669628400Z</date>
+  <millis>1545578273669</millis>
+  <nanos>628400</nanos>
+  <sequence>80</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:53.863746800Z</date>
+  <millis>1545578273863</millis>
+  <nanos>746800</nanos>
+  <sequence>81</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:54.064919200Z</date>
+  <millis>1545578274064</millis>
+  <nanos>919200</nanos>
+  <sequence>82</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:54.243640600Z</date>
+  <millis>1545578274243</millis>
+  <nanos>640600</nanos>
+  <sequence>83</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:54.425378600Z</date>
+  <millis>1545578274425</millis>
+  <nanos>378600</nanos>
+  <sequence>84</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:54.608714200Z</date>
+  <millis>1545578274608</millis>
+  <nanos>714200</nanos>
+  <sequence>85</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:55.029506400Z</date>
+  <millis>1545578275029</millis>
+  <nanos>506400</nanos>
+  <sequence>86</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:55.377163700Z</date>
+  <millis>1545578275377</millis>
+  <nanos>163700</nanos>
+  <sequence>87</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:55.540020400Z</date>
+  <millis>1545578275540</millis>
+  <nanos>20400</nanos>
+  <sequence>88</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>intersectStacks</method>
+  <thread>17</thread>
+  <message>intersection of plate with right stack</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:55.540521Z</date>
+  <millis>1545578275540</millis>
+  <nanos>521000</nanos>
+  <sequence>89</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>intersectStacks</method>
+  <thread>17</thread>
+  <message>plate addded to right stack</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:55.540992900Z</date>
+  <millis>1545578275540</millis>
+  <nanos>992900</nanos>
+  <sequence>90</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>WARNING</level>
+  <class>model.gameObjects.shapes.plate.PlatesPool</class>
+  <method>PopPlate</method>
+  <thread>17</thread>
+  <message>pool is empty</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:55.540992900Z</date>
+  <millis>1545578275540</millis>
+  <nanos>992900</nanos>
+  <sequence>91</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.shapes.plate.PlateFactory</class>
+  <method>getPlate</method>
+  <thread>17</thread>
+  <message>rectanglar Plate instance is returned from factory </message>
+</record>
+<record>
+  <date>2018-12-23T15:17:55.669118900Z</date>
+  <millis>1545578275669</millis>
+  <nanos>118900</nanos>
+  <sequence>92</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>intersectStacks</method>
+  <thread>17</thread>
+  <message>intersection of plate with left stack</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:55.669623700Z</date>
+  <millis>1545578275669</millis>
+  <nanos>623700</nanos>
+  <sequence>93</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>intersectStacks</method>
+  <thread>17</thread>
+  <message>plate addded to left stack</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:55.670126Z</date>
+  <millis>1545578275670</millis>
+  <nanos>126000</nanos>
+  <sequence>94</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>WARNING</level>
+  <class>model.gameWorld.GameWorld</class>
+  <method>refresh</method>
+  <thread>17</thread>
+  <message>score up</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:56.410607200Z</date>
+  <millis>1545578276410</millis>
+  <nanos>607200</nanos>
+  <sequence>95</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:56.582193500Z</date>
+  <millis>1545578276582</millis>
+  <nanos>193500</nanos>
+  <sequence>96</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:58.295849200Z</date>
+  <millis>1545578278295</millis>
+  <nanos>849200</nanos>
+  <sequence>97</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:58.787530800Z</date>
+  <millis>1545578278787</millis>
+  <nanos>530800</nanos>
+  <sequence>98</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:58.812412600Z</date>
+  <millis>1545578278812</millis>
+  <nanos>412600</nanos>
+  <sequence>99</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:58.846981400Z</date>
+  <millis>1545578278846</millis>
+  <nanos>981400</nanos>
+  <sequence>100</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:58.871848400Z</date>
+  <millis>1545578278871</millis>
+  <nanos>848400</nanos>
+  <sequence>101</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:17:58.883880400Z</date>
+  <millis>1545578278883</millis>
+  <nanos>880400</nanos>
+  <sequence>102</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.shapes.plate.PlateFactory</class>
+  <method>getBatmanLogo</method>
+  <thread>17</thread>
+  <message>batman logo instance is returned from factory </message>
+</record>
+<record>
+  <date>2018-12-23T15:17:58.945518800Z</date>
+  <millis>1545578278945</millis>
+  <nanos>518800</nanos>
+  <sequence>103</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.shapes.plate.PlateFactory</class>
+  <method>getHarleyLogo</method>
+  <thread>17</thread>
+  <message>harley logo instance is returned from factory </message>
+</record>
+<record>
+  <date>2018-12-23T15:17:59.031545100Z</date>
+  <millis>1545578279031</millis>
+  <nanos>545100</nanos>
+  <sequence>104</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:00.159390400Z</date>
+  <millis>1545578280159</millis>
+  <nanos>390400</nanos>
+  <sequence>105</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:01.937408500Z</date>
+  <millis>1545578281937</millis>
+  <nanos>408500</nanos>
+  <sequence>106</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:02.430952500Z</date>
+  <millis>1545578282430</millis>
+  <nanos>952500</nanos>
+  <sequence>107</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:02.460944600Z</date>
+  <millis>1545578282460</millis>
+  <nanos>944600</nanos>
+  <sequence>108</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:02.494725800Z</date>
+  <millis>1545578282494</millis>
+  <nanos>725800</nanos>
+  <sequence>109</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:02.948386700Z</date>
+  <millis>1545578282948</millis>
+  <nanos>386700</nanos>
+  <sequence>110</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:03.441204300Z</date>
+  <millis>1545578283441</millis>
+  <nanos>204300</nanos>
+  <sequence>111</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:03.474824100Z</date>
+  <millis>1545578283474</millis>
+  <nanos>824100</nanos>
+  <sequence>112</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:03.496672600Z</date>
+  <millis>1545578283496</millis>
+  <nanos>672600</nanos>
+  <sequence>113</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:03.528337400Z</date>
+  <millis>1545578283528</millis>
+  <nanos>337400</nanos>
+  <sequence>114</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:03.560043400Z</date>
+  <millis>1545578283560</millis>
+  <nanos>43400</nanos>
+  <sequence>115</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:03.593165Z</date>
+  <millis>1545578283593</millis>
+  <nanos>165000</nanos>
+  <sequence>116</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:03.615478200Z</date>
+  <millis>1545578283615</millis>
+  <nanos>478200</nanos>
+  <sequence>117</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:03.658869700Z</date>
+  <millis>1545578283658</millis>
+  <nanos>869700</nanos>
+  <sequence>118</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:03.692323900Z</date>
+  <millis>1545578283692</millis>
+  <nanos>323900</nanos>
+  <sequence>119</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:03.947436200Z</date>
+  <millis>1545578283947</millis>
+  <nanos>436200</nanos>
+  <sequence>120</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:04.261613100Z</date>
+  <millis>1545578284261</millis>
+  <nanos>613100</nanos>
+  <sequence>121</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>intersectStacks</method>
+  <thread>17</thread>
+  <message>intersection of plate with left stack</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:04.262175500Z</date>
+  <millis>1545578284262</millis>
+  <nanos>175500</nanos>
+  <sequence>122</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>intersectStacks</method>
+  <thread>17</thread>
+  <message>plate addded to left stack</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:04.432613900Z</date>
+  <millis>1545578284432</millis>
+  <nanos>613900</nanos>
+  <sequence>123</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:05.697594600Z</date>
+  <millis>1545578285697</millis>
+  <nanos>594600</nanos>
+  <sequence>124</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:06.182995900Z</date>
+  <millis>1545578286182</millis>
+  <nanos>995900</nanos>
+  <sequence>125</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:06.213582200Z</date>
+  <millis>1545578286213</millis>
+  <nanos>582200</nanos>
+  <sequence>126</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:06.245480500Z</date>
+  <millis>1545578286245</millis>
+  <nanos>480500</nanos>
+  <sequence>127</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:06.271801200Z</date>
+  <millis>1545578286271</millis>
+  <nanos>801200</nanos>
+  <sequence>128</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:06.301407200Z</date>
+  <millis>1545578286301</millis>
+  <nanos>407200</nanos>
+  <sequence>129</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:06.332993400Z</date>
+  <millis>1545578286332</millis>
+  <nanos>993400</nanos>
+  <sequence>130</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:06.365799500Z</date>
+  <millis>1545578286365</millis>
+  <nanos>799500</nanos>
+  <sequence>131</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:06.397447900Z</date>
+  <millis>1545578286397</millis>
+  <nanos>447900</nanos>
+  <sequence>132</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:06.423166600Z</date>
+  <millis>1545578286423</millis>
+  <nanos>166600</nanos>
+  <sequence>133</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:06.632537100Z</date>
+  <millis>1545578286632</millis>
+  <nanos>537100</nanos>
+  <sequence>134</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>intersectStacks</method>
+  <thread>17</thread>
+  <message>intersection of plate with right stack</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:06.632537100Z</date>
+  <millis>1545578286632</millis>
+  <nanos>537100</nanos>
+  <sequence>135</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>intersectStacks</method>
+  <thread>17</thread>
+  <message>plate addded to right stack</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:06.780453200Z</date>
+  <millis>1545578286780</millis>
+  <nanos>453200</nanos>
+  <sequence>136</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:07.040042500Z</date>
+  <millis>1545578287040</millis>
+  <nanos>42500</nanos>
+  <sequence>137</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:07.291324500Z</date>
+  <millis>1545578287291</millis>
+  <nanos>324500</nanos>
+  <sequence>138</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:07.473213100Z</date>
+  <millis>1545578287473</millis>
+  <nanos>213100</nanos>
+  <sequence>139</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:07.689213400Z</date>
+  <millis>1545578287689</millis>
+  <nanos>213400</nanos>
+  <sequence>140</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:07.881686400Z</date>
+  <millis>1545578287881</millis>
+  <nanos>686400</nanos>
+  <sequence>141</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:08.115784Z</date>
+  <millis>1545578288115</millis>
+  <nanos>784000</nanos>
+  <sequence>142</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:08.542217400Z</date>
+  <millis>1545578288542</millis>
+  <nanos>217400</nanos>
+  <sequence>143</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:08.884966600Z</date>
+  <millis>1545578288884</millis>
+  <nanos>966600</nanos>
+  <sequence>144</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.shapes.plate.PlateFactory</class>
+  <method>getBatmanLogo</method>
+  <thread>17</thread>
+  <message>batman logo instance is returned from factory </message>
+</record>
+<record>
+  <date>2018-12-23T15:18:08.896551300Z</date>
+  <millis>1545578288896</millis>
+  <nanos>551300</nanos>
+  <sequence>145</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>intersectStacks</method>
+  <thread>17</thread>
+  <message>intersection of plate with left stack</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:08.897044300Z</date>
+  <millis>1545578288897</millis>
+  <nanos>44300</nanos>
+  <sequence>146</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>intersectStacks</method>
+  <thread>17</thread>
+  <message>plate addded to left stack</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:08.897044300Z</date>
+  <millis>1545578288897</millis>
+  <nanos>44300</nanos>
+  <sequence>147</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>WARNING</level>
+  <class>model.gameObjects.shapes.plate.PlatesPool</class>
+  <method>PopPlate</method>
+  <thread>17</thread>
+  <message>pool is empty</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:08.897044300Z</date>
+  <millis>1545578288897</millis>
+  <nanos>44300</nanos>
+  <sequence>148</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.shapes.plate.PlateFactory</class>
+  <method>getPlate</method>
+  <thread>17</thread>
+  <message>oval Plate instance is returned from factory </message>
+</record>
+<record>
+  <date>2018-12-23T15:18:08.950726700Z</date>
+  <millis>1545578288950</millis>
+  <nanos>726700</nanos>
+  <sequence>149</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.shapes.plate.PlateFactory</class>
+  <method>getHarleyLogo</method>
+  <thread>17</thread>
+  <message>harley logo instance is returned from factory </message>
+</record>
+<record>
+  <date>2018-12-23T15:18:09.208676100Z</date>
+  <millis>1545578289208</millis>
+  <nanos>676100</nanos>
+  <sequence>150</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:09.630179200Z</date>
+  <millis>1545578289630</millis>
+  <nanos>179200</nanos>
+  <sequence>151</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:10.097450700Z</date>
+  <millis>1545578290097</millis>
+  <nanos>450700</nanos>
+  <sequence>152</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:10.668927200Z</date>
+  <millis>1545578290668</millis>
+  <nanos>927200</nanos>
+  <sequence>153</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:10.876270300Z</date>
+  <millis>1545578290876</millis>
+  <nanos>270300</nanos>
+  <sequence>154</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:11.043377700Z</date>
+  <millis>1545578291043</millis>
+  <nanos>377700</nanos>
+  <sequence>155</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:11.207448500Z</date>
+  <millis>1545578291207</millis>
+  <nanos>448500</nanos>
+  <sequence>156</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:11.208990700Z</date>
+  <millis>1545578291208</millis>
+  <nanos>990700</nanos>
+  <sequence>157</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>intersectStacks</method>
+  <thread>17</thread>
+  <message>intersection of harleyquinn with left stack</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:11.208990700Z</date>
+  <millis>1545578291208</millis>
+  <nanos>990700</nanos>
+  <sequence>158</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>WARNING</level>
+  <class>model.gameWorld.GameWorld</class>
+  <method>refresh</method>
+  <thread>17</thread>
+  <message>harley quinn affects score up</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:11.982240900Z</date>
+  <millis>1545578291982</millis>
+  <nanos>240900</nanos>
+  <sequence>159</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:12.626067200Z</date>
+  <millis>1545578292626</millis>
+  <nanos>67200</nanos>
+  <sequence>160</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:13.122018Z</date>
+  <millis>1545578293122</millis>
+  <nanos>18000</nanos>
+  <sequence>161</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:13.149772400Z</date>
+  <millis>1545578293149</millis>
+  <nanos>772400</nanos>
+  <sequence>162</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:13.173804500Z</date>
+  <millis>1545578293173</millis>
+  <nanos>804500</nanos>
+  <sequence>163</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:13.206620900Z</date>
+  <millis>1545578293206</millis>
+  <nanos>620900</nanos>
+  <sequence>164</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:13.238204500Z</date>
+  <millis>1545578293238</millis>
+  <nanos>204500</nanos>
+  <sequence>165</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:13.267310400Z</date>
+  <millis>1545578293267</millis>
+  <nanos>310400</nanos>
+  <sequence>166</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:13.293352Z</date>
+  <millis>1545578293293</millis>
+  <nanos>352000</nanos>
+  <sequence>167</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:13.323932700Z</date>
+  <millis>1545578293323</millis>
+  <nanos>932700</nanos>
+  <sequence>168</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:13.358524500Z</date>
+  <millis>1545578293358</millis>
+  <nanos>524500</nanos>
+  <sequence>169</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:13.391113100Z</date>
+  <millis>1545578293391</millis>
+  <nanos>113100</nanos>
+  <sequence>170</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:15.705730500Z</date>
+  <millis>1545578295705</millis>
+  <nanos>730500</nanos>
+  <sequence>171</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:16.198435600Z</date>
+  <millis>1545578296198</millis>
+  <nanos>435600</nanos>
+  <sequence>172</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:16.223836100Z</date>
+  <millis>1545578296223</millis>
+  <nanos>836100</nanos>
+  <sequence>173</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:16.256351700Z</date>
+  <millis>1545578296256</millis>
+  <nanos>351700</nanos>
+  <sequence>174</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:16.288907400Z</date>
+  <millis>1545578296288</millis>
+  <nanos>907400</nanos>
+  <sequence>175</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:18.888591700Z</date>
+  <millis>1545578298888</millis>
+  <nanos>591700</nanos>
+  <sequence>176</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.shapes.plate.PlateFactory</class>
+  <method>getBatmanLogo</method>
+  <thread>17</thread>
+  <message>batman logo instance is returned from factory </message>
+</record>
+<record>
+  <date>2018-12-23T15:18:18.908348400Z</date>
+  <millis>1545578298908</millis>
+  <nanos>348400</nanos>
+  <sequence>177</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:18.952967500Z</date>
+  <millis>1545578298952</millis>
+  <nanos>967500</nanos>
+  <sequence>178</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.shapes.plate.PlateFactory</class>
+  <method>getHarleyLogo</method>
+  <thread>17</thread>
+  <message>harley logo instance is returned from factory </message>
+</record>
+<record>
+  <date>2018-12-23T15:18:19.473643900Z</date>
+  <millis>1545578299473</millis>
+  <nanos>643900</nanos>
+  <sequence>179</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:19.702907300Z</date>
+  <millis>1545578299702</millis>
+  <nanos>907300</nanos>
+  <sequence>180</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:19.906779500Z</date>
+  <millis>1545578299906</millis>
+  <nanos>779500</nanos>
+  <sequence>181</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:20.070962900Z</date>
+  <millis>1545578300070</millis>
+  <nanos>962900</nanos>
+  <sequence>182</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:20.232508200Z</date>
+  <millis>1545578300232</millis>
+  <nanos>508200</nanos>
+  <sequence>183</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:20.392943700Z</date>
+  <millis>1545578300392</millis>
+  <nanos>943700</nanos>
+  <sequence>184</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:21.421090800Z</date>
+  <millis>1545578301421</millis>
+  <nanos>90800</nanos>
+  <sequence>185</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>intersectStacks</method>
+  <thread>17</thread>
+  <message>intersection of harleyquinn with left stack</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:21.421090800Z</date>
+  <millis>1545578301421</millis>
+  <nanos>90800</nanos>
+  <sequence>186</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>WARNING</level>
+  <class>model.gameWorld.GameWorld</class>
+  <method>refresh</method>
+  <thread>17</thread>
+  <message>harley quinn affects score up</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:22.079435600Z</date>
+  <millis>1545578302079</millis>
+  <nanos>435600</nanos>
+  <sequence>187</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:22.471216Z</date>
+  <millis>1545578302471</millis>
+  <nanos>216000</nanos>
+  <sequence>188</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:22.811752100Z</date>
+  <millis>1545578302811</millis>
+  <nanos>752100</nanos>
+  <sequence>189</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:23.037866500Z</date>
+  <millis>1545578303037</millis>
+  <nanos>866500</nanos>
+  <sequence>190</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:23.235943200Z</date>
+  <millis>1545578303235</millis>
+  <nanos>943200</nanos>
+  <sequence>191</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:23.604581200Z</date>
+  <millis>1545578303604</millis>
+  <nanos>581200</nanos>
+  <sequence>192</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:23.824251900Z</date>
+  <millis>1545578303824</millis>
+  <nanos>251900</nanos>
+  <sequence>193</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:24.032153200Z</date>
+  <millis>1545578304032</millis>
+  <nanos>153200</nanos>
+  <sequence>194</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:24.605864800Z</date>
+  <millis>1545578304605</millis>
+  <nanos>864800</nanos>
+  <sequence>195</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:24.834767900Z</date>
+  <millis>1545578304834</millis>
+  <nanos>767900</nanos>
+  <sequence>196</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:25.035602Z</date>
+  <millis>1545578305035</millis>
+  <nanos>602000</nanos>
+  <sequence>197</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:25.240559400Z</date>
+  <millis>1545578305240</millis>
+  <nanos>559400</nanos>
+  <sequence>198</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:25.914312500Z</date>
+  <millis>1545578305914</millis>
+  <nanos>312500</nanos>
+  <sequence>199</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>intersectStacks</method>
+  <thread>17</thread>
+  <message>intersection of plate with left stack</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:25.914841500Z</date>
+  <millis>1545578305914</millis>
+  <nanos>841500</nanos>
+  <sequence>200</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>intersectStacks</method>
+  <thread>17</thread>
+  <message>plate addded to left stack</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:25.915407400Z</date>
+  <millis>1545578305915</millis>
+  <nanos>407400</nanos>
+  <sequence>201</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>WARNING</level>
+  <class>model.gameObjects.shapes.plate.PlatesPool</class>
+  <method>PopPlate</method>
+  <thread>17</thread>
+  <message>pool is empty</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:25.915407400Z</date>
+  <millis>1545578305915</millis>
+  <nanos>407400</nanos>
+  <sequence>202</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.shapes.plate.PlateFactory</class>
+  <method>getPlate</method>
+  <thread>17</thread>
+  <message>oval Plate instance is returned from factory </message>
+</record>
+<record>
+  <date>2018-12-23T15:18:26.041652Z</date>
+  <millis>1545578306041</millis>
+  <nanos>652000</nanos>
+  <sequence>203</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:26.343360900Z</date>
+  <millis>1545578306343</millis>
+  <nanos>360900</nanos>
+  <sequence>204</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>intersectStacks</method>
+  <thread>17</thread>
+  <message>intersection of plate with left stack</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:26.343360900Z</date>
+  <millis>1545578306343</millis>
+  <nanos>360900</nanos>
+  <sequence>205</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>intersectStacks</method>
+  <thread>17</thread>
+  <message>plate addded to left stack</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:26.343862600Z</date>
+  <millis>1545578306343</millis>
+  <nanos>862600</nanos>
+  <sequence>206</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>WARNING</level>
+  <class>model.gameObjects.shapes.plate.PlatesPool</class>
+  <method>PopPlate</method>
+  <thread>17</thread>
+  <message>pool is empty</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:26.343862600Z</date>
+  <millis>1545578306343</millis>
+  <nanos>862600</nanos>
+  <sequence>207</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.shapes.plate.PlateFactory</class>
+  <method>getPlate</method>
+  <thread>17</thread>
+  <message>oval Plate instance is returned from factory </message>
+</record>
+<record>
+  <date>2018-12-23T15:18:26.521212100Z</date>
+  <millis>1545578306521</millis>
+  <nanos>212100</nanos>
+  <sequence>208</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:26.804270Z</date>
+  <millis>1545578306804</millis>
+  <nanos>270000</nanos>
+  <sequence>209</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:27.000488400Z</date>
+  <millis>1545578307000</millis>
+  <nanos>488400</nanos>
+  <sequence>210</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:27.646842300Z</date>
+  <millis>1545578307646</millis>
+  <nanos>842300</nanos>
+  <sequence>211</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:28.120417700Z</date>
+  <millis>1545578308120</millis>
+  <nanos>417700</nanos>
+  <sequence>212</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:28.267041500Z</date>
+  <millis>1545578308267</millis>
+  <nanos>41500</nanos>
+  <sequence>213</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>intersectStacks</method>
+  <thread>17</thread>
+  <message>intersection of plate with right stack</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:28.267543200Z</date>
+  <millis>1545578308267</millis>
+  <nanos>543200</nanos>
+  <sequence>214</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>intersectStacks</method>
+  <thread>17</thread>
+  <message>plate addded to right stack</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:28.267543200Z</date>
+  <millis>1545578308267</millis>
+  <nanos>543200</nanos>
+  <sequence>215</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>WARNING</level>
+  <class>model.gameWorld.GameWorld</class>
+  <method>refresh</method>
+  <thread>17</thread>
+  <message>score up</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:28.277106700Z</date>
+  <millis>1545578308277</millis>
+  <nanos>106700</nanos>
+  <sequence>216</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>intersectStacks</method>
+  <thread>17</thread>
+  <message>intersection of plate with left stack</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:28.277106700Z</date>
+  <millis>1545578308277</millis>
+  <nanos>106700</nanos>
+  <sequence>217</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>intersectStacks</method>
+  <thread>17</thread>
+  <message>plate addded to left stack</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:28.277570400Z</date>
+  <millis>1545578308277</millis>
+  <nanos>570400</nanos>
+  <sequence>218</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>WARNING</level>
+  <class>model.gameWorld.GameWorld</class>
+  <method>refresh</method>
+  <thread>17</thread>
+  <message>score up</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:28.893708600Z</date>
+  <millis>1545578308893</millis>
+  <nanos>708600</nanos>
+  <sequence>219</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.shapes.plate.PlateFactory</class>
+  <method>getBatmanLogo</method>
+  <thread>17</thread>
+  <message>batman logo instance is returned from factory </message>
+</record>
+<record>
+  <date>2018-12-23T15:18:28.986869Z</date>
+  <millis>1545578308986</millis>
+  <nanos>869000</nanos>
+  <sequence>220</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.shapes.plate.PlateFactory</class>
+  <method>getHarleyLogo</method>
+  <thread>17</thread>
+  <message>harley logo instance is returned from factory </message>
+</record>
+<record>
+  <date>2018-12-23T15:18:29.325781700Z</date>
+  <millis>1545578309325</millis>
+  <nanos>781700</nanos>
+  <sequence>221</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:29.573555300Z</date>
+  <millis>1545578309573</millis>
+  <nanos>555300</nanos>
+  <sequence>222</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:29.781934200Z</date>
+  <millis>1545578309781</millis>
+  <nanos>934200</nanos>
+  <sequence>223</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:30.026224600Z</date>
+  <millis>1545578310026</millis>
+  <nanos>224600</nanos>
+  <sequence>224</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:30.795769600Z</date>
+  <millis>1545578310795</millis>
+  <nanos>769600</nanos>
+  <sequence>225</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>intersectStacks</method>
+  <thread>17</thread>
+  <message>intersection of plate with right stack</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:30.795769600Z</date>
+  <millis>1545578310795</millis>
+  <nanos>769600</nanos>
+  <sequence>226</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>intersectStacks</method>
+  <thread>17</thread>
+  <message>plate addded to right stack</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:30.796274400Z</date>
+  <millis>1545578310796</millis>
+  <nanos>274400</nanos>
+  <sequence>227</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>WARNING</level>
+  <class>model.gameWorld.GameWorld</class>
+  <method>refresh</method>
+  <thread>17</thread>
+  <message>score up</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:30.857542700Z</date>
+  <millis>1545578310857</millis>
+  <nanos>542700</nanos>
+  <sequence>228</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:31.236305100Z</date>
+  <millis>1545578311236</millis>
+  <nanos>305100</nanos>
+  <sequence>229</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:31.642273900Z</date>
+  <millis>1545578311642</millis>
+  <nanos>273900</nanos>
+  <sequence>230</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:31.833816400Z</date>
+  <millis>1545578311833</millis>
+  <nanos>816400</nanos>
+  <sequence>231</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:32.557114800Z</date>
+  <millis>1545578312557</millis>
+  <nanos>114800</nanos>
+  <sequence>232</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:32.594974Z</date>
+  <millis>1545578312594</millis>
+  <nanos>974000</nanos>
+  <sequence>233</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>intersectStacks</method>
+  <thread>17</thread>
+  <message>intersection of plate with left stack</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:32.595437700Z</date>
+  <millis>1545578312595</millis>
+  <nanos>437700</nanos>
+  <sequence>234</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>intersectStacks</method>
+  <thread>17</thread>
+  <message>plate addded to left stack</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:32.595939900Z</date>
+  <millis>1545578312595</millis>
+  <nanos>939900</nanos>
+  <sequence>235</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>WARNING</level>
+  <class>model.gameWorld.GameWorld</class>
+  <method>refresh</method>
+  <thread>17</thread>
+  <message>score up</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:32.774686600Z</date>
+  <millis>1545578312774</millis>
+  <nanos>686600</nanos>
+  <sequence>236</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:32.980857600Z</date>
+  <millis>1545578312980</millis>
+  <nanos>857600</nanos>
+  <sequence>237</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:33.170060700Z</date>
+  <millis>1545578313170</millis>
+  <nanos>60700</nanos>
+  <sequence>238</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:33.353499600Z</date>
+  <millis>1545578313353</millis>
+  <nanos>499600</nanos>
+  <sequence>239</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:33.524721Z</date>
+  <millis>1545578313524</millis>
+  <nanos>721000</nanos>
+  <sequence>240</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:33.755354400Z</date>
+  <millis>1545578313755</millis>
+  <nanos>354400</nanos>
+  <sequence>241</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:33.979160200Z</date>
+  <millis>1545578313979</millis>
+  <nanos>160200</nanos>
+  <sequence>242</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:36.698499300Z</date>
+  <millis>1545578316698</millis>
+  <nanos>499300</nanos>
+  <sequence>243</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:38.905196700Z</date>
+  <millis>1545578318905</millis>
+  <nanos>196700</nanos>
+  <sequence>244</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.shapes.plate.PlateFactory</class>
+  <method>getBatmanLogo</method>
+  <thread>17</thread>
+  <message>batman logo instance is returned from factory </message>
+</record>
+<record>
+  <date>2018-12-23T15:18:38.991067800Z</date>
+  <millis>1545578318991</millis>
+  <nanos>67800</nanos>
+  <sequence>245</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.shapes.plate.PlateFactory</class>
+  <method>getHarleyLogo</method>
+  <thread>17</thread>
+  <message>harley logo instance is returned from factory </message>
+</record>
+<record>
+  <date>2018-12-23T15:18:39.257518100Z</date>
+  <millis>1545578319257</millis>
+  <nanos>518100</nanos>
+  <sequence>246</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:39.856950500Z</date>
+  <millis>1545578319856</millis>
+  <nanos>950500</nanos>
+  <sequence>247</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:40.527139600Z</date>
+  <millis>1545578320527</millis>
+  <nanos>139600</nanos>
+  <sequence>248</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:41.184980600Z</date>
+  <millis>1545578321184</millis>
+  <nanos>980600</nanos>
+  <sequence>249</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>intersectStacks</method>
+  <thread>17</thread>
+  <message>intersection of harleyquinn with right stack</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:41.185487Z</date>
+  <millis>1545578321185</millis>
+  <nanos>487000</nanos>
+  <sequence>250</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>WARNING</level>
+  <class>model.gameWorld.GameWorld</class>
+  <method>refresh</method>
+  <thread>17</thread>
+  <message>harley quinn affects score up</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:41.354881400Z</date>
+  <millis>1545578321354</millis>
+  <nanos>881400</nanos>
+  <sequence>251</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:43.541294200Z</date>
+  <millis>1545578323541</millis>
+  <nanos>294200</nanos>
+  <sequence>252</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:44.030429100Z</date>
+  <millis>1545578324030</millis>
+  <nanos>429100</nanos>
+  <sequence>253</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:44.060374400Z</date>
+  <millis>1545578324060</millis>
+  <nanos>374400</nanos>
+  <sequence>254</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:44.084640400Z</date>
+  <millis>1545578324084</millis>
+  <nanos>640400</nanos>
+  <sequence>255</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:44.115128600Z</date>
+  <millis>1545578324115</millis>
+  <nanos>128600</nanos>
+  <sequence>256</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:44.148522700Z</date>
+  <millis>1545578324148</millis>
+  <nanos>522700</nanos>
+  <sequence>257</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:44.173610700Z</date>
+  <millis>1545578324173</millis>
+  <nanos>610700</nanos>
+  <sequence>258</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:44.204567200Z</date>
+  <millis>1545578324204</millis>
+  <nanos>567200</nanos>
+  <sequence>259</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:44.235439900Z</date>
+  <millis>1545578324235</millis>
+  <nanos>439900</nanos>
+  <sequence>260</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:44.262865300Z</date>
+  <millis>1545578324262</millis>
+  <nanos>865300</nanos>
+  <sequence>261</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:44.292718600Z</date>
+  <millis>1545578324292</millis>
+  <nanos>718600</nanos>
+  <sequence>262</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:44.321972600Z</date>
+  <millis>1545578324321</millis>
+  <nanos>972600</nanos>
+  <sequence>263</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:44.603253900Z</date>
+  <millis>1545578324603</millis>
+  <nanos>253900</nanos>
+  <sequence>264</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:45.907789600Z</date>
+  <millis>1545578325907</millis>
+  <nanos>789600</nanos>
+  <sequence>265</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved right</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:46.115404700Z</date>
+  <millis>1545578326115</millis>
+  <nanos>404700</nanos>
+  <sequence>266</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>intersectStacks</method>
+  <thread>17</thread>
+  <message>intersection of plate with left stack</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:46.115404700Z</date>
+  <millis>1545578326115</millis>
+  <nanos>404700</nanos>
+  <sequence>267</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>intersectStacks</method>
+  <thread>17</thread>
+  <message>plate addded to left stack</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:47.675876200Z</date>
+  <millis>1545578327675</millis>
+  <nanos>876200</nanos>
+  <sequence>268</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:48.163155400Z</date>
+  <millis>1545578328163</millis>
+  <nanos>155400</nanos>
+  <sequence>269</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:48.196280100Z</date>
+  <millis>1545578328196</millis>
+  <nanos>280100</nanos>
+  <sequence>270</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:48.220166800Z</date>
+  <millis>1545578328220</millis>
+  <nanos>166800</nanos>
+  <sequence>271</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:48.250141900Z</date>
+  <millis>1545578328250</millis>
+  <nanos>141900</nanos>
+  <sequence>272</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:48.282186100Z</date>
+  <millis>1545578328282</millis>
+  <nanos>186100</nanos>
+  <sequence>273</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:48.309121700Z</date>
+  <millis>1545578328309</millis>
+  <nanos>121700</nanos>
+  <sequence>274</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:48.340008200Z</date>
+  <millis>1545578328340</millis>
+  <nanos>8200</nanos>
+  <sequence>275</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:48.369760800Z</date>
+  <millis>1545578328369</millis>
+  <nanos>760800</nanos>
+  <sequence>276</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:48.399251200Z</date>
+  <millis>1545578328399</millis>
+  <nanos>251200</nanos>
+  <sequence>277</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:48.914279600Z</date>
+  <millis>1545578328914</millis>
+  <nanos>279600</nanos>
+  <sequence>278</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.shapes.plate.PlateFactory</class>
+  <method>getBatmanLogo</method>
+  <thread>17</thread>
+  <message>batman logo instance is returned from factory </message>
+</record>
+<record>
+  <date>2018-12-23T15:18:49.001942700Z</date>
+  <millis>1545578329001</millis>
+  <nanos>942700</nanos>
+  <sequence>279</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.shapes.plate.PlateFactory</class>
+  <method>getHarleyLogo</method>
+  <thread>17</thread>
+  <message>harley logo instance is returned from factory </message>
+</record>
+<record>
+  <date>2018-12-23T15:18:49.487984Z</date>
+  <millis>1545578329487</millis>
+  <nanos>984000</nanos>
+  <sequence>280</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:49.978689300Z</date>
+  <millis>1545578329978</millis>
+  <nanos>689300</nanos>
+  <sequence>281</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:50.007834800Z</date>
+  <millis>1545578330007</millis>
+  <nanos>834800</nanos>
+  <sequence>282</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:50.031893100Z</date>
+  <millis>1545578330031</millis>
+  <nanos>893100</nanos>
+  <sequence>283</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:50.062954500Z</date>
+  <millis>1545578330062</millis>
+  <nanos>954500</nanos>
+  <sequence>284</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:50.095419200Z</date>
+  <millis>1545578330095</millis>
+  <nanos>419200</nanos>
+  <sequence>285</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:50.124522500Z</date>
+  <millis>1545578330124</millis>
+  <nanos>522500</nanos>
+  <sequence>286</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:50.150342500Z</date>
+  <millis>1545578330150</millis>
+  <nanos>342500</nanos>
+  <sequence>287</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:50.179945500Z</date>
+  <millis>1545578330179</millis>
+  <nanos>945500</nanos>
+  <sequence>288</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:50.213071800Z</date>
+  <millis>1545578330213</millis>
+  <nanos>71800</nanos>
+  <sequence>289</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:50.246216100Z</date>
+  <millis>1545578330246</millis>
+  <nanos>216100</nanos>
+  <sequence>290</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:50.269955700Z</date>
+  <millis>1545578330269</millis>
+  <nanos>955700</nanos>
+  <sequence>291</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:50.299568900Z</date>
+  <millis>1545578330299</millis>
+  <nanos>568900</nanos>
+  <sequence>292</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:50.333658600Z</date>
+  <millis>1545578330333</millis>
+  <nanos>658600</nanos>
+  <sequence>293</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:50.365581500Z</date>
+  <millis>1545578330365</millis>
+  <nanos>581500</nanos>
+  <sequence>294</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:50.388467800Z</date>
+  <millis>1545578330388</millis>
+  <nanos>467800</nanos>
+  <sequence>295</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:50.418554Z</date>
+  <millis>1545578330418</millis>
+  <nanos>554000</nanos>
+  <sequence>296</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:50.450028600Z</date>
+  <millis>1545578330450</millis>
+  <nanos>28600</nanos>
+  <sequence>297</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>setX</method>
+  <thread>17</thread>
+  <message>clown moved left</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:52.551260700Z</date>
+  <millis>1545578332551</millis>
+  <nanos>260700</nanos>
+  <sequence>298</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>intersectStacks</method>
+  <thread>17</thread>
+  <message>intersection of plate with right stack</message>
+</record>
+<record>
+  <date>2018-12-23T15:18:52.551260700Z</date>
+  <millis>1545578332551</millis>
+  <nanos>260700</nanos>
+  <sequence>299</sequence>
+  <logger>model.gameWorld.MyLogger</logger>
+  <level>INFO</level>
+  <class>model.gameObjects.Clown</class>
+  <method>intersectStacks</method>
+  <thread>17</thread>
+  <message>plate addded to right stack</message>
+</record>
+</log>

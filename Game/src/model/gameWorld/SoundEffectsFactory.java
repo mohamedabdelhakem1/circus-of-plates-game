@@ -54,6 +54,9 @@ public class SoundEffectsFactory {
 			}
 		};
 		thread = new Thread(runnable);
+		if (thread.isAlive()) {
+			thread.stop();
+		}
 		thread.start();
 
 	}
