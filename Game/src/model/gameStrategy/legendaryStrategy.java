@@ -14,9 +14,9 @@ public class legendaryStrategy implements GameStrategyIF {
 	public void setGamePlay(PlateFactory factory, List<GameObject> control, List<GameObject> moving, Clown clown,
 			int width, int height, GameWorld gameWorld) {
 		gameWorld.setControlSpeed(30);
-		gameWorld.setSpeed(4);
+		gameWorld.setSpeed(6);
 		factory = PlateFactory.getInstance(9);
-		ClownEngineer clownEnginner = new ClownEngineer(100, 480, 20, 20);
+		ClownEngineer clownEnginner = new ClownEngineer(100, 480, 25, 25);
 		clownEnginner.makeClown();
 		clown = clownEnginner.getClown();
 		control.add(clown);

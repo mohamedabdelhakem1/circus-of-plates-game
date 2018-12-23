@@ -1,9 +1,5 @@
 package view;
 
-import java.awt.Color;
-import java.awt.Image;
-import java.awt.Label;
-import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.ImageIcon;
@@ -11,9 +7,6 @@ import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JMenu;
-import javax.swing.JMenuBar;
-import javax.swing.JMenuItem;
 import javax.swing.JPanel;
 
 
@@ -30,7 +23,7 @@ public class MainMenu extends JFrame {
 
 	private static final long serialVersionUID = 1L;
 	private String[] difficulties = new String[] { "amateur", "semipro", "professional", "legendary"};
-	private JComboBox<String> box = new JComboBox(difficulties);
+	private JComboBox<String> box = new JComboBox<String>(difficulties);
 	private JButton start = new JButton("start");
 
 	public MainMenu() {

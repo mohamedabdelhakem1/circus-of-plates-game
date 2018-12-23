@@ -14,6 +14,7 @@ import javax.swing.JOptionPane;
 import eg.edu.alexu.csd.oop.game.GameEngine;
 import eg.edu.alexu.csd.oop.game.GameEngine.GameController;
 import model.gameWorld.GameWorld;
+import model.gameWorld.MyLogger;
 import model.memento.Caretaker;
 import view.MainMenu;
 
@@ -47,23 +48,26 @@ public class Controller {
 			GameWorld gameWorld = new GameWorld(700, 1300, mainMenu.getSelectedDifficulty());
 			final GameController gameController = GameEngine.start("Very Simple Game in 99 Line of Code", gameWorld,
 					menuBar, Color.white);
+			MyLogger.getLogger().config("game started");
 
 			newMenuItem.addActionListener(new ActionListener() {
 				@Override
 				public void actionPerformed(ActionEvent e) {
-				
+					MyLogger.getLogger().config("new game started");
 					gameController.changeWorld( new GameWorld(700, 1300, mainMenu.getSelectedDifficulty()));
 				}
 			});
 			pauseMenuItem.addActionListener(new ActionListener() {
 				@Override
 				public void actionPerformed(ActionEvent e) {
+					MyLogger.getLogger().config("game paused");
 					gameController.pause();
 				}
 			});
 			resumeMenuItem.addActionListener(new ActionListener() {
 				@Override
 				public void actionPerformed(ActionEvent e) {
+					MyLogger.getLogger().config("game resumed");
 					gameController.resume();
 				}
 			});
@@ -77,7 +81,7 @@ public class Controller {
 			LoadSnapshot.addActionListener(new ActionListener() {
 				@Override
 				public void actionPerformed(ActionEvent e) {
-					
+				
 					Object[] possibilities = new Object[Caretaker.NumberOfCheckpoints()];
 					for (int i = 0; i < possibilities.length; i++) {
 						possibilities[i] = "checkpoint " + String.valueOf(i + 1);
@@ -88,7 +92,7 @@ public class Controller {
 
 					// If a string was returned, say so.
 					if ((s != null) && (s.length() > 0)) {
-						
+						MyLogger.getLogger().config(s +"loaded");
 						gameWorld.loadCheckpoint(Integer.parseInt(s.substring(s.length() -1 , s.length())) - 1);
 					}
 					

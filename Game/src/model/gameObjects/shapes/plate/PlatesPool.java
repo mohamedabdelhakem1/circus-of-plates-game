@@ -8,6 +8,7 @@ import java.util.Map;
 import java.util.Random;
 
 import model.gameObjects.shapes.Plate;
+import model.gameWorld.MyLogger;
 
 public class PlatesPool {
 	private static PlatesPool pool;
@@ -28,13 +29,15 @@ public class PlatesPool {
 
 	public Plate PopPlate() {
 		if (platesPoolUnused.size() == 0) {
+			MyLogger.getLogger().warning("pool is empty");
 			return null;
 		}
+		MyLogger.getLogger().config("a random plate is popped from the pool");
 		return platesPoolUnused.remove(random.nextInt(platesPoolUnused.size()));
 	}
 
 	public void PushPlate(Plate plate) {
-		
+		MyLogger.getLogger().config("plate is push to the pool to be reused");
 		platesPoolUnused.add(plate);
 	}
 }

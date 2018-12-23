@@ -6,6 +6,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.Random;
 
 import model.gameObjects.shapes.Plate;
+import model.gameWorld.MyLogger;
 
 public class PlateFactory {
 	private static PlateFactory factory;
@@ -47,6 +48,7 @@ public class PlateFactory {
 		}
 		if (PlateType == 0) {
 			// dynamic loading
+			MyLogger.getLogger().info("rectanglar Plate instance is returned from factory ");
 			Class<? extends Plate> s = shapesloader.load("model.gameObjects.shapes.RegtanglePlateObject");
 			Class[] parameterTypes = new Class[] { int.class, int.class, int.class, int.class, Color.class };
 			try {
@@ -62,6 +64,7 @@ public class PlateFactory {
 			// RegtanglePlateObject(Math.abs(randomGenerator.nextInt(width-80)),randomGenerator.nextInt(80)
 			// , 80, 15, colors[randomGenerator.nextInt(3)]);
 		} else {
+			MyLogger.getLogger().info("oval Plate instance is returned from factory ");
 			Class<? extends Plate> s =shapesloader.load("model.gameObjects.shapes.ElipsePlateObject");
 			Class[] parameterTypes = new Class[] { int.class, int.class, int.class, int.class, Color.class };
 			try {
@@ -82,7 +85,7 @@ public class PlateFactory {
 
 	public Plate getBatmanLogo(int width, int height) {
 		Plate plate = null;
-
+		MyLogger.getLogger().info("batman logo instance is returned from factory ");
 		Class<? extends Plate> s = shapesloader.load("model.gameObjects.shapes.BatmanObject");
 		Class[] parameterTypes = new Class[] { int.class, int.class, int.class, int.class, Color.class };
 		try {
@@ -99,7 +102,7 @@ public class PlateFactory {
 	
 	public Plate getHarleyLogo(int width, int height) {
 		Plate plate = null;
-
+		MyLogger.getLogger().info("harley logo instance is returned from factory ");
 		Class<? extends Plate> s = shapesloader.load("model.gameObjects.shapes.HarleyQuinnObject");
 		Class[] parameterTypes = new Class[] { int.class, int.class, int.class, int.class, Color.class };
 		try {

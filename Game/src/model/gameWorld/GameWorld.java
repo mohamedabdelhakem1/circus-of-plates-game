@@ -66,8 +66,9 @@ public class GameWorld implements World {
 	public boolean refresh() {
 		// strategy
 		gameEnded = true;
-		if (clown.getLeftStack().getCurrentState() instanceof FullStack
-				&& clown.getRightStack().getCurrentState() instanceof FullStack && gameEnded) {
+		if (((clown.getLeftStack().getCurrentState() instanceof FullStack
+				&& clown.getRightStack().getCurrentState() instanceof FullStack)
+				|| (System.currentTimeMillis() - startTime > 120000)) && gameEnded) {
 			try {
 				constant.add(control.remove(0));
 			} catch (Exception e) {
@@ -93,17 +94,20 @@ public class GameWorld implements World {
 					moving.remove(plate);
 					if (score != 0) {
 						score--;
+						MyLogger.getLogger().warning("batman affects score down");
 					}
 				} else if (Shapesloader.getInstance().loadAllclasses().get("model.gameObjects.shapes.HarleyQuinnObject")
 						.isInstance(plate)) {
 					saveSnapshot();
 					moving.remove(plate);
+					MyLogger.getLogger().warning("harley quinn saves a checkpoint");
 				} else {
 					moving.remove(plate);
 					control.add(plate);
 					if (((Clown) control.get(0)).CheckScore(control)) {
 						effectsFactory.playJokerLaugh();
 						score++;
+						MyLogger.getLogger().warning("score up");
 					}
 					moving.add(factory.getPlate(width, height));
 				}
@@ -151,7 +155,8 @@ public class GameWorld implements World {
 
 	@Override
 	public String getStatus() {
-		return "score :" + String.valueOf(score);
+		return "score : " + String.valueOf(score) + " time : "
+				+ String.valueOf((System.currentTimeMillis() - startTime) / 1000) + "/ 120";
 	}
 
 	@Override
@@ -208,6 +213,7 @@ public class GameWorld implements World {
 	}
 
 	public void saveSnapshot() {
+		MyLogger.getLogger().info("Created Checkpoint");
 		Runnable runnable = new Runnable() {
 			@Override
 			public void run() {

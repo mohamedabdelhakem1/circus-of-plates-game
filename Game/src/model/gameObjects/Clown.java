@@ -13,6 +13,7 @@ import model.clownBuilder.stack.StackIF;
 import model.gameObjects.shapes.Plate;
 import model.gameObjects.shapes.plate.Shapesloader;
 import model.gameWorld.GameWorld;
+import model.gameWorld.MyLogger;
 import view.MainMenu;
 
 public class Clown implements GameObject {
@@ -24,7 +25,6 @@ public class Clown implements GameObject {
 	private StackIF leftStack;
 	private StackIF rightStack;
 	private BufferedImage[] clownImage = new BufferedImage[1];
-
 	public Clown(int positionX, int positionY) {
 		this.positionX = positionX;
 		this.positionY = positionY;
@@ -48,6 +48,11 @@ public class Clown implements GameObject {
 
 	@Override
 	public void setX(int x) {
+		if(x>positionX) {
+			MyLogger.getLogger().info("clown moved right");
+		}else {
+			MyLogger.getLogger().info("clown moved left");
+		}
 		leftStack.setPositionX(x + 51);
 		rightStack.setPositionX(x + 157);
 		positionX = x;
@@ -122,11 +127,17 @@ public class Clown implements GameObject {
 				&& (Math.abs(p.getY() - rightStack.getPositiony()) <= deltaY)) {
 			if (Shapesloader.getInstance().loadAllclasses().get("model.gameObjects.shapes.HarleyQuinnObject")
 					.isInstance(p)) {
+				MyLogger.getLogger().info("intersection of harleyquinn with right stack");
+				
 				return true;
 			} if (Shapesloader.getInstance().loadAllclasses().get("model.gameObjects.shapes.BatmanObject")
 					.isInstance(p)) {
+				MyLogger.getLogger().info("intersection of Batman with right stack");
+				
 				return true;
 			} else if (rightStack.addPlate(p)) {
+				MyLogger.getLogger().info("intersection of plate with right stack");
+				MyLogger.getLogger().info("plate addded to right stack");
 				p.setattached(true);
 				notifyStacks();
 				return true;
@@ -135,11 +146,15 @@ public class Clown implements GameObject {
 				&& (Math.abs(p.getY() - leftStack.getPositiony()) <= deltaY)) {
 			if (Shapesloader.getInstance().loadAllclasses().get("model.gameObjects.shapes.HarleyQuinnObject")
 					.isInstance(p)) {
+				MyLogger.getLogger().info("intersection of harleyquinn with left stack");
 				return true;
 			} if (Shapesloader.getInstance().loadAllclasses().get("model.gameObjects.shapes.BatmanObject")
 					.isInstance(p)) {
+				MyLogger.getLogger().info("intersection of Batman with left stack");
 				return true;
 			} else if (leftStack.addPlate(p)) {
+				MyLogger.getLogger().info("intersection of plate with left stack");
+				MyLogger.getLogger().info("plate addded to left stack");
 				p.setattached(true);
 				notifyStacks();
 				return true;
