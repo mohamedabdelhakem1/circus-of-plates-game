@@ -43,6 +43,8 @@ public class GameWorld implements World {
 	private Clown clown;
 	private DifficultyFactory difficultyFactory;
 	private GameStrategyIF strategy;
+	private long PauseTime;
+	private long stopTime;
 	public GameWorld(int height, int width, String difficulty) {
 		effectsFactory = new SoundEffectsFactory();
 		gameEnded = true;
@@ -226,4 +228,10 @@ public class GameWorld implements World {
 		new Thread(runnable).start();
 	}
 
+	public void setPauseTime(long pause) {
+
+	}
+	public void setResumeTime() {
+
+	}
 }
