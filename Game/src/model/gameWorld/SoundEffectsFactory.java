@@ -10,11 +10,12 @@ import model.gameObjects.Clown;
 
 public class SoundEffectsFactory {
 	private Thread thread;
+
 	public SoundEffectsFactory() {
-		
+
 		Runnable runnable = new Runnable() {
 			public void run() {
-				while(true) {
+				while (true) {
 					playMainTheme("/res/joker.mp3");
 				}
 			}
@@ -23,7 +24,7 @@ public class SoundEffectsFactory {
 	}
 
 	private void playMainTheme(String path) {
-		File soundFile = new File(Clown.class.getResource(path).getFile()); 
+		File soundFile = new File(Clown.class.getResource(path).getPath());
 		FileInputStream audioIn;
 		try {
 			try {
@@ -41,16 +42,19 @@ public class SoundEffectsFactory {
 		}
 
 	}
+
 	public void playJokerLaugh() {
+
 		Runnable runnable = new Runnable() {
 			public void run() {
-				while(true) {
+				while (true) {
 					playMainTheme("/res/jokerLaugh.mp3");
 					thread.stop();
 				}
 			}
 		};
 		thread = new Thread(runnable);
-		thread.start();	
+		thread.start();
+
 	}
 }

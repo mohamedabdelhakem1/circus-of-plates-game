@@ -3,7 +3,7 @@ package model.clownBuilder.stack;
 import java.util.ArrayList;
 
 import model.clownBuilder.stack.state.StackState;
-import model.gameObjects.shapes.Plate;
+import model.gameObjects.shapes.ImageObject;
 
 public interface StackIF {
 	/**
@@ -38,13 +38,13 @@ public interface StackIF {
 	 * 
 	 * @param plates
 	 */
-	public void setStack(ArrayList<Plate> plates);
+	public void setStack(ArrayList<ImageObject> plates);
 
 	/**
 	 * 
 	 * @return
 	 */
-	public ArrayList<Plate> getStack();
+	public ArrayList<ImageObject> getStack();
 
 	/**
 	 * state
@@ -53,7 +53,7 @@ public interface StackIF {
 	 * @param key
 	 * @return
 	 */
-	public boolean addPlate(Plate plate);
+	public boolean addPlate(ImageObject plate);
 
 	/**
 	 * state
@@ -61,7 +61,7 @@ public interface StackIF {
 	 * @param positionFromTop
 	 * @return
 	 */
-	public boolean removePlate(Plate plate);
+	public boolean removePlate(ImageObject plate);
 
 	/**
 	 * state
@@ -151,7 +151,7 @@ public interface StackIF {
 	 * 
 	 * @return
 	 */
-	public ArrayList<Plate> checkStack();
+	public ArrayList<ImageObject> checkStack();
 
 	public StackState getEmptyState();
 	public Stack DeepClone(); 

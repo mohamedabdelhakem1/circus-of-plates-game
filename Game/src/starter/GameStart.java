@@ -6,10 +6,11 @@ import view.MainMenu;
 
 
 public class GameStart {
-	
+	private static 	MainMenu mainMenu;
+	private static Controller controller;
 	public static void main(String[] args) {
-		MainMenu mainMenu = new MainMenu();
-		Controller controller = new Controller(mainMenu);
+		mainMenu = new MainMenu();
+		controller = new Controller(mainMenu);
 		mainMenu.setVisible(true);
 	
 	}

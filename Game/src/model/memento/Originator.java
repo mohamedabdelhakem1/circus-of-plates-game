@@ -9,7 +9,7 @@ import model.clownBuilder.stack.Stack;
 import model.clownBuilder.stack.StackIF;
 import model.clownBuilder.stack.Iterator.Iterator;
 import model.gameObjects.Clown;
-import model.gameObjects.shapes.Plate;
+import model.gameObjects.shapes.ImageObject;
 
 // Memento Design Pattern
 
@@ -45,25 +45,25 @@ public class Originator {
 		// controlled plates
 
 		for (iterator = left.getIterator(); iterator.hasNext();) {
-			Plate plate = (Plate) iterator.next();
+			ImageObject plate = (ImageObject) iterator.next();
 			controlMemento.add(plate);
 		}
 
 		for (iterator = right.getIterator(); iterator.hasNext();) {
-			Plate plate = (Plate) iterator.next();
+			ImageObject plate = (ImageObject) iterator.next();
 			controlMemento.add(plate);
 		}
 		// constant objects
 		List<GameObject> constantMemento = new LinkedList<GameObject>();
 		for (GameObject gameObject : constant) {
-			constantMemento.add(((Plate)gameObject).deepClone());
+			constantMemento.add(((ImageObject)gameObject).deepClone());
 		}
 		// moving plates
 
 		List<GameObject> movingMemento = new LinkedList<GameObject>();
 		for (GameObject plate : moving) {
 	
-			movingMemento.add(((Plate)plate).deepClone());
+			movingMemento.add(((ImageObject)plate).deepClone());
 		}
 		return new Memento(score, movingMemento, controlMemento, constantMemento);
 	}

@@ -7,12 +7,12 @@ import java.util.List;
 import java.util.Map;
 import java.util.Random;
 
-import model.gameObjects.shapes.Plate;
+import model.gameObjects.shapes.ImageObject;
 import model.gameWorld.MyLogger;
 
 public class PlatesPool {
 	private static PlatesPool pool;
-	private static List<Plate> platesPoolUnused;
+	private static List<ImageObject> platesPoolUnused;
 	private static Random random;
 
 	private PlatesPool() {
@@ -27,7 +27,7 @@ public class PlatesPool {
 		return pool;
 	}
 
-	public Plate PopPlate() {
+	public ImageObject PopPlate() {
 		if (platesPoolUnused.size() == 0) {
 			MyLogger.getLogger().warning("pool is empty");
 			return null;
@@ -36,7 +36,7 @@ public class PlatesPool {
 		return platesPoolUnused.remove(random.nextInt(platesPoolUnused.size()));
 	}
 
-	public void PushPlate(Plate plate) {
+	public void PushPlate(ImageObject plate) {
 		MyLogger.getLogger().config("plate is push to the pool to be reused");
 		platesPoolUnused.add(plate);
 	}

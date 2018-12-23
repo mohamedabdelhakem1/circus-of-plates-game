@@ -3,7 +3,7 @@ package model.clownBuilder.stack.state;
 import java.util.ArrayList;
 
 import model.clownBuilder.stack.StackIF;
-import model.gameObjects.shapes.Plate;
+import model.gameObjects.shapes.ImageObject;
 
 public class EmptyStack implements StackState {
 	private StackIF stack;
@@ -13,7 +13,7 @@ public class EmptyStack implements StackState {
 	}
 
 	@Override
-	public boolean AddPlate(Plate plate) {
+	public boolean AddPlate(ImageObject plate) {
 		stack.getStack().add(plate);
 		plate.setY(stack.getLimit());
 		stack.setLimit(stack.getLimit() - 15);
@@ -23,12 +23,12 @@ public class EmptyStack implements StackState {
 	}
 
 	@Override
-	public boolean removePlate(Plate plate) {	
+	public boolean removePlate(ImageObject plate) {	
 		return false;
 	}
 
 	@Override
-	public ArrayList<Plate> checkConsecutivePlate() {
+	public ArrayList<ImageObject> checkConsecutivePlate() {
 		return new ArrayList<>();
 	}
 

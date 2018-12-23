@@ -5,7 +5,7 @@ import java.io.IOException;
 
 import javax.imageio.ImageIO;
 
-public class Background extends Plate {
+public class Background extends ImageObject {
 
 	public Background(int posX, int posY, int width, int height, Color color) {
 		super(posX, posY, width, height, color);
