@@ -13,16 +13,19 @@ public class SoundEffectsFactory {
 	private static Thread thread1;
 	private static Player player1;
 	private static Thread thread2;
+
 	public SoundEffectsFactory() {
-		Runnable runnable = new Runnable() {
-			public void run() {
-			
-					playMainTheme("resources/joker.mp3");
-				
-			}
-		};
-		thread1 = new Thread(runnable);
-		thread1.start();
+		if (player1 == null) {
+			Runnable runnable = new Runnable() {
+				public void run() {
+					while (true) {
+						playMainTheme("resources/joker.mp3");
+					}
+				}
+			};
+			thread1 = new Thread(runnable);
+			thread1.start();
+		}
 	}
 
 	private void playMainTheme(String path) {
@@ -49,20 +52,19 @@ public class SoundEffectsFactory {
 
 		Runnable runnable = new Runnable() {
 			public void run() {
-				
-					playMainTheme("resources/jokerLaugh.mp3");
-					thread2.stop();
-				
+
+				playMainTheme("resources/jokerLaugh.mp3");
+				thread2.stop();
+
 			}
 		};
 		thread2 = new Thread(runnable);
 		thread2.start();
 	}
+
 	public void destroy() {
-		if(player1 !=  null) {
+		if (player1 != null) {
 			player1.close();
 		}
-		
-		
 	}
 }

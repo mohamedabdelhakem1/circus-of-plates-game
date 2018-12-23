@@ -2,23 +2,21 @@ package model.gameWorld;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.InputStream;
+
 import java.util.Random;
 import java.util.logging.FileHandler;
 import java.util.logging.Handler;
-import java.util.logging.Level;
+
 import java.util.logging.LogManager;
 import java.util.logging.Logger;
 
-import model.gameObjects.Clown;
+
 
 public class MyLogger {
 
 	private static Logger LOGGER;
 	private static LogManager logManager;
-	private static String path;
+
 
 	private MyLogger() {
 
