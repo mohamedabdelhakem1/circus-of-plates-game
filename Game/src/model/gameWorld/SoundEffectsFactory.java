@@ -1,5 +1,6 @@
 package model.gameWorld;
 
+import java.awt.List;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -9,18 +10,19 @@ import javazoom.jl.player.Player;
 import model.gameObjects.Clown;
 
 public class SoundEffectsFactory {
-	private Thread thread;
-
+	private static Thread thread1;
+	private static Player player1;
+	private static Thread thread2;
 	public SoundEffectsFactory() {
-
 		Runnable runnable = new Runnable() {
 			public void run() {
-				while (true) {
+			
 					playMainTheme("resources/joker.mp3");
-				}
+				
 			}
 		};
-		new Thread(runnable).start();
+		thread1 = new Thread(runnable);
+		thread1.start();
 	}
 
 	private void playMainTheme(String path) {
@@ -29,8 +31,8 @@ public class SoundEffectsFactory {
 		try {
 			try {
 				audioIn = new FileInputStream(soundFile);
-				Player player = new Player(audioIn);
-				player.play();
+				player1 = new Player(audioIn);
+				player1.play();
 			} catch (FileNotFoundException e1) {
 				// TODO Auto-generated catch block
 				e1.printStackTrace();
@@ -47,14 +49,20 @@ public class SoundEffectsFactory {
 
 		Runnable runnable = new Runnable() {
 			public void run() {
-				while (true) {
+				
 					playMainTheme("resources/jokerLaugh.mp3");
-					thread.stop();
-				}
+					thread2.stop();
+				
 			}
 		};
-		thread = new Thread(runnable);
-		thread.start();
-
+		thread2 = new Thread(runnable);
+		thread2.start();
+	}
+	public void destroy() {
+		if(player1 !=  null) {
+			player1.close();
+		}
+		
+		
 	}
 }

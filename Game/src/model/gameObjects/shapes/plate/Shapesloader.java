@@ -35,13 +35,13 @@ public class Shapesloader {
 			Enumeration<JarEntry> enumeration = file.entries();
 			while (enumeration.hasMoreElements()) {
 				JarEntry jarEntry = enumeration.nextElement();
-				System.out.println(jarEntry.getName());
+			//	System.out.println(jarEntry.getName());
 				if (jarEntry.isDirectory() || !jarEntry.getName().endsWith(".class")) {
 					continue;
 				}
 				String classname = jarEntry.getName().substring(0, jarEntry.getName().length() - 6);
 				classname = classname.replace('/', '.');
-				System.out.println(classname);
+				//System.out.println(classname);
 				Class<?extends ImageObject> c = (Class<? extends ImageObject>) classLoad.loadClass(classname);
 				classes.put(c.getName(),c);
 				

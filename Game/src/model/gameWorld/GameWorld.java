@@ -54,6 +54,7 @@ public class GameWorld implements World {
 		pauseTime = 0;
 		paused = false;
 		effectsFactory = new SoundEffectsFactory();
+		effectsFactory.destroy();
 		gameEnded = true;
 		startTime = System.currentTimeMillis();
 		batmanTime = System.currentTimeMillis();
