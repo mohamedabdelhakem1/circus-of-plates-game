@@ -16,7 +16,7 @@ public class SoundEffectsFactory {
 		Runnable runnable = new Runnable() {
 			public void run() {
 				while (true) {
-					playMainTheme("/res/joker.mp3");
+					playMainTheme("resources/joker.mp3");
 				}
 			}
 		};
@@ -24,7 +24,7 @@ public class SoundEffectsFactory {
 	}
 
 	private void playMainTheme(String path) {
-		File soundFile = new File(Clown.class.getResource(path).getPath());
+		File soundFile = new File(path);
 		FileInputStream audioIn;
 		try {
 			try {
@@ -48,7 +48,7 @@ public class SoundEffectsFactory {
 		Runnable runnable = new Runnable() {
 			public void run() {
 				while (true) {
-					playMainTheme("/res/jokerLaugh.mp3");
+					playMainTheme("resources/jokerLaugh.mp3");
 					thread.stop();
 				}
 			}

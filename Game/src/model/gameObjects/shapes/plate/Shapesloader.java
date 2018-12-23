@@ -28,7 +28,7 @@ public class Shapesloader {
 		JarFile file;
 		try {//PlateClasses.jar
 			//C:/Users/SHIKO/git/circusofplates/Game/
-			file = new JarFile("PlateClasses.jar");
+			file = new JarFile("resources/PlateClasses.jar");
 			URL[] urls = { new URL("jar:file:" + "PlateClasses.jar" + "!/") };
 			ClassLoader classLoad = URLClassLoader.newInstance(urls);
 			classLoad = new URLClassLoader(urls);
