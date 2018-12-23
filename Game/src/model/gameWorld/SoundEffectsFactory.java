@@ -47,10 +47,10 @@ public class SoundEffectsFactory {
 
 		Runnable runnable = new Runnable() {
 			public void run() {
-				while (true) {
+				
 					playMainTheme("resources/jokerLaugh.mp3");
 					thread.stop();
-				}
+				
 			}
 		};
 		thread = new Thread(runnable);

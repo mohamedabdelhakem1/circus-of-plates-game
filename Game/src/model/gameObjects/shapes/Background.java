@@ -10,7 +10,7 @@ public class Background extends ImageObject {
 	public Background(int posX, int posY, int width, int height, Color color) {
 		super(posX, posY, width, height, color);
 		try {
-			spriteImages[0] = ImageIO.read(BatmanObject.class.getResource("/res/background.jpg"));
+			spriteImages[0] = ImageIO.read(Background.class.getResource("/res/background.jpg"));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

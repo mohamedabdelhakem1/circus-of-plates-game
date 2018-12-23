@@ -1,6 +1,6 @@
 package model.gameObjects.shapes;
 
-import java.awt.*;
+import java.awt.Color;
 import java.awt.image.BufferedImage;
 import java.lang.reflect.InvocationTargetException;
 import java.util.Map;
