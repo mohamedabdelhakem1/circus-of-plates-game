@@ -20,7 +20,6 @@ public class Originator {
 	private List<GameObject> moving;
 	private List<GameObject> control;
 	private Clown clown;
-
 	public void set(int score, List<GameObject> moving, List<GameObject> control, List<GameObject> constant,
 			Clown clown) {
 		this.moving = moving;
