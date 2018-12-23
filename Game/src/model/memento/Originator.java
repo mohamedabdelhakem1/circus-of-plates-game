@@ -20,13 +20,17 @@ public class Originator {
 	private List<GameObject> moving;
 	private List<GameObject> control;
 	private Clown clown;
+	private long Timpaused;
+	private long TimePlayed;
 	public void set(int score, List<GameObject> moving, List<GameObject> control, List<GameObject> constant,
-			Clown clown) {
+			Clown clown , long Timpaused , long TimePlayed) {
 		this.moving = moving;
 		this.control = control;
 		this.score = score;
 		this.constant = constant;
 		this.clown = clown;
+		this.Timpaused = Timpaused;
+		this.TimePlayed = TimePlayed;
 	}
 
 	public Memento storeInMemento() {
@@ -64,7 +68,7 @@ public class Originator {
 	
 			movingMemento.add(((ImageObject)plate).deepClone());
 		}
-		return new Memento(score, movingMemento, controlMemento, constantMemento);
+		return new Memento(score, movingMemento, controlMemento, constantMemento,Timpaused , TimePlayed);
 	}
 
 	public void RestoreFromMemento(Memento memento) {
@@ -72,6 +76,8 @@ public class Originator {
 		this.control = memento.getControl();
 		this.score = memento.getScore();
 		this.constant = memento.getConstant();
+		this.TimePlayed =  memento.getTimePlayed();
+		this.Timpaused = memento.getTimpaused();
 		for (GameObject clown : control) {
 			if (clown instanceof Clown) {
 				this.clown = (Clown) clown;

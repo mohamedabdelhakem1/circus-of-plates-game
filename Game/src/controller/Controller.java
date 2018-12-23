@@ -61,6 +61,7 @@ public class Controller {
 				@Override
 				public void actionPerformed(ActionEvent e) {
 					MyLogger.getLogger().config("game paused");
+					gameWorld.setPauseMoment(System.currentTimeMillis());
 					gameController.pause();
 				}
 			});
@@ -68,6 +69,7 @@ public class Controller {
 				@Override
 				public void actionPerformed(ActionEvent e) {
 					MyLogger.getLogger().config("game resumed");
+					gameWorld.setResumeMoment(System.currentTimeMillis());
 					gameController.resume();
 				}
 			});

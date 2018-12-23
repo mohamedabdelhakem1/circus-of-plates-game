@@ -28,7 +28,7 @@ public class GameOver implements GameObject {
 		image[0] = new BufferedImage(400, 150, BufferedImage.TYPE_INT_ARGB);
 		Graphics2D g2 = image[0].createGraphics();
 		g2.setFont(new Font("SansSerif", Font.BOLD, 48));
-		g2.setColor(Color.black);
+		g2.setColor(Color.white);
 		FontMetrics fm = g2.getFontMetrics();
 		int x = image[0].getWidth() - fm.stringWidth("GAME OVER") - 5;
 		int y = fm.getHeight();

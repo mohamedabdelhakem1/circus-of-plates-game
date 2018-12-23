@@ -4,6 +4,8 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;
 
+import org.omg.Messaging.SyncScopeHelper;
+
 import eg.edu.alexu.csd.oop.game.GameObject;
 import eg.edu.alexu.csd.oop.game.World;
 import model.clownBuilder.ClownEngineer;
@@ -43,11 +45,14 @@ public class GameWorld implements World {
 	private Clown clown;
 	private DifficultyFactory difficultyFactory;
 	private GameStrategyIF strategy;
-
-	private long PauseTime;
-	private long stopTime;
-
+	private long millisecondsPlayed;
+	private long pauseTime;
+	private long pauseMoment;
+	private boolean paused;
+	
 	public GameWorld(int height, int width, String difficulty) {
+		pauseTime = 0;
+		paused = false;
 		effectsFactory = new SoundEffectsFactory();
 		gameEnded = true;
 		startTime = System.currentTimeMillis();
@@ -68,10 +73,11 @@ public class GameWorld implements World {
 	@Override
 	public boolean refresh() {
 		// strategy
+		millisecondsPlayed = System.currentTimeMillis() - startTime - pauseTime;
 		gameEnded = true;
 		if (((clown.getLeftStack().getCurrentState() instanceof FullStack
-				&& clown.getRightStack().getCurrentState() instanceof FullStack)
-				|| (System.currentTimeMillis() - startTime > 120000)) && gameEnded) {
+				&& clown.getRightStack().getCurrentState() instanceof FullStack) || (millisecondsPlayed > 120000))
+				&& gameEnded) {
 			try {
 				constant.add(control.remove(0));
 			} catch (Exception e) {
@@ -160,8 +166,8 @@ public class GameWorld implements World {
 
 	@Override
 	public String getStatus() {
-		return "score : " + String.valueOf(score) + " 	time : "
-				+ String.valueOf((System.currentTimeMillis() - startTime) / 1000) + "/ 120";
+		return "score : " + String.valueOf(score) + " 	time : " + String.valueOf((120000 - millisecondsPlayed) / 1000)
+				+ "/ 120";
 	}
 
 	@Override
@@ -215,6 +221,9 @@ public class GameWorld implements World {
 		control = memento.getControl();
 		moving = memento.getMoving();
 		clown = (Clown) control.get(0);
+		startTime = System.currentTimeMillis() -  memento.getTimePlayed();
+		pauseTime = memento.getTimpaused();
+		millisecondsPlayed = memento.getTimePlayed();
 	}
 
 	public void saveSnapshot() {
@@ -223,18 +232,23 @@ public class GameWorld implements World {
 			@Override
 			public void run() {
 				Originator originator = new Originator();
-				originator.set(score, moving, control, constant, clown);
+				originator.set(score, moving, control, constant, clown , pauseTime, millisecondsPlayed);
 				Caretaker.addMemento(originator.storeInMemento());
 			}
 		};
 		new Thread(runnable).start();
 	}
 
-	public void setPauseTime(long pause) {
-
+	public void setPauseMoment(long pause) {
+		paused= true;
+		pauseMoment = pause;
 	}
-	public void setResumeTime() {
 
+	public void setResumeMoment(long resume) {
+		if(paused) {
+		pauseTime = pauseTime + (resume - pauseMoment);
+		paused = false;
+		}
 	}
 
 }
