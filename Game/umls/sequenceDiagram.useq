@@ -121,23 +121,11 @@
     <execution id="59">      
       <position height="63" width="112" x="1056" y="102"/>    
     </execution>    
-    <execution id="62">      
-      <position height="80" width="112" x="1056" y="367"/>    
-    </execution>    
-    <execution id="67">      
-      <position height="83" width="112" x="1056" y="464"/>    
-    </execution>    
-    <execution id="72">      
-      <position height="63" width="112" x="906" y="350"/>    
-    </execution>    
-    <execution id="75">      
-      <position height="63" width="112" x="906" y="445"/>    
-    </execution>    
     <execution id="54">      
       <position height="21" width="112" x="906" y="313"/>    
     </execution>  
   </object>  
-  <object id="78" language="java" name="model.clownBuilder.stack.state.StackState" project="Game" 
+  <object id="62" language="java" name="model.clownBuilder.stack.state.StackState" project="Game" 
     file="/Game/src/model/clownBuilder/stack/state/StackState.java" binary="false" label="stackState" type="interface" 
     autoSize="true">    
     <position height="-1" width="-1" x="942" y="0"/>    
@@ -148,52 +136,12 @@
       <position height="21" width="136" x="1172" y="123"/>    
     </execution>  
   </object>  
-  <object id="79" language="java" name="model.gameObjects.shapes.ElipsePlateObject" project="Game" 
-    file="/Game/src/model/gameObjects/shapes/ElipsePlateObject.java" binary="false" label="elipsePlateObject" 
-    type="class" autoSize="true">    
-    <position height="-1" width="-1" x="1318" y="0"/>    
-    <execution id="64">      
-      <position height="21" width="123" x="1312" y="388"/>    
-    </execution>    
-    <execution id="80">      
-      <position height="63" width="123" x="1162" y="112"/>    
-    </execution>    
-    <execution id="74">      
-      <position height="21" width="123" x="1162" y="371"/>    
-    </execution>    
-    <execution id="66">      
-      <position height="21" width="123" x="1162" y="405"/>    
-    </execution>  
-  </object>  
-  <object id="83" language="java" name="model.gameObjects.shapes.RegtanglePlateObject" project="Game" 
-    file="/Game/src/model/gameObjects/shapes/RegtanglePlateObject.java" binary="false" label="regtanglePlateObject" 
-    type="class" autoSize="true">    
-    <position height="-1" width="-1" x="1318" y="0"/>    
-    <execution id="69">      
-      <position height="21" width="146" x="1439" y="485"/>    
-    </execution>    
-    <execution id="84">      
-      <position height="63" width="146" x="1289" y="195"/>    
-    </execution>    
-    <execution id="77">      
-      <position height="21" width="146" x="1289" y="466"/>    
-    </execution>    
-    <execution id="71">      
-      <position height="21" width="146" x="1289" y="505"/>    
-    </execution>  
-  </object>  
-  <object id="87" language="java" name="model.gameObjects.shapes.plate.PlateFlyWeight" project="Game" 
+  <object id="63" language="java" name="model.gameObjects.shapes.plate.PlateFlyWeight" project="Game" 
     file="/Game/src/model/gameObjects/shapes/plate/PlateFlyWeight.java" binary="false" label="plateFlyWeight" 
     type="class" autoSize="true">    
-    <position height="-1" width="-1" x="738" y="0"/>    
-    <execution id="82">      
-      <position height="21" width="146" x="1439" y="133"/>    
-    </execution>    
-    <execution id="86">      
-      <position height="21" width="146" x="1439" y="216"/>    
-    </execution>  
+    <position height="-1" width="-1" x="738" y="0"/>  
   </object>  
-  <object id="88" language="java" name="model.memento.SnapShotCommand" project="Game" 
+  <object id="64" language="java" name="model.memento.SnapShotCommand" project="Game" 
     file="/Game/src/model/memento/SnapShotCommand.java" binary="false" label="snapShotCommand" type="class" 
     autoSize="true">    
     <position height="-1" width="-1" x="977" y="0"/>    
@@ -204,7 +152,7 @@
       <position height="21" width="136" x="1589" y="775"/>    
     </execution>  
   </object>  
-  <object id="89" language="java" name="model.memento.Originator" project="Game" 
+  <object id="65" language="java" name="model.memento.Originator" project="Game" 
     file="/Game/src/model/memento/Originator.java" binary="false" label="originator" type="class" autoSize="true">    
     <position height="-1" width="-1" x="977" y="0"/>    
     <execution id="13">      
@@ -214,11 +162,11 @@
       <position height="21" width="80" x="1729" y="611"/>    
     </execution>  
   </object>  
-  <object id="90" language="java" name="model.memento.Memento" project="Game" 
+  <object id="66" language="java" name="model.memento.Memento" project="Game" 
     file="/Game/src/model/memento/Memento.java" binary="false" label="memento" type="class" autoSize="true">    
     <position height="-1" width="-1" x="977" y="0"/>  
   </object>  
-  <object id="91" language="java" name="model.memento.Caretaker" project="Game" 
+  <object id="67" language="java" name="model.memento.Caretaker" project="Game" 
     file="/Game/src/model/memento/Caretaker.java" binary="false" label="caretaker" type="class" autoSize="true">    
     <position height="-1" width="-1" x="977" y="0"/>    
     <execution id="19">      
@@ -237,9 +185,7 @@
     <end type="SOURCE" refId="8"/>    
     <end type="TARGET" refId="10"/>  
   </message>  
-  <message id="12" 
-    operation="set(int,java.util.List&lt;eg.edu.alexu.csd.oop.game.GameObject&gt;,java.util.List&lt;eg.edu.alexu.csd.oop.game.GameObject&gt;,java.util.List&lt;eg.edu.alexu.csd.oop.game.GameObject&gt;,model.gameObjects.Clown):void" 
-    asynchronous="false">    
+  <message id="12" asynchronous="false">    
     <end type="SOURCE" refId="11"/>    
     <end type="TARGET" refId="13"/>  
   </message>  
@@ -301,38 +247,5 @@
   <message id="60" asynchronous="false">    
     <end type="SOURCE" refId="59"/>    
     <end type="TARGET" refId="61"/>  
-  </message>  
-  <message id="63" operation="updateCoordinates(int):void" asynchronous="false">    
-    <end type="SOURCE" refId="62"/>    
-    <end type="TARGET" refId="64"/>  
-  </message>  
-  <message id="65" operation="setStopMoving(boolean):void" asynchronous="false">    
-    <end type="SOURCE" refId="62"/>    
-    <end type="TARGET" refId="66"/>  
-  </message>  
-  <message id="68" operation="updateCoordinates(int):void" asynchronous="false">    
-    <end type="SOURCE" refId="67"/>    
-    <end type="TARGET" refId="69"/>  
-  </message>  
-  <message id="70" operation="setStopMoving(boolean):void" asynchronous="false">    
-    <end type="SOURCE" refId="67"/>    
-    <end type="TARGET" refId="71"/>  
-  </message>  
-  <message id="73" operation="setattached(boolean):void" asynchronous="false">    
-    <end type="SOURCE" refId="72"/>    
-    <end type="TARGET" refId="74"/>  
-  </message>  
-  <message id="76" operation="setattached(boolean):void" asynchronous="false">    
-    <end type="SOURCE" refId="75"/>    
-    <end type="TARGET" refId="77"/>  
-  </message>  
-  <message id="81" operation="getOvalPlate(java.awt.Color,int,int):java.awt.image.BufferedImage" asynchronous="false">    
-    <end type="SOURCE" refId="80"/>    
-    <end type="TARGET" refId="82"/>  
-  </message>  
-  <message id="85" operation="getRectangularPlate(java.awt.Color,int,int):java.awt.image.BufferedImage" 
-    asynchronous="false">    
-    <end type="SOURCE" refId="84"/>    
-    <end type="TARGET" refId="86"/>  
   </message>
 </sequence-diagram>

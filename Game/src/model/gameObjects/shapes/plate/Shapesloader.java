@@ -29,18 +29,20 @@ public class Shapesloader {
 		try {//PlateClasses.jar
 			//C:/Users/SHIKO/git/circusofplates/Game/
 			file = new JarFile("resources/PlateClasses.jar");
-			URL[] urls = { new URL("jar:file:" + "PlateClasses.jar" + "!/") };
+			URL[] urls = { new URL("jar:file:" + "resources/PlateClasses.jar" + "!/") };
 			ClassLoader classLoad = URLClassLoader.newInstance(urls);
 			classLoad = new URLClassLoader(urls);
 			Enumeration<JarEntry> enumeration = file.entries();
 			while (enumeration.hasMoreElements()) {
 				JarEntry jarEntry = enumeration.nextElement();
+				System.out.println(jarEntry.getName());
 				if (jarEntry.isDirectory() || !jarEntry.getName().endsWith(".class")) {
 					continue;
 				}
 				String classname = jarEntry.getName().substring(0, jarEntry.getName().length() - 6);
 				classname = classname.replace('/', '.');
-				Class c = classLoad.loadClass(classname);
+				System.out.println(classname);
+				Class<?extends ImageObject> c = (Class<? extends ImageObject>) classLoad.loadClass(classname);
 				classes.put(c.getName(),c);
 				
 			}

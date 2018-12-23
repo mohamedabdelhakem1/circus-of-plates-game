@@ -15,7 +15,7 @@ public class SemiproStrategy implements GameStrategyIF{
 		gameWorld.setControlSpeed(35);
 		gameWorld.setSpeed(8);
 		factory = PlateFactory.getInstance(6);
-		ClownEngineer clownEnginner = new ClownEngineer(100, 480, 25, 25);
+		ClownEngineer clownEnginner = new ClownEngineer(100, 480, 20,20);
 		clownEnginner.makeClown();
 		clown = clownEnginner.getClown();
 		control.add(clown);

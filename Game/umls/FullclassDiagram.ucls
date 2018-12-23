@@ -55,16 +55,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </interface>  
-  <class id="7" language="java" name="model.gameObjects.shapes.ElipsePlateObject" project="Game" 
-    file="/Game/src/model/gameObjects/shapes/ElipsePlateObject.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="75" y="1153"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="8" language="java" name="model.gameObjects.shapes.ImageObject" project="Game" 
+  <class id="7" language="java" name="model.gameObjects.shapes.ImageObject" project="Game" 
     file="/Game/src/model/gameObjects/shapes/ImageObject.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="535" y="875"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -73,25 +64,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="9" language="java" name="model.gameObjects.shapes.BatmanObject" project="Game" 
-    file="/Game/src/model/gameObjects/shapes/BatmanObject.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="305" y="1153"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="10" language="java" name="model.gameObjects.shapes.HarleyQuinnObject" project="Game" 
-    file="/Game/src/model/gameObjects/shapes/HarleyQuinnObject.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="538" y="1153"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="11" language="java" name="model.gameObjects.shapes.Background" project="Game" 
+  <class id="8" language="java" name="model.gameObjects.shapes.Background" project="Game" 
     file="/Game/src/model/gameObjects/shapes/Background.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="767" y="1153"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -100,16 +73,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="12" language="java" name="model.gameObjects.shapes.RegtanglePlateObject" project="Game" 
-    file="/Game/src/model/gameObjects/shapes/RegtanglePlateObject.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1002" y="1153"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <interface id="13" language="java" name="eg.edu.alexu.csd.oop.game.GameObject" project="Game" 
+  <interface id="9" language="java" name="eg.edu.alexu.csd.oop.game.GameObject" project="Game" 
     file="/Game/engine_v3.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="129" y="874"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -118,7 +82,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </interface>  
-  <interface id="14" language="java" name="model.gameObjects.shapes.plate.Observer" project="Game" 
+  <interface id="10" language="java" name="model.gameObjects.shapes.plate.Observer" project="Game" 
     file="/Game/src/model/gameObjects/shapes/plate/Observer.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="864" y="872"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -127,7 +91,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </interface>  
-  <class id="15" language="java" name="model.gameObjects.shapes.plate.PlateFlyWeight" project="Game" 
+  <class id="11" language="java" name="model.gameObjects.shapes.plate.PlateFlyWeight" project="Game" 
     file="/Game/src/model/gameObjects/shapes/plate/PlateFlyWeight.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="587" y="1291"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -136,7 +100,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="16" language="java" name="model.gameObjects.shapes.plate.PlatesPool" project="Game" 
+  <class id="12" language="java" name="model.gameObjects.shapes.plate.PlatesPool" project="Game" 
     file="/Game/src/model/gameObjects/shapes/plate/PlatesPool.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="1220" y="1158"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -145,7 +109,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="17" language="java" name="model.gameObjects.shapes.plate.Shapesloader" project="Game" 
+  <class id="13" language="java" name="model.gameObjects.shapes.plate.Shapesloader" project="Game" 
     file="/Game/src/model/gameObjects/shapes/plate/Shapesloader.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="1488" y="1336"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -154,7 +118,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="18" language="java" name="model.gameObjects.shapes.plate.PlateFactory" project="Game" 
+  <class id="14" language="java" name="model.gameObjects.shapes.plate.PlateFactory" project="Game" 
     file="/Game/src/model/gameObjects/shapes/plate/PlateFactory.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="1483" y="1160"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -163,7 +127,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <interface id="19" language="java" name="model.memento.GameCommand" project="Game" 
+  <interface id="15" language="java" name="model.memento.GameCommand" project="Game" 
     file="/Game/src/model/memento/GameCommand.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="-295" y="616"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -172,7 +136,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </interface>  
-  <class id="20" language="java" name="model.memento.Originator" project="Game" 
+  <class id="16" language="java" name="model.memento.Originator" project="Game" 
     file="/Game/src/model/memento/Originator.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="130" width="267" x="-606" y="1071"/>    
     <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -181,7 +145,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="21" language="java" name="model.memento.Memento" project="Game" file="/Game/src/model/memento/Memento.java" 
+  <class id="17" language="java" name="model.memento.Memento" project="Game" file="/Game/src/model/memento/Memento.java" 
     binary="false" corner="BOTTOM_RIGHT">    
     <position height="148" width="198" x="-391" y="842"/>    
     <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -190,7 +154,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="22" language="java" name="model.memento.Caretaker" project="Game" 
+  <class id="18" language="java" name="model.memento.Caretaker" project="Game" 
     file="/Game/src/model/memento/Caretaker.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="-560" y="918"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -199,7 +163,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="23" language="java" name="model.memento.SnapShotCommand" project="Game" 
+  <class id="19" language="java" name="model.memento.SnapShotCommand" project="Game" 
     file="/Game/src/model/memento/SnapShotCommand.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="-293" y="752"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -208,7 +172,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <interface id="24" language="java" name="model.clownBuilder.ClownBuilder" project="Game" 
+  <interface id="20" language="java" name="model.clownBuilder.ClownBuilder" project="Game" 
     file="/Game/src/model/clownBuilder/ClownBuilder.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="1049" y="451"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -217,7 +181,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </interface>  
-  <class id="25" language="java" name="model.clownBuilder.ClownBuilderHouse" project="Game" 
+  <class id="21" language="java" name="model.clownBuilder.ClownBuilderHouse" project="Game" 
     file="/Game/src/model/clownBuilder/ClownBuilderHouse.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="1304" y="449"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -226,7 +190,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="26" language="java" name="model.clownBuilder.ClownEngineer" project="Game" 
+  <class id="22" language="java" name="model.clownBuilder.ClownEngineer" project="Game" 
     file="/Game/src/model/clownBuilder/ClownEngineer.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="796" y="427"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -235,7 +199,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="27" language="java" name="model.gameObjects.GameOver" project="Game" 
+  <class id="23" language="java" name="model.gameObjects.GameOver" project="Game" 
     file="/Game/src/model/gameObjects/GameOver.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="78" width="193" x="-236" y="1113"/>    
     <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -244,7 +208,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="28" language="java" name="model.gameObjects.Clown" project="Game" 
+  <class id="24" language="java" name="model.gameObjects.Clown" project="Game" 
     file="/Game/src/model/gameObjects/Clown.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="1641" y="495"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -253,7 +217,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <interface id="29" language="java" name="model.gameStrategy.GameStrategyIF" project="Game" 
+  <interface id="25" language="java" name="model.gameStrategy.GameStrategyIF" project="Game" 
     file="/Game/src/model/gameStrategy/GameStrategyIF.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="76" width="247" x="988" y="169"/>    
     <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -262,7 +226,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </interface>  
-  <class id="30" language="java" name="model.gameStrategy.legendaryStrategy" project="Game" 
+  <class id="26" language="java" name="model.gameStrategy.legendaryStrategy" project="Game" 
     file="/Game/src/model/gameStrategy/legendaryStrategy.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="94" width="186" x="875" y="-15"/>    
     <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -271,7 +235,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="31" language="java" name="model.gameStrategy.AmateurStrategy" project="Game" 
+  <class id="27" language="java" name="model.gameStrategy.AmateurStrategy" project="Game" 
     file="/Game/src/model/gameStrategy/AmateurStrategy.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="94" width="155" x="1098" y="-15"/>    
     <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -280,7 +244,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="32" language="java" name="model.gameStrategy.DifficultyFactory" project="Game" 
+  <class id="28" language="java" name="model.gameStrategy.DifficultyFactory" project="Game" 
     file="/Game/src/model/gameStrategy/DifficultyFactory.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="94" width="139" x="703" y="-14"/>    
     <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -289,7 +253,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="33" language="java" name="model.gameStrategy.ProStrategy" project="Game" 
+  <class id="29" language="java" name="model.gameStrategy.ProStrategy" project="Game" 
     file="/Game/src/model/gameStrategy/ProStrategy.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="94" width="168" x="1289" y="-14"/>    
     <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -298,7 +262,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="34" language="java" name="model.gameStrategy.SemiproStrategy" project="Game" 
+  <class id="30" language="java" name="model.gameStrategy.SemiproStrategy" project="Game" 
     file="/Game/src/model/gameStrategy/SemiproStrategy.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="94" width="186" x="1509" y="-11"/>    
     <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -307,7 +271,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="35" language="java" name="model.clownBuilder.stack.Stack" project="Game" 
+  <class id="31" language="java" name="model.clownBuilder.stack.Stack" project="Game" 
     file="/Game/src/model/clownBuilder/stack/Stack.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="2016" y="462"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -316,7 +280,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="36" language="java" name="model.clownBuilder.stack.Stack.StackIterator" project="Game" 
+  <class id="32" language="java" name="model.clownBuilder.stack.Stack.StackIterator" project="Game" 
     file="/Game/src/model/clownBuilder/stack/Stack.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="2024" y="851"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -325,7 +289,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="37" language="java" name="model.clownBuilder.stack.state.EmptyStack" project="Game" 
+  <class id="33" language="java" name="model.clownBuilder.stack.state.EmptyStack" project="Game" 
     file="/Game/src/model/clownBuilder/stack/state/EmptyStack.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="3086" y="239"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -334,7 +298,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <interface id="38" language="java" name="model.clownBuilder.stack.StackIF" project="Game" 
+  <interface id="34" language="java" name="model.clownBuilder.stack.StackIF" project="Game" 
     file="/Game/src/model/clownBuilder/stack/StackIF.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="53" width="164" x="2339" y="-19"/>    
     <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -343,7 +307,7 @@
       <operations public="false" package="false" protected="false" private="false" static="true"/>    
     </display>  
   </interface>  
-  <class id="39" language="java" name="model.clownBuilder.stack.state.UnfullStack" project="Game" 
+  <class id="35" language="java" name="model.clownBuilder.stack.state.UnfullStack" project="Game" 
     file="/Game/src/model/clownBuilder/stack/state/UnfullStack.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="2481" y="230"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -352,7 +316,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="40" language="java" name="model.clownBuilder.stack.state.FullStack" project="Game" 
+  <class id="36" language="java" name="model.clownBuilder.stack.state.FullStack" project="Game" 
     file="/Game/src/model/clownBuilder/stack/state/FullStack.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="2775" y="235"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -361,7 +325,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <interface id="41" language="java" name="model.clownBuilder.stack.state.StackState" project="Game" 
+  <interface id="37" language="java" name="model.clownBuilder.stack.state.StackState" project="Game" 
     file="/Game/src/model/clownBuilder/stack/state/StackState.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="2584" y="425"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -370,7 +334,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </interface>  
-  <interface id="42" language="java" name="model.clownBuilder.stack.Iterator.Container" project="Game" 
+  <interface id="38" language="java" name="model.clownBuilder.stack.Iterator.Container" project="Game" 
     file="/Game/src/model/clownBuilder/stack/Iterator/Container.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="2371" y="593"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -379,7 +343,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </interface>  
-  <interface id="43" language="java" name="model.clownBuilder.stack.Iterator.Iterator" project="Game" 
+  <interface id="39" language="java" name="model.clownBuilder.stack.Iterator.Iterator" project="Game" 
     file="/Game/src/model/clownBuilder/stack/Iterator/Iterator.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="1744" y="956"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -388,490 +352,646 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </interface>  
-  <association id="44">    
-    <end type="SOURCE" refId="23" navigable="false">      
-      <attribute id="45" name="memento"/>      
-      <multiplicity id="46" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="21" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="47">    
+  <association id="40">    
     <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="48" name="control"/>      
-      <multiplicity id="49" minimum="0" maximum="2147483647"/>    
+      <attribute id="41" name="strategy">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="42" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
-    <end type="TARGET" refId="13" navigable="true"/>    
+    <end type="TARGET" refId="25" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="50">    
+  <association id="43">    
+    <end type="SOURCE" refId="31" navigable="false">      
+      <attribute id="44" name="unfullstate">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="45" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="37" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="46">    
     <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="51" name="factory"/>      
-      <multiplicity id="52" minimum="0" maximum="1"/>    
+      <attribute id="47" name="difficultyFactory">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="48" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
-    <end type="TARGET" refId="18" navigable="true"/>    
+    <end type="TARGET" refId="28" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <generalization id="53">    
-    <end type="SOURCE" refId="9"/>    
-    <end type="TARGET" refId="8"/>  
-  </generalization>  
-  <association id="54">    
+  <association id="49">    
     <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="55" name="clownEngineer"/>      
-      <multiplicity id="56" minimum="0" maximum="1"/>    
+      <attribute id="50" name="constant">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="51" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
-    <end type="TARGET" refId="26" navigable="true"/>    
+    <end type="TARGET" refId="9" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
+  <realization id="52">    
+    <end type="SOURCE" refId="23"/>    
+    <end type="TARGET" refId="9"/>  
+  </realization>  
+  <association id="53">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="54" name="clownEngineer">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="55" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="22" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="56">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="9"/>  
+  </realization>  
   <realization id="57">    
-    <end type="SOURCE" refId="33"/>    
-    <end type="TARGET" refId="29"/>  
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="10"/>  
   </realization>  
   <association id="58">    
-    <end type="SOURCE" refId="21" navigable="false">      
-      <attribute id="59" name="moving"/>      
-      <multiplicity id="60" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="13" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="61">    
-    <end type="SOURCE" refId="26" navigable="false">      
-      <attribute id="62" name="clownBuilderHouse"/>      
-      <multiplicity id="63" minimum="0" maximum="1"/>    
+    <end type="SOURCE" refId="16" navigable="false">      
+      <attribute id="59" name="clown">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="60" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="24" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="64">    
-    <end type="SOURCE" refId="25" navigable="false">      
-      <attribute id="65" name="rightStack"/>      
-      <multiplicity id="66" minimum="0" maximum="1"/>    
+  <realization id="61">    
+    <end type="SOURCE" refId="32"/>    
+    <end type="TARGET" refId="39"/>  
+  </realization>  
+  <association id="62">    
+    <end type="SOURCE" refId="35" navigable="false">      
+      <attribute id="63" name="stack">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="64" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
-    <end type="TARGET" refId="38" navigable="true"/>    
+    <end type="TARGET" refId="34" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="67">    
-    <end type="SOURCE" refId="20" navigable="false">      
-      <attribute id="68" name="moving"/>      
-      <multiplicity id="69" minimum="0" maximum="2147483647"/>    
+  <association id="65">    
+    <end type="SOURCE" refId="21" navigable="false">      
+      <attribute id="66" name="rightStack">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="67" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
-    <end type="TARGET" refId="13" navigable="true"/>    
+    <end type="TARGET" refId="34" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="70">    
+  <association id="68">    
     <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="71" name="gameWorld"/>      
-      <multiplicity id="72" minimum="0" maximum="1"/>    
+      <attribute id="69" name="clown">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="70" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="24" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="71">    
+    <end type="SOURCE" refId="22" navigable="false">      
+      <attribute id="72" name="clownBuilderHouse">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="73" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="20" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="74">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="75" name="control">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="76" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="9" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="77">    
+    <end type="SOURCE" refId="24" navigable="false">      
+      <attribute id="78" name="rightStack">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="79" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="34" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="80">    
+    <end type="SOURCE" refId="19" navigable="false">      
+      <attribute id="81" name="memento">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="82" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="17" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="83">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="84" name="gameWorld">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="85" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="4" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="73">    
-    <end type="SOURCE" refId="21" navigable="false">      
-      <attribute id="74" name="control"/>      
-      <multiplicity id="75" minimum="0" maximum="2147483647"/>    
+  <realization id="86">    
+    <end type="SOURCE" refId="24"/>    
+    <end type="TARGET" refId="9"/>  
+  </realization>  
+  <association id="87">    
+    <end type="SOURCE" refId="19" navigable="false">      
+      <attribute id="88" name="gameWorld">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="89" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="90">    
+    <end type="SOURCE" refId="33"/>    
+    <end type="TARGET" refId="37"/>  
+  </realization>  
+  <association id="91">    
+    <end type="SOURCE" refId="13" navigable="false">      
+      <attribute id="92" name="shapesloader">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="93" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="13" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <realization id="76">    
-    <end type="SOURCE" refId="23"/>    
-    <end type="TARGET" refId="19"/>  
-  </realization>  
-  <association id="77">    
+  <association id="94">    
+    <end type="SOURCE" refId="21" navigable="false">      
+      <attribute id="95" name="clown">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="96" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="24" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="97">    
+    <end type="SOURCE" refId="24" navigable="false">      
+      <attribute id="98" name="leftStack">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="99" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="34" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="100">    
     <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="78" name="effectsFactory"/>      
-      <multiplicity id="79" minimum="0" maximum="1"/>    
+      <attribute id="101" name="effectsFactory">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="102" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="5" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="80">    
-    <end type="SOURCE" refId="15" navigable="false">      
-      <attribute id="81" name="factory"/>      
-      <multiplicity id="82" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="15" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="83">    
-    <end type="SOURCE" refId="16" navigable="false">      
-      <attribute id="84" name="platesPoolUnused"/>      
-      <multiplicity id="85" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="8" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <realization id="86">    
-    <end type="SOURCE" refId="37"/>    
-    <end type="TARGET" refId="41"/>  
-  </realization>  
-  <association id="87">    
-    <end type="SOURCE" refId="39" navigable="false">      
-      <attribute id="88" name="stack"/>      
-      <multiplicity id="89" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="38" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="90">    
-    <end type="SOURCE" refId="20" navigable="false">      
-      <attribute id="91" name="clown"/>      
-      <multiplicity id="92" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="28" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="93">    
-    <end type="SOURCE" refId="3" navigable="false">      
-      <attribute id="94" name="mainMenu"/>      
-      <multiplicity id="95" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="2" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="96">    
-    <end type="SOURCE" refId="35" navigable="false">      
-      <attribute id="97" name="unfullstate"/>      
-      <multiplicity id="98" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="41" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="99">    
-    <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="100" name="clown"/>      
-      <multiplicity id="101" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="28" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <generalization id="102">    
-    <end type="SOURCE" refId="12"/>    
-    <end type="TARGET" refId="8"/>  
-  </generalization>  
   <association id="103">    
-    <end type="SOURCE" refId="22" navigable="false">      
-      <attribute id="104" name="GameCheckPoints"/>      
-      <multiplicity id="105" minimum="0" maximum="2147483647"/>    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="104" name="moving">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="105" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
-    <end type="TARGET" refId="21" navigable="true"/>    
+    <end type="TARGET" refId="9" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <association id="106">    
-    <end type="SOURCE" refId="16" navigable="false">      
-      <attribute id="107" name="pool"/>      
-      <multiplicity id="108" minimum="0" maximum="1"/>    
+    <end type="SOURCE" refId="31" navigable="false">      
+      <attribute id="107" name="plates">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="108" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
-    <end type="TARGET" refId="16" navigable="true"/>    
+    <end type="TARGET" refId="7" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <association id="109">    
-    <end type="SOURCE" refId="35" navigable="false">      
-      <attribute id="110" name="plates"/>      
-      <multiplicity id="111" minimum="0" maximum="2147483647"/>    
+    <end type="SOURCE" refId="16" navigable="false">      
+      <attribute id="110" name="control">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="111" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
-    <end type="TARGET" refId="8" navigable="true"/>    
+    <end type="TARGET" refId="9" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <association id="112">    
-    <end type="SOURCE" refId="20" navigable="false">      
-      <attribute id="113" name="control"/>      
-      <multiplicity id="114" minimum="0" maximum="2147483647"/>    
+    <end type="SOURCE" refId="16" navigable="false">      
+      <attribute id="113" name="iterator">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="114" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
-    <end type="TARGET" refId="13" navigable="true"/>    
+    <end type="TARGET" refId="39" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <realization id="115">    
-    <end type="SOURCE" refId="28"/>    
-    <end type="TARGET" refId="13"/>  
-  </realization>  
-  <realization id="116">    
-    <end type="SOURCE" refId="8"/>    
-    <end type="TARGET" refId="14"/>  
-  </realization>  
-  <association id="117">    
-    <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="118" name="moving"/>      
-      <multiplicity id="119" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="13" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <realization id="120">    
     <end type="SOURCE" refId="31"/>    
-    <end type="TARGET" refId="29"/>  
+    <end type="TARGET" refId="34"/>  
   </realization>  
-  <association id="121">    
-    <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="122" name="strategy"/>      
-      <multiplicity id="123" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="29" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <realization id="124">    
-    <end type="SOURCE" refId="35"/>    
-    <end type="TARGET" refId="38"/>  
-  </realization>  
-  <association id="125">    
-    <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="126" name="difficultyFactory"/>      
-      <multiplicity id="127" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="32" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="128">    
-    <end type="SOURCE" refId="20" navigable="false">      
-      <attribute id="129" name="constant"/>      
-      <multiplicity id="130" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="13" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="131">    
-    <end type="SOURCE" refId="35" navigable="false">      
-      <attribute id="132" name="fullstate"/>      
-      <multiplicity id="133" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="41" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <generalization id="134">    
-    <end type="SOURCE" refId="7"/>    
-    <end type="TARGET" refId="8"/>  
-  </generalization>  
-  <association id="135">    
-    <end type="SOURCE" refId="12" navigable="false">      
-      <attribute id="136" name="flyWeight"/>      
-      <multiplicity id="137" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="15" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="138">    
-    <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="139" name="mainMenu"/>      
-      <multiplicity id="140" minimum="0" maximum="1"/>    
+  <association id="116">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="117" name="mainMenu">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="118" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="2" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="141">    
-    <end type="SOURCE" refId="36" navigable="false">      
-      <attribute id="142" name="list"/>      
-      <multiplicity id="143" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="8" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="144">    
-    <end type="SOURCE" refId="18" navigable="false">      
-      <attribute id="145" name="shapesloader"/>      
-      <multiplicity id="146" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="17" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <realization id="147">    
-    <end type="SOURCE" refId="40"/>    
-    <end type="TARGET" refId="41"/>  
+  <realization id="119">    
+    <end type="SOURCE" refId="29"/>    
+    <end type="TARGET" refId="25"/>  
   </realization>  
-  <realization id="148">    
-    <end type="SOURCE" refId="34"/>    
-    <end type="TARGET" refId="29"/>  
-  </realization>  
-  <association id="149">    
-    <end type="SOURCE" refId="17" navigable="false">      
-      <attribute id="150" name="shapesloader"/>      
-      <multiplicity id="151" minimum="0" maximum="1"/>    
+  <association id="120">    
+    <end type="SOURCE" refId="14" navigable="false">      
+      <attribute id="121" name="shapesloader">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="122" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
-    <end type="TARGET" refId="17" navigable="true"/>    
+    <end type="TARGET" refId="13" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <realization id="152">    
+  <realization id="123">    
     <end type="SOURCE" refId="30"/>    
-    <end type="TARGET" refId="29"/>  
+    <end type="TARGET" refId="25"/>  
   </realization>  
-  <realization id="153">    
-    <end type="SOURCE" refId="39"/>    
-    <end type="TARGET" refId="41"/>  
-  </realization>  
-  <realization id="154">    
-    <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="6"/>  
-  </realization>  
-  <association id="155">    
-    <end type="SOURCE" refId="25" navigable="false">      
-      <attribute id="156" name="leftStack"/>      
-      <multiplicity id="157" minimum="0" maximum="1"/>    
+  <association id="124">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="125" name="factory">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="126" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
-    <end type="TARGET" refId="38" navigable="true"/>    
+    <end type="TARGET" refId="14" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <generalization id="158">    
-    <end type="SOURCE" refId="10"/>    
-    <end type="TARGET" refId="8"/>  
+  <generalization id="127">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="7"/>  
   </generalization>  
-  <association id="159">    
-    <end type="SOURCE" refId="20" navigable="false">      
-      <attribute id="160" name="iterator"/>      
-      <multiplicity id="161" minimum="0" maximum="1"/>    
+  <association id="128">    
+    <end type="SOURCE" refId="12" navigable="false">      
+      <attribute id="129" name="platesPoolUnused">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="130" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
-    <end type="TARGET" refId="43" navigable="true"/>    
+    <end type="TARGET" refId="7" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="162">    
-    <end type="SOURCE" refId="18" navigable="false">      
-      <attribute id="163" name="factory"/>      
-      <multiplicity id="164" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="18" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="165">    
-    <end type="SOURCE" refId="28" navigable="false">      
-      <attribute id="166" name="rightStack"/>      
-      <multiplicity id="167" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="38" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="168">    
-    <end type="SOURCE" refId="18" navigable="false">      
-      <attribute id="169" name="pool"/>      
-      <multiplicity id="170" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="16" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="171">    
-    <end type="SOURCE" refId="35" navigable="false">      
-      <attribute id="172" name="currentstate"/>      
-      <multiplicity id="173" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="41" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <realization id="174">    
-    <end type="SOURCE" refId="36"/>    
-    <end type="TARGET" refId="43"/>  
-  </realization>  
-  <association id="175">    
-    <end type="SOURCE" refId="7" navigable="false">      
-      <attribute id="176" name="flyWeight"/>      
-      <multiplicity id="177" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="15" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <generalization id="178">    
-    <end type="SOURCE" refId="11"/>    
-    <end type="TARGET" refId="8"/>  
-  </generalization>  
-  <association id="179">    
+  <association id="131">    
     <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="180" name="controller"/>      
-      <multiplicity id="181" minimum="0" maximum="1"/>    
+      <attribute id="132" name="controller">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="133" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="3" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <realization id="182">    
+  <association id="134">    
+    <end type="SOURCE" refId="31" navigable="false">      
+      <attribute id="135" name="fullstate">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="136" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="37" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="137">    
+    <end type="SOURCE" refId="17" navigable="false">      
+      <attribute id="138" name="moving">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="139" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="9" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="140">    
+    <end type="SOURCE" refId="17" navigable="false">      
+      <attribute id="141" name="constant">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="142" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="9" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="143">    
+    <end type="SOURCE" refId="16" navigable="false">      
+      <attribute id="144" name="constant">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="145" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="9" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="146">    
+    <end type="SOURCE" refId="11" navigable="false">      
+      <attribute id="147" name="factory">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="148" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="11" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="149">    
     <end type="SOURCE" refId="35"/>    
-    <end type="TARGET" refId="42"/>  
+    <end type="TARGET" refId="37"/>  
   </realization>  
-  <realization id="183">    
-    <end type="SOURCE" refId="8"/>    
-    <end type="TARGET" refId="13"/>  
+  <realization id="150">    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="20"/>  
   </realization>  
-  <association id="184">    
-    <end type="SOURCE" refId="3" navigable="false">      
-      <attribute id="185" name="gameWorld"/>      
-      <multiplicity id="186" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="4" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="187">    
-    <end type="SOURCE" refId="23" navigable="false">      
-      <attribute id="188" name="gameWorld"/>      
-      <multiplicity id="189" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="4" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <realization id="190">    
-    <end type="SOURCE" refId="25"/>    
-    <end type="TARGET" refId="24"/>  
+  <realization id="151">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="6"/>  
   </realization>  
-  <association id="191">    
-    <end type="SOURCE" refId="37" navigable="false">      
-      <attribute id="192" name="stack"/>      
-      <multiplicity id="193" minimum="0" maximum="1"/>    
+  <association id="152">    
+    <end type="SOURCE" refId="17" navigable="false">      
+      <attribute id="153" name="control">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="154" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
-    <end type="TARGET" refId="38" navigable="true"/>    
+    <end type="TARGET" refId="9" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="194">    
-    <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="195" name="constant"/>      
-      <multiplicity id="196" minimum="0" maximum="2147483647"/>    
+  <association id="155">    
+    <end type="SOURCE" refId="18" navigable="false">      
+      <attribute id="156" name="GameCheckPoints">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="157" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
-    <end type="TARGET" refId="13" navigable="true"/>    
+    <end type="TARGET" refId="17" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="197">    
-    <end type="SOURCE" refId="21" navigable="false">      
-      <attribute id="198" name="constant"/>      
-      <multiplicity id="199" minimum="0" maximum="2147483647"/>    
+  <realization id="158">    
+    <end type="SOURCE" refId="36"/>    
+    <end type="TARGET" refId="37"/>  
+  </realization>  
+  <association id="159">    
+    <end type="SOURCE" refId="31" navigable="false">      
+      <attribute id="160" name="emptyState">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="161" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
-    <end type="TARGET" refId="13" navigable="true"/>    
+    <end type="TARGET" refId="37" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <nesting id="200">    
-    <end type="SOURCE" refId="35"/>    
-    <end type="TARGET" refId="36"/>  
-  </nesting>  
-  <association id="201">    
-    <end type="SOURCE" refId="28" navigable="false">      
-      <attribute id="202" name="leftStack"/>      
-      <multiplicity id="203" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="38" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <realization id="204">    
+  <realization id="162">    
     <end type="SOURCE" refId="27"/>    
-    <end type="TARGET" refId="13"/>  
+    <end type="TARGET" refId="25"/>  
   </realization>  
-  <association id="205">    
-    <end type="SOURCE" refId="35" navigable="false">      
-      <attribute id="206" name="emptyState"/>      
-      <multiplicity id="207" minimum="0" maximum="1"/>    
+  <realization id="163">    
+    <end type="SOURCE" refId="31"/>    
+    <end type="TARGET" refId="38"/>  
+  </realization>  
+  <nesting id="164">    
+    <end type="SOURCE" refId="31"/>    
+    <end type="TARGET" refId="32"/>  
+  </nesting>  
+  <association id="165">    
+    <end type="SOURCE" refId="33" navigable="false">      
+      <attribute id="166" name="stack">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="167" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
-    <end type="TARGET" refId="41" navigable="true"/>    
+    <end type="TARGET" refId="34" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="208">    
-    <end type="SOURCE" refId="25" navigable="false">      
-      <attribute id="209" name="clown"/>      
-      <multiplicity id="210" minimum="0" maximum="1"/>    
+  <association id="168">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="169" name="mainMenu">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="170" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
-    <end type="TARGET" refId="28" navigable="true"/>    
+    <end type="TARGET" refId="2" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="211">    
-    <end type="SOURCE" refId="40" navigable="false">      
-      <attribute id="212" name="stack"/>      
-      <multiplicity id="213" minimum="0" maximum="1"/>    
+  <association id="171">    
+    <end type="SOURCE" refId="32" navigable="false">      
+      <attribute id="172" name="list">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="173" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
-    <end type="TARGET" refId="38" navigable="true"/>    
+    <end type="TARGET" refId="7" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
+  <association id="174">    
+    <end type="SOURCE" refId="12" navigable="false">      
+      <attribute id="175" name="pool">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="176" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="12" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="177">    
+    <end type="SOURCE" refId="36" navigable="false">      
+      <attribute id="178" name="stack">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="179" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="34" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="180">    
+    <end type="SOURCE" refId="16" navigable="false">      
+      <attribute id="181" name="moving">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="182" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="9" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="183">    
+    <end type="SOURCE" refId="14" navigable="false">      
+      <attribute id="184" name="factory">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="185" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="14" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="186">    
+    <end type="SOURCE" refId="21" navigable="false">      
+      <attribute id="187" name="leftStack">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="188" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="34" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="189">    
+    <end type="SOURCE" refId="14" navigable="false">      
+      <attribute id="190" name="pool">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="191" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="12" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="192">    
+    <end type="SOURCE" refId="31" navigable="false">      
+      <attribute id="193" name="currentstate">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="194" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="37" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="195">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="196" name="gameWorld">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="197" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="198">    
+    <end type="SOURCE" refId="19"/>    
+    <end type="TARGET" refId="15"/>  
+  </realization>  
+  <realization id="199">    
+    <end type="SOURCE" refId="26"/>    
+    <end type="TARGET" refId="25"/>  
+  </realization>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
     <attributes public="false" package="false" protected="false" private="false" static="true"/>    
