@@ -43,8 +43,10 @@ public class GameWorld implements World {
 	private Clown clown;
 	private DifficultyFactory difficultyFactory;
 	private GameStrategyIF strategy;
+
 	private long PauseTime;
 	private long stopTime;
+
 	public GameWorld(int height, int width, String difficulty) {
 		effectsFactory = new SoundEffectsFactory();
 		gameEnded = true;
@@ -158,8 +160,8 @@ public class GameWorld implements World {
 
 	@Override
 	public String getStatus() {
-		return "score : " + String.valueOf(score) + " 	time : " + String.valueOf((System.currentTimeMillis() - startTime) / 1000)
-				+ "/ 120";
+		return "score : " + String.valueOf(score) + " 	time : "
+				+ String.valueOf((System.currentTimeMillis() - startTime) / 1000) + "/ 120";
 	}
 
 	@Override
@@ -234,4 +236,5 @@ public class GameWorld implements World {
 	public void setResumeTime() {
 
 	}
+
 }
